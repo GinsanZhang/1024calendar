@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg"><defs>
+  <symbol id="back" viewBox="0 0 24 24"><path d="M14.5 5L7.5 12l7 7M8 12h11" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="previous" viewBox="0 0 24 24"><path d="M15.5 5L8.5 12l7 7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="next" viewBox="0 0 24 24"><path d="M8.5 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</defs></svg>

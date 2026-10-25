@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" fill="none" aria-hidden="true">
+  <defs>
+    <filter id="mistSoftFront" x="-15%" y="-40%" width="130%" height="180%">
+      <feGaussianBlur stdDeviation="16" />
+    </filter>
+    <linearGradient id="mistFadeFront" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#f2eddf" stop-opacity="0" />
+      <stop offset=".35" stop-color="#f2eddf" stop-opacity=".72" />
+      <stop offset=".65" stop-color="#f2eddf" stop-opacity=".55" />
+      <stop offset="1" stop-color="#f2eddf" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <g filter="url(#mistSoftFront)" stroke="url(#mistFadeFront)" stroke-linecap="round">
+    <path d="M240 445 C475 365 640 470 860 370 S1200 390 1480 320" stroke-width="42" />
+  </g>
+</svg>

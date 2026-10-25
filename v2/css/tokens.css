@@ -1,0 +1,246 @@
+/* ============================================================
+   一页千秋 · v2 设计令牌
+   ------------------------------------------------------------
+   分层：原始色 → 语义色 → 组件色。组件样式只允许读语义色。
+   所有文字色后标注的是对 --paper 的实测对比度（WCAG 2.1）。
+   目标：正文级 ≥ 4.5:1；大字（≥24 CSS px 或 ≥18.667px 粗体）≥ 3:1。
+   最终设计决策见 ../design.md；不透明色对复算见 ../design/contrast-audit.json。
+   ============================================================ */
+
+:root {
+  /* ── 纸与墨 ── */
+  --paper:        #F4EFE6;   /* 绢纸底 */
+  --paper-2:      #FBF8F2;   /* 抬升面 */
+  --card:         #FCFAF5;   /* 卡片 */
+  --paper-deep:   #EAE3D6;   /* 纸页背面 / 压印 */
+
+  --ink:          #1F1D1A;   /* 14.68:1  标题与正文主色 */
+  --ink-2:        #4A443B;   /*  8.41:1  次级正文 */
+  --muted:        #675E52;   /*  5.56:1  辅助信息：出处、纪年、图例 */
+  --whisper:      #A79D8E;   /*  2.33:1  仅装饰：分隔线、刻度、未选中标记。不得承载文字 */
+
+  --line:         rgba(31, 29, 26, .14);
+  --line-2:       rgba(31, 29, 26, .07);
+  --line-strong:  rgba(31, 29, 26, .26);
+
+  /* ── 三支强调色，各司其职 ── */
+  --zhu:          #B23A2E;   /*  5.18:1  时间与行动：今天、主按钮、印章 */
+  --zhu-deep:     #962C22;   /*  6.84:1  朱砂按下态 / 深底反白前的重色 */
+  --on-zhu:      #FFF9F4;   /* 配 --zhu 为 5.68:1；不能在深色主题继续写死白字 */
+  --zhu-wash:     rgba(178, 58, 46, .10);
+  --zhu-wash-2:   rgba(178, 58, 46, .18);
+
+  --qing:         #3E6B62;   /*  5.26:1  山水与节气 */
+  --qing-wash:    rgba(62, 107, 98, .10);
+
+  --gold:         #826631;   /*  4.71:1  纪年与朝代标记 */
+  --gold-bright:  #9A7B3F;   /*  3.47:1  仅装饰金线，不作文字 */
+  --gold-wash:    rgba(154, 123, 63, .12);
+
+  /* ── 朝代强调色：装饰值与可读值分离 ──
+     --era 用于色块、长卷刻度、纸面晕染；
+     --era-ink 是同一色相压深后专供文字，保证 ≥ 4.5:1。 */
+  --era:          #B23A2E;
+  --era-ink:      #B23A2E;
+  --era-wash:     rgba(178, 58, 46, .12);
+
+  /* ── 四季（四时视图的底色与强调） ── */
+  --season:       #4E7A6B;
+  --season-ink:   #4B7567;
+  --season-wash:  rgba(78, 122, 107, .10);
+  --season-paper: #F1F3EA;
+
+  /* ── 字体 ── */
+  --serif: var(--font-qianqiu-serif, "Qianqiu Serif"), "Source Han Serif SC", "Songti SC", "Noto Serif CJK SC", "Noto Serif SC", "STSong", "SimSun", Georgia, serif;
+  --sans:  -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+  --num:   "SF Mono", "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --font-brand: "Qianqiu Brand"; /* 待定稿书法资产；禁止视为已有字体或以系统宋体验收 */
+
+  /* ── 字阶：中文最小 11px，不再出现 9.5px / 10px 承载信息 ── */
+  --fs-display: clamp(46px, 7vw, 82px);
+  --fs-h1:      clamp(28px, 3.4vw, 42px);
+  --fs-h2:      26px;
+  --fs-h3:      18px;
+  --fs-body:    15px;
+  --fs-sm:      13px;
+  --fs-xs:      12px;
+  --fs-micro:   11px;   /* 下限：只用于标签、单位、序号 */
+  --fs-numeral: clamp(64px, 9vw, 112px);
+
+  --lh-display: 1.04;
+  --lh-title:   1.22;
+  --lh-body:    1.78;
+  --lh-tight:   1.45;
+
+  --ls-display: .06em;   /* 宋体大字留气口 */
+  --ls-title:   .02em;
+  --ls-label:   .14em;   /* 小字疏排，替代缩小字号 */
+
+  /* ── 间距：4 基数 ── */
+  --s1: 4px;   --s2: 8px;   --s3: 12px;  --s4: 16px;  --s5: 24px;
+  --s6: 32px;  --s7: 48px;  --s8: 64px;  --s9: 96px;  --s10: 128px;
+
+  /* ── 圆角：四档收敛 ── */
+  --r-1: 4px;    /* 内联标签、出处胶囊的方角替代 */
+  --r-2: 10px;   /* 控件：按钮、输入、格子 */
+  --r-3: 18px;   /* 卡片、纸页 */
+  --r-pill: 999px;
+
+  /* ── 投影：纸页三层，越远越淡 ── */
+  --e-1: 0 1px 2px rgba(60, 45, 30, .06);
+  --e-2: 0 2px 6px rgba(60, 45, 30, .07), 0 14px 30px -18px rgba(60, 45, 30, .34);
+  --e-3: 0 6px 18px rgba(60, 45, 30, .09), 0 36px 70px -42px rgba(60, 45, 30, .48);
+  --e-paper: 0 1px 0 rgba(255, 255, 255, .7) inset,
+             0 18px 40px -28px rgba(60, 45, 30, .5),
+             2px 0 0 -1px var(--paper-deep),
+             4px 0 0 -2px var(--paper-deep);
+
+  /* ── 动效：一套节奏，四种语义 ── */
+  --dur-tap:      140ms;  /* 按钮、日期选中 */
+  --dur-focus:    220ms;  /* 单点内容就位 */
+  --dur-page:     340ms;  /* 翻页 */
+  --dur-view:     500ms;  /* 视图 / 朝代切换 */
+  --dur-ink:      650ms;  /* 墨晕入画 */
+  --dur-ambient: 4000ms;  /* 呼吸基准；雾与舟为 28–64s 长循环 */
+
+  --ease-out:      cubic-bezier(.2, .72, .25, 1);
+  --ease-ink:      cubic-bezier(.2, .72, .2, 1);
+  --ease-standard: cubic-bezier(.4, 0, .2, 1);
+  --ease-spring:   cubic-bezier(.2, .9, .3, 1.2);
+
+  /* ── 层高 ── */
+  --z-art: 0;  --z-rail: 20;  --z-float: 40;
+  --z-enter: 60;  --z-lookback: 70;  --z-search: 80;  --z-toast: 90;
+
+  /* ── 版心 ── */
+  --measure: 1180px;
+  --gutter: clamp(20px, 4vw, 64px);
+  --rail-w: 112px;
+
+  /* ── 参考稿专用语义：物理装裱与画境，不沿用通用卡片形状 ── */
+  --pigment-blue: #123F48;
+  --pigment-pine: #326C58;
+  --pigment-ochre: #8C6B35;
+  --pigment-sand: #EED4AD;
+  --pigment-bark: #805F49;
+  --r-paper: 3px;
+  --r-caption: 2px;
+  --r-control: 6px;
+  --r-circle: 50%;
+  --target-touch: 44px;
+  --target-day-narrow: 36px;
+  --nav-width: 144px;
+  --reading-measure: 32em;
+  --fs-reading: clamp(16px, 1.2vw, 18px);
+  --fs-caption: 12px;
+  --hero-title-width: clamp(256px, 32vw, 520px);
+  --caption-paper: #FBF8F2;
+  --caption-ink: #1F1D1A;
+  --night-paper: #14120F;
+  --night-ink: #EDE6DA;
+  --night-muted: #CFC6B7;
+  --texture-paper-opacity: .14;
+  --texture-silk-opacity: .08;
+  --dur-exit: 280ms;
+  --dur-rewind: 600ms;
+  --dur-arrive: 500ms;
+  --dur-mist-back: 28000ms;
+  --dur-mist-front: 24000ms;
+  --dur-boat: 64000ms;
+  --z-scene: 0;
+  --z-atmosphere: 2;
+  --z-content: 10;
+  --z-chrome: 30;
+  --z-focus: 100;
+
+  /* 朝代文字专用色。深色对 paper / paper-2 / card 三种底均复算。 */
+  --era-xia-ink: #866647; --era-cq-ink: #65714D;
+  --era-qin-ink: #39332C; --era-han-ink: #9A3C2E;
+  --era-sj-ink: #5B6A79; --era-sui-ink: #795B45;
+  --era-tang-ink: #94631B; --era-wudai-ink: #6A6053;
+  --era-song-ink: #4B7567; --era-yuan-ink: #4E5A8B;
+  --era-ming-ink: #AE3F2F; --era-qing-ink: #3D6A8B;
+  --era-minguo-ink: #6D594D; --era-prc-ink: #B0392E;
+}
+
+/* ============================================================
+   深色：不是反相，而是「夜观长卷」——纸变墨，朱砂提亮一档
+   ============================================================ */
+html[data-theme="dark"] {
+  --paper:        #14120F;
+  --paper-2:      #191712;
+  --card:         #1E1B16;
+  --paper-deep:   #0E0D0B;
+
+  --ink:          #EDE6DA;   /* 15.08:1 */
+  --ink-2:        #CFC6B7;   /* 11.05:1 */
+  --muted:        #A79C8B;   /*  6.92:1 */
+  --whisper:      #6E6559;   /*  3.27:1  仅装饰 */
+
+  --line:         rgba(237, 230, 218, .14);
+  --line-2:       rgba(237, 230, 218, .07);
+  --line-strong:  rgba(237, 230, 218, .28);
+
+  --zhu:          #E06A52;   /*  5.66:1 */
+  --zhu-deep:     #D9634C;
+  --on-zhu:       #14120F;
+  --zhu-wash:     rgba(224, 106, 82, .14);
+  --zhu-wash-2:   rgba(224, 106, 82, .24);
+
+  --qing:         #7FB2A6;   /*  7.85:1 */
+  --qing-wash:    rgba(127, 178, 166, .12);
+
+  --gold:         #C4A366;   /*  7.82:1 */
+  --gold-bright:  #D2B075;
+  --gold-wash:    rgba(196, 163, 102, .14);
+
+  --e-1: 0 1px 2px rgba(0, 0, 0, .4);
+  --e-2: 0 2px 6px rgba(0, 0, 0, .4), 0 16px 34px -20px rgba(0, 0, 0, .8);
+  --e-3: 0 8px 22px rgba(0, 0, 0, .45), 0 40px 80px -46px rgba(0, 0, 0, .9);
+  --e-paper: 0 1px 0 rgba(255, 255, 255, .06) inset,
+             0 20px 44px -30px rgba(0, 0, 0, .9),
+             2px 0 0 -1px var(--paper-deep),
+             4px 0 0 -2px var(--paper-deep);
+
+  --season-paper: #171A16;
+  --season: #9ABCAB;
+  --season-ink: #9ABCAB;
+  --season-wash: rgba(154,188,171,.12);
+  --era: #E06A52;
+  --era-ink: #E06A52;
+  --era-wash: rgba(224,106,82,.14);
+  --caption-paper: #1E1B16;
+  --caption-ink: #EDE6DA;
+
+  --era-xia-ink: #A68565; --era-cq-ink: #84906B;
+  --era-qin-ink: #968A79; --era-han-ink: #D07061;
+  --era-sj-ink: #7D8D9D; --era-sui-ink: #A6846B;
+  --era-tang-ink: #C28223; --era-wudai-ink: #958A7B;
+  --era-song-ink: #6A9586; --era-yuan-ink: #7F8AB7;
+  --era-ming-ink: #D46D5D; --era-qing-ink: #6091B4;
+  --era-minguo-ink: #9E8779; --era-prc-ink: #D66B60;
+}
+
+/* 四季：只换色相，不动结构 */
+html[data-season="spring"] { --season: #4E7A6B; --season-ink: #46705F; --season-wash: rgba(78,122,107,.10); --season-paper: #F1F3EA; }
+html[data-season="summer"] { --season: #35605A; --season-ink: #315852; --season-wash: rgba(53,96,90,.10);  --season-paper: #EAF0EC; }
+html[data-season="autumn"] { --season: #94631B; --season-ink: #8A5C19; --season-wash: rgba(148,99,27,.12); --season-paper: #F4EEE0; }
+html[data-season="winter"] { --season: #4F5B8C; --season-ink: #4A5583; --season-wash: rgba(79,91,140,.10); --season-paper: #EDEFF4; }
+html[data-theme="dark"][data-season="spring"] { --season: #9ABCAB; --season-ink: #9ABCAB; --season-wash: rgba(154,188,171,.12); --season-paper: #151A15; }
+html[data-theme="dark"][data-season="summer"] { --season: #83B4A9; --season-ink: #83B4A9; --season-wash: rgba(131,180,169,.12); --season-paper: #131917; }
+html[data-theme="dark"][data-season="autumn"] { --season: #D4B273; --season-ink: #D4B273; --season-wash: rgba(212,178,115,.12); --season-paper: #1A1712; }
+html[data-theme="dark"][data-season="winter"] { --season: #A8B3DE; --season-ink: #A8B3DE; --season-wash: rgba(168,179,222,.12); --season-paper: #14161C; }
+
+/* 朝代换色：颜色本身参与插值，避免切换时跳变 */
+@property --era      { syntax: "<color>"; inherits: true; initial-value: #B23A2E; }
+@property --era-ink  { syntax: "<color>"; inherits: true; initial-value: #B23A2E; }
+@property --era-wash { syntax: "<color>"; inherits: true; initial-value: rgba(178,58,46,.12); }
+@property --season   { syntax: "<color>"; inherits: true; initial-value: #4E7A6B; }
+
+html {
+  transition:
+    --era var(--dur-view) var(--ease-standard),
+    --era-ink var(--dur-view) var(--ease-standard),
+    --era-wash var(--dur-view) var(--ease-standard),
+    background-color var(--dur-view) var(--ease-standard);
+}

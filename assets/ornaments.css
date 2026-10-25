@@ -1,0 +1,70 @@
+/* 本地透明底画作点景。装饰不占用交互、阅读或辅助技术焦点。 */
+.ornament { pointer-events: none; user-select: none; object-fit: contain; }
+.welcome-cranes {
+  position: absolute; right: 21%; top: 20%; width: clamp(116px, 12vw, 184px);
+  height: auto; opacity: .8;
+}
+.opening::after {
+  content: ""; position: absolute; inset: 8px; z-index: 1;
+  border: 1px solid rgba(143, 114, 64, .22); pointer-events: none;
+}
+.opening-cranes {
+  position: absolute; right: 12%; top: 14px; width: 158px; height: 158px;
+  opacity: .88;
+}
+.opening-caption { z-index: 2; border: 1px solid rgba(143, 114, 64, .26); }
+.opening-cranes, .footer-pine { display: none; }
+html[data-era="song"] .opening-cranes, html[data-era="song"] .footer-pine { display: block; }
+.era-ornament { color: var(--era-ink); }
+.era-ornament .scene-svg { display: block; width: 100%; height: 100%; }
+.intro-era { position: absolute; right: 12px; top: -27px; width: 178px; height: 113px; opacity: .42; }
+.footer-era { position: absolute; right: clamp(16px,4vw,48px); bottom: 9px; width: 160px; height: 102px; opacity: .4; }
+html[data-era="song"] .footer-era { display: none; }
+.scroll-intro { position: relative; min-height: 77px; padding-right: 210px; }
+.scroll-intro::after {
+  content: ""; position: absolute; right: 12px; top: -36px;
+  width: 200px; height: 134px; opacity: .58; pointer-events: none;
+  background: none;
+}
+.site-foot { padding-bottom: 118px; }
+.footer-pine {
+  position: absolute; right: clamp(16px,4vw,48px); bottom: 8px;
+  width: 154px; height: 154px; opacity: .8;
+}
+.site-foot::after {
+  content: ""; position: absolute; left: clamp(16px,4vw,48px); right: 230px;
+  bottom: 51px; height: 1px;
+  background: linear-gradient(90deg, var(--line), rgba(143,114,64,.24), transparent);
+}
+/* 装裱的折角只沿画框边缘布置。 */
+.d-art::before {
+  display: block; inset: 9px; width: auto; height: auto; z-index: 1; opacity: .65;
+  background:
+    linear-gradient(#d7c29a,#d7c29a) left top / 26px 1px no-repeat,
+    linear-gradient(#d7c29a,#d7c29a) left top / 1px 26px no-repeat,
+    linear-gradient(#d7c29a,#d7c29a) right bottom / 26px 1px no-repeat,
+    linear-gradient(#d7c29a,#d7c29a) right bottom / 1px 26px no-repeat;
+}
+html[data-theme="dark"] .opening-cranes { opacity: .8; filter: brightness(.9); }
+html[data-theme="dark"] .scroll-intro::after { opacity: .65; filter: brightness(1.5) saturate(.7); }
+html[data-theme="dark"] .footer-pine { opacity: .62; filter: brightness(1.35) saturate(.7); }
+html[data-theme="dark"] .era-ornament { opacity: .56; }
+@media (max-width: 720px) {
+  .welcome-cranes { right: 14%; top: auto; bottom: 29%; width: 108px; opacity: .68; }
+  .opening-cranes { width: 106px; height: 106px; right: 4px; top: 7px; opacity: .7; }
+  .opening::after { inset: 6px; }
+  .scroll-intro { padding-right: 0; min-height: 0; }
+  .scroll-intro::after { width: 110px; height: 73px; right: -5px; top: -29px; opacity: .23; }
+  .intro-era { width: 95px; height: 61px; right: -3px; top: -24px; opacity: .22; }
+  .footer-era { width: 123px; height: 78px; }
+  html[data-theme="dark"] .intro-era { opacity: .3; }
+  .scroll-intro h2 { position: relative; z-index: 1; }
+  .scroll-intro p { position: relative; z-index: 1; }
+  .site-foot { padding-bottom: 104px; }
+  .footer-pine { width: 122px; height: 122px; opacity: .65; }
+  .site-foot::after { right: 162px; bottom: 39px; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .ornament, html[data-era="song"] .ornament, .scroll-intro::after, .site-foot::after { display: none; }
+  .site-foot { padding-bottom: 34px; }
+}

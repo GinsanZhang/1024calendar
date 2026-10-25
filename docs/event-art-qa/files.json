@@ -1,0 +1,114 @@
+[
+  {
+    "path": "assets/events/assembly/modern-v1-768.webp",
+    "width": 768,
+    "height": 512,
+    "bytes": 84830,
+    "sha256": "d0153d98ba78aceecf733edfc370b0162366d72fa2af15c6cb6e78d919142204"
+  },
+  {
+    "path": "assets/events/assembly/modern-v1-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 289018,
+    "sha256": "eb31d7d977ee5809b68fddf171bb6bffe8f08fd111c99519900e88855691813f"
+  },
+  {
+    "path": "assets/events/labour/v2-768.webp",
+    "width": 768,
+    "height": 512,
+    "bytes": 110616,
+    "sha256": "31a3fb14aa6789d1d47279810262d32324ed0096c436acb9e4b4f29abb2dc380"
+  },
+  {
+    "path": "assets/events/labour/v2-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 404784,
+    "sha256": "b751a10750e50e8c8357b7cbc95d694b2fd856f5b3a6df290df1b5df11776e77"
+  },
+  {
+    "path": "assets/events/battle/modern-v1-768.webp",
+    "width": 768,
+    "height": 512,
+    "bytes": 108770,
+    "sha256": "a62f10cc8d1fb20fc5fc87a905391876728be37e75fc2dc2d091646756f201a3"
+  },
+  {
+    "path": "assets/events/battle/modern-v1-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 378112,
+    "sha256": "5f4badb434ef9d85fbdbf6079050646b16f6c6014556c312e1af6f10fe3681df"
+  },
+  {
+    "path": "assets/events/nuclear/v1-768.webp",
+    "width": 768,
+    "height": 512,
+    "bytes": 65760,
+    "sha256": "b4a4c5e6b252c3e8e3bfaeddb0df01f8703aa40b6159839f3402e3e99da71ec7"
+  },
+  {
+    "path": "assets/events/nuclear/v1-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 215828,
+    "sha256": "665f00604bf1a89723246634f132e8c27a0cfc8039207faeb3219dcc1b1d03be"
+  },
+  {
+    "path": "assets/events/earthquake/v1-768.webp",
+    "width": 768,
+    "height": 512,
+    "bytes": 119352,
+    "sha256": "d4703d81a587c65cdefb172a58a9a2b30df852a46113fbbb4728d19520fa07c4"
+  },
+  {
+    "path": "assets/events/earthquake/v1-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 398416,
+    "sha256": "5a52acbf6e582872c975d4eea0347b351e9a15618da49bf8afcc9a914d3304d5"
+  },
+  {
+    "path": "assets/events/earthquake/tangshan-v1-768.webp",
+    "width": 768,
+    "height": 512,
+    "bytes": 104832,
+    "sha256": "637ff22c2f07bab89173ee8ecda18d23f179cb8495555a59a10f492242f28884"
+  },
+  {
+    "path": "assets/events/earthquake/tangshan-v1-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 379726,
+    "sha256": "96c04ea78a72a6cb1262750072d3d2626e37685225fec9ceb786733778771f22"
+  },
+  {
+    "path": "assets/events/diplomacy/v1-768.webp",
+    "width": 768,
+    "height": 512,
+    "bytes": 75000,
+    "sha256": "3822f83a2c8e3764bd5348def12f068bac8f8349e2d4e8ff57d5c079b093d1fa"
+  },
+  {
+    "path": "assets/events/diplomacy/v1-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 258886,
+    "sha256": "7904c4b05fa80b9d7ccc5038ced63925f65e182cbec09206855bc33d40224f93"
+  },
+  {
+    "path": "assets/events/handover/v2-768.webp",
+    "width": 768,
+    "height": 512,
+    "bytes": 58830,
+    "sha256": "852cc9acc3ab0f79574f7b80a9dcdb965299a29f4e096d4368e20d081e319d44"
+  },
+  {
+    "path": "assets/events/handover/v2-1536.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 200394,
+    "sha256": "a7799f6bb1253aa7f7d88dd604808255ab3cbe546bca5ac7ecf7f8d5a4988098"
+  }
+]

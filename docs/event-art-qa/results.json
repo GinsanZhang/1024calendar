@@ -1,0 +1,140 @@
+{
+  "ok": true,
+  "readerChecks": 22,
+  "results": [
+    {
+      "version": "v1",
+      "title": "遵义会议召开",
+      "asset": "assembly-early",
+      "loaded": true
+    },
+    {
+      "version": "v1",
+      "title": "十一届三中全会开幕",
+      "asset": "assembly-modern",
+      "loaded": true
+    },
+    {
+      "version": "v1",
+      "title": "安源路矿工人大罢工",
+      "asset": "labour",
+      "loaded": true
+    },
+    {
+      "version": "v1",
+      "title": "上甘岭战役开始",
+      "asset": "battle-modern",
+      "loaded": true
+    },
+    {
+      "version": "v1",
+      "title": "中国第一颗原子弹爆炸成功",
+      "asset": "nuclear",
+      "loaded": true
+    },
+    {
+      "version": "v1",
+      "title": "中国第一颗氢弹爆炸成功",
+      "asset": "nuclear",
+      "loaded": true
+    },
+    {
+      "version": "v1",
+      "title": "唐山大地震",
+      "asset": "earthquake-tangshan",
+      "loaded": true
+    },
+    {
+      "version": "v1",
+      "title": "汶川大地震",
+      "asset": "earthquake",
+      "loaded": true
+    },
+    {
+      "version": "v1",
+      "title": "中美两国正式建立外交关系",
+      "asset": "diplomacy",
+      "loaded": true
+    },
+    {
+      "version": "v1",
+      "title": "香港回归",
+      "asset": "handover",
+      "loaded": true
+    },
+    {
+      "version": "v1",
+      "title": "澳门回归",
+      "asset": "handover",
+      "loaded": true
+    },
+    {
+      "version": "v2",
+      "title": "遵义会议召开",
+      "asset": "assembly-early",
+      "loaded": true
+    },
+    {
+      "version": "v2",
+      "title": "十一届三中全会开幕",
+      "asset": "assembly-modern",
+      "loaded": true
+    },
+    {
+      "version": "v2",
+      "title": "安源路矿工人大罢工",
+      "asset": "labour",
+      "loaded": true
+    },
+    {
+      "version": "v2",
+      "title": "上甘岭战役开始",
+      "asset": "battle-modern",
+      "loaded": true
+    },
+    {
+      "version": "v2",
+      "title": "中国第一颗原子弹爆炸成功",
+      "asset": "nuclear",
+      "loaded": true
+    },
+    {
+      "version": "v2",
+      "title": "中国第一颗氢弹爆炸成功",
+      "asset": "nuclear",
+      "loaded": true
+    },
+    {
+      "version": "v2",
+      "title": "唐山大地震",
+      "asset": "earthquake-tangshan",
+      "loaded": true
+    },
+    {
+      "version": "v2",
+      "title": "汶川大地震",
+      "asset": "earthquake",
+      "loaded": true
+    },
+    {
+      "version": "v2",
+      "title": "中美两国正式建立外交关系",
+      "asset": "diplomacy",
+      "loaded": true
+    },
+    {
+      "version": "v2",
+      "title": "香港回归",
+      "asset": "handover",
+      "loaded": true
+    },
+    {
+      "version": "v2",
+      "title": "澳门回归",
+      "asset": "handover",
+      "loaded": true
+    }
+  ],
+  "errors": [],
+  "mobileDarkOverflow": false
+}

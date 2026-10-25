@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1536" role="img" aria-labelledby="title">
+  <title id="title">一页千秋朱文落款章</title>
+  <defs><clipPath id="seal-clip"><rect x="248" y="142" width="528" height="1252" rx="92"/></clipPath></defs>
+  <image href="yiye-qianqiu-seal.png" width="1024" height="1536" clip-path="url(#seal-clip)" preserveAspectRatio="xMidYMid meet"/>
+</svg>

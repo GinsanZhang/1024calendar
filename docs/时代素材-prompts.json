@@ -1,0 +1,330 @@
+{
+  "mode": "built-in image_gen",
+  "generated": "2026-10-23",
+  "specs": [
+    {
+      "era": "ming",
+      "source": "/Users/ginsan/.codex/generated_images/01a162c5-1ad8-7b50-a462-4c09da58d5d9/exec-b9900e0d-7dc1-4cd4-a05b-8ef12921b660.png",
+      "prompt": "Use case: historical-scene. Production illustration for a premium Chinese history calendar. Landscape 1536x1024. Museum-quality Chinese handscroll painting: very refined ink outlines, delicate layered mineral-pigment washes on luminous ivory silk, coherent muted celadon, warm ochre and graphite with restrained period color accents. Beautiful atmospheric depth and believable small details, not a flat icon. Main architecture/subjects occupy center-right so UI copy can sit on left when cropped into a wide banner. Edge-to-edge painting, no frame, text, seals, watermark, symbols or interface. An artistic period evocation, not a claimed reconstruction of a specific event. Avoid anachronistic buildings, modern objects, photorealism, cartoon, 3D, fantasy. Ming dynasty China, early 1400s: large wooden Chinese ocean-going junks with multiple brown battened sails and detailed wooden hulls departing a southern port, mountainous coastline and layered jade-blue open sea, a few smaller escort junks; elegant maritime painting, warm dawn light. No European square-riggers, iron ships, steam, modern ports, or invented enormous sails.",
+      "outputs": [
+        "assets/dynasties/ming-1536.webp",
+        "assets/dynasties/ming-768.webp"
+      ],
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "files": [
+        {
+          "path": "assets/dynasties/ming-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 407624
+        },
+        {
+          "path": "assets/dynasties/ming-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 121614
+        }
+      ]
+    },
+    {
+      "era": "qing",
+      "source": "/Users/ginsan/.codex/generated_images/01a162c5-1ad8-7b50-a462-4c09da58d5d9/exec-7d2db7ad-ab2d-459d-959d-d81f83b4d1b0.png",
+      "prompt": "Use case: historical-scene. Production illustration for a premium Chinese history calendar. Landscape 1536x1024. Museum-quality Chinese handscroll painting: very refined ink outlines, delicate layered mineral-pigment washes on luminous ivory silk, coherent muted celadon, warm ochre and graphite with restrained period color accents. Beautiful atmospheric depth and believable small details, not a flat icon. Main architecture/subjects occupy center-right so UI copy can sit on left when cropped into a wide banner. Edge-to-edge painting, no frame, text, seals, watermark, symbols or interface. An artistic period evocation, not a claimed reconstruction of a specific event. Avoid anachronistic buildings, modern objects, photorealism, cartoon, 3D, fantasy. Qing dynasty Jiangnan garden, 1700s: a perfectly circular moon gate opening through a white plaster garden wall with gray curved tile coping, fine Taihu scholar rocks, slender bamboo, a quiet lotus pond and a modest waterside pavilion, distant willow trees. Architectural garden painting, subtle cool teal and soft ochre, intimate poetic atmosphere, no people needed. The moon gate is grounded in the wall, never a floating ring.",
+      "outputs": [
+        "assets/dynasties/qing-1536.webp",
+        "assets/dynasties/qing-768.webp"
+      ],
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "files": [
+        {
+          "path": "assets/dynasties/qing-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 481976
+        },
+        {
+          "path": "assets/dynasties/qing-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 131138
+        }
+      ]
+    },
+    {
+      "era": "cq",
+      "source": "/Users/ginsan/.codex/generated_images/01a162c5-1ad8-7b50-a462-4c09da58d5d9/exec-5225b931-a5e1-4511-89e4-840fd6c889c8.png",
+      "prompt": "undefinedEastern Zhou Spring and Autumn / Warring States China, around 400 BCE: an ancient fortified city with massive unadorned rammed-earth walls, timber watchtowers and modest gray/thatched tiled roofs beside a river and mountain pass; an old stone foreground carries a rolled bamboo-slip manuscript and a slender bronze sword in a subtle still-life corner, tiny distant travelers and oxcart. Quiet bronze-green and earth palette. No later brick Ming Great Wall, pagodas, imperial golden roofs, paper books or modern objects.",
+      "outputs": [
+        "assets/dynasties/cq-1536.webp",
+        "assets/dynasties/cq-768.webp"
+      ],
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "files": [
+        {
+          "path": "assets/dynasties/cq-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 320798
+        },
+        {
+          "path": "assets/dynasties/cq-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 107872
+        }
+      ]
+    },
+    {
+      "era": "tang",
+      "source": "/Users/ginsan/.codex/generated_images/01a162c5-1ad8-7b50-a462-4c09da58d5d9/exec-987aa4f7-41e9-48fb-bb3a-4ac67647dbc9.png",
+      "prompt": "Use case: historical-scene. Production illustration for a premium Chinese history calendar. Landscape 1536x1024. Museum-quality Chinese handscroll painting: very refined ink outlines, delicate layered mineral-pigment washes on luminous ivory silk, coherent muted celadon, warm ochre and graphite with restrained period color accents. Beautiful atmospheric depth and believable small details, not a flat icon. Main architecture/subjects occupy center-right so UI copy can sit on left when cropped into a wide banner. Edge-to-edge painting, no frame, text, seals, watermark, symbols or interface. An artistic period evocation, not a claimed reconstruction of a specific event. Avoid anachronistic buildings, modern objects, photorealism, cartoon, 3D, fantasy. Tang dynasty China, circa 700 CE: Chang'an city gate with broad low tiled roofs and robust timber brackets, a red-brown palace compound behind a rammed-earth city wall, one distant early Buddhist pagoda, spring trees and very small robed travelers along an avenue. Soft amber morning. Early medieval architecture, restrained roof curves, NO Qing palace ornament, no gold Forbidden City roofs, no dragon-lined skyscraper pagodas.",
+      "outputs": [
+        "assets/dynasties/tang-1536.webp",
+        "assets/dynasties/tang-768.webp"
+      ],
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "files": [
+        {
+          "path": "assets/dynasties/tang-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 405076
+        },
+        {
+          "path": "assets/dynasties/tang-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 111548
+        }
+      ]
+    },
+    {
+      "era": "xia",
+      "source": "/Users/ginsan/.codex/generated_images/01a162c5-1ad8-7b50-a462-4c09da58d5d9/exec-f51c77b2-7abf-420e-a478-1c604e05cb23.png",
+      "prompt": "undefinedBronze Age China, Shang and Western Zhou era: one imposing dark green-patinated three-legged bronze ding ritual vessel on a low stone platform in the foreground right; understated realistic taotie relief and two upright handles; beyond it a settlement of low timber and thatch halls on rammed-earth terraces in a broad Yellow River valley, distant hills and pale morning mist. Bronze, jade green, earth ochre. No glazed imperial roofs, pagodas, stone castles, fancy dragon fantasy, no later dynasty architecture.",
+      "outputs": [
+        "assets/dynasties/xia-1536.webp",
+        "assets/dynasties/xia-768.webp"
+      ],
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "files": [
+        {
+          "path": "assets/dynasties/xia-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 322282
+        },
+        {
+          "path": "assets/dynasties/xia-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 94032
+        }
+      ]
+    },
+    {
+      "era": "sj",
+      "source": "/Users/ginsan/.codex/generated_images/01a162c5-1ad8-7b50-a462-4c09da58d5d9/exec-aa3410cf-2cbf-4753-84ea-824207845519.png",
+      "prompt": "undefinedWei-Jin / Northern and Southern dynasties China, around 300-500 CE: seven tiny plainly robed scholars sitting and strolling in a serene grove of tall slender bamboo, a winding stream, elegant gray rocks, a modest early timber shelter in the distance and misty southern hills. Quiet reclusion and literary conversation, soft sage-green and gray ink, fine understated brushwork. Faces very small, no enlarged portraits, no teapots as central props, no late imperial garden moon gates, no Qing costume.",
+      "outputs": [
+        "assets/dynasties/sj-1536.webp",
+        "assets/dynasties/sj-768.webp"
+      ],
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "files": [
+        {
+          "path": "assets/dynasties/sj-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 458144
+        },
+        {
+          "path": "assets/dynasties/sj-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 133772
+        }
+      ]
+    },
+    {
+      "era": "yuan",
+      "source": "/Users/ginsan/.codex/generated_images/01a162c5-1ad8-7b50-a462-4c09da58d5d9/exec-f896fea9-732a-4c8f-a795-c324b9c73da7.png",
+      "prompt": "Use case: historical-scene. Production illustration for a premium Chinese history calendar. Landscape 1536x1024. Museum-quality Chinese handscroll painting: very refined ink outlines, delicate layered mineral-pigment washes on luminous ivory silk, coherent muted celadon, warm ochre and graphite with restrained period color accents. Beautiful atmospheric depth and believable small details, not a flat icon. Main architecture/subjects occupy center-right so UI copy can sit on left when cropped into a wide banner. Edge-to-edge painting, no frame, text, seals, watermark, symbols or interface. An artistic period evocation, not a claimed reconstruction of a specific event. Avoid anachronistic buildings, modern objects, photorealism, cartoon, 3D, fantasy. Yuan dynasty Inner Asian grassland, 1200s-1300s: low rounded white felt gers with simple lattice doors, a few saddled Mongolian horses and grazing horses, a small distant caravan crossing broad rolling steppe toward blue-gray mountains, late-summer ochre grasses and pale sky. Delicate hand-painted Chinese/Inner Asian landscape, ample breathing room. No Chinese palace roofs on tents, no modern saddles, no toy domes, no battle.",
+      "outputs": [
+        "assets/dynasties/yuan-1536.webp",
+        "assets/dynasties/yuan-768.webp"
+      ],
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "files": [
+        {
+          "path": "assets/dynasties/yuan-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 338292
+        },
+        {
+          "path": "assets/dynasties/yuan-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 99352
+        }
+      ]
+    },
+    {
+      "era": "han",
+      "source": "/Users/ginsan/.codex/generated_images/01a162c5-1ad8-7b50-a462-4c09da58d5d9/exec-5d427d5e-158e-4cbd-86d9-0bfdbd41b595.png",
+      "prompt": "undefinedHan dynasty China, around 100 CE: monumental paired stone que gate towers with low gray tiled roofs and restrained carved stone relief, an elegant ceremonial avenue between them, a small two-wheeled horse-drawn chariot entering the distant capital, flat river plain and modest palatial halls beyond. Authentic ancient low roof profiles, earthy ochre, warm dark ink and dusty jade foliage. No towering late imperial palace, gold Qing roof decoration, later pagodas or modern objects.",
+      "outputs": [
+        "assets/dynasties/han-1536.webp",
+        "assets/dynasties/han-768.webp"
+      ],
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "files": [
+        {
+          "path": "assets/dynasties/han-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 320030
+        },
+        {
+          "path": "assets/dynasties/han-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 97306
+        }
+      ]
+    },
+    {
+      "era": "sui",
+      "source": "/Users/ginsan/.codex/generated_images/01a162c5-1ad8-7b50-a462-4c09da58d5d9/exec-ead29b69-607b-4249-9ee6-04144bac5b85.png",
+      "prompt": "undefinedSui dynasty China, around 610 CE: a broad newly established canal with several modest wooden grain barges, one low arched stone bridge, distant willows along straight towpaths, tiny workers guiding a barge on the bank, calm Jiangnan farmland and low river settlements. Restrained canal engineering landscape, muted ochre and blue-green. No later steam ships, skyscrapers, giant ocean junks, ornate late Qing pagodas, modern bridges or locks.",
+      "outputs": [
+        "assets/dynasties/sui-1536.webp",
+        "assets/dynasties/sui-768.webp"
+      ],
+      "originalSize": [
+        1774,
+        887
+      ],
+      "files": [
+        {
+          "path": "assets/dynasties/sui-1536.webp",
+          "width": 1536,
+          "height": 768,
+          "bytes": 250822
+        },
+        {
+          "path": "assets/dynasties/sui-768.webp",
+          "width": 768,
+          "height": 384,
+          "bytes": 81672
+        }
+      ]
+    },
+    {
+      "era": "wudai",
+      "source": "/Users/ginsan/.codex/generated_images/01a162c5-1ad8-7b50-a462-4c09da58d5d9/exec-6bd5880c-7fb3-4d41-88a2-155536ee5c5d.png",
+      "prompt": "undefinedFive Dynasties and Ten Kingdoms China, around 930 CE: a small fortified southern riverside town under drifting mist, weathered stone and rammed-earth wall with a broken edge, simple early medieval gray-tiled timber houses, a few long plain cloth banners on a small tower, empty moored wooden boats and distant blue mountains. Wistful, fragmented yet tranquil, muted gray-brown and blue-green. No battle, violence, flames, fantasy ruins, modern objects or late imperial golden palaces.",
+      "outputs": [
+        "assets/dynasties/wudai-1536.webp",
+        "assets/dynasties/wudai-768.webp"
+      ],
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "files": [
+        {
+          "path": "assets/dynasties/wudai-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 355678
+        },
+        {
+          "path": "assets/dynasties/wudai-768.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 104370
+        }
+      ]
+    },
+    {
+      "era": "qin",
+      "source": "/Users/ginsan/.codex/generated_images/01a162c5-1ad8-7b50-a462-4c09da58d5d9/exec-5888d4f9-f0e7-4ca3-9692-8a2153aac63e.png",
+      "prompt": "undefinedQin dynasty northern China, circa 215 BCE: a massive serpentine RAMMED-EARTH defensive wall following steep brown loess ridges, a few solid rectangular earth beacon towers under a broad misty sky, distant mountains. Sparse ancient construction and strong monumental horizon. Warm ochre, gray-green and ink. Absolutely no Ming brick crenellations, no elaborate gatehouse or tile-roofed palaces, no merchants with camel caravans, no pagodas, no later dynasty silhouette.",
+      "outputs": [
+        "assets/dynasties/qin-1536.webp",
+        "assets/dynasties/qin-768.webp"
+      ],
+      "originalSize": [
+        1774,
+        887
+      ],
+      "files": [
+        {
+          "path": "assets/dynasties/qin-1536.webp",
+          "width": 1536,
+          "height": 768,
+          "bytes": 189986
+        },
+        {
+          "path": "assets/dynasties/qin-768.webp",
+          "width": 768,
+          "height": 384,
+          "bytes": 63684
+        }
+      ]
+    },
+    {
+      "era": "minguo",
+      "source": "/Users/ginsan/.codex/generated_images/01a162c5-1ad8-7b50-a462-4c09da58d5d9/exec-501f009a-3ac8-4795-8483-1142750027a7.png",
+      "prompt": "undefinedRepublican-era Chinese city, late 1920s or early 1930s: a graceful street of modest brick and pale stucco facades with arched windows and wooden shopfronts, a small period electric streetcar on rails with overhead wires, elegant old street lamps and a few tiny pedestrians in period clothing, distant trees and a hazy riverfront. Translate the urban scene into the SAME refined Chinese ink and mineral-pigment handscroll style as the ancient landscapes, restrained warm-gray, muted celadon and touches of ochre. Shop signs have NO readable writing. No neon, cars from after 1940, skyscrapers, modern train, propaganda, flags or invented signage.",
+      "outputs": [
+        "assets/dynasties/minguo-1536.webp",
+        "assets/dynasties/minguo-768.webp"
+      ],
+      "originalSize": [
+        1774,
+        887
+      ],
+      "files": [
+        {
+          "path": "assets/dynasties/minguo-1536.webp",
+          "width": 1536,
+          "height": 768,
+          "bytes": 228074
+        },
+        {
+          "path": "assets/dynasties/minguo-768.webp",
+          "width": 768,
+          "height": 384,
+          "bytes": 70466
+        }
+      ]
+    }
+  ]
+}

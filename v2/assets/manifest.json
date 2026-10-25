@@ -1,0 +1,1557 @@
+{
+  "generatedAt": "2026-10-25",
+  "rasters": [
+    {
+      "path": "assets/brand/yiye-qianqiu-seal.png",
+      "width": 1024,
+      "height": 1536,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 1395182,
+      "sha256": "9030a04df09335853dde62f8aa49b2d0534054c5d983c48f3707b9714c08f7ba"
+    },
+    {
+      "path": "assets/brand/yiye-qianqiu-seal.webp",
+      "width": 1024,
+      "height": 1536,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 209382,
+      "sha256": "61da6b159a7a921a2740861ae8ecaa11c91b39f5e6c9c7c7386aac3813938684"
+    },
+    {
+      "path": "assets/brand/yiye-qianqiu-wordmark.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 712921,
+      "sha256": "fb16beb579995ae50128b1da6acc57b5aeb1eccf048ed41fe88bb4c5787c8a06"
+    },
+    {
+      "path": "assets/brand/yiye-qianqiu-wordmark@2x.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 208858,
+      "sha256": "6359a94e5bdea5c391b9957df034b048aa41ec22d5d1e44b205cc08fcf89fbf1"
+    },
+    {
+      "path": "assets/calendar/blank-day-landscape.png",
+      "width": 1643,
+      "height": 957,
+      "alpha": null,
+      "bytes": 2751073,
+      "sha256": "d484ca0ec30061075ffdba13d72ee6faa0d202dbe6bbe703fcad02c3992cd444"
+    },
+    {
+      "path": "assets/calendar/blank-day-landscape.webp",
+      "width": 2400,
+      "height": 1400,
+      "alpha": null,
+      "bytes": 571536,
+      "sha256": "a05b003b24587c293b0c8c4e0e53facf0d685ea19085beb2b470d4a675213093"
+    },
+    {
+      "path": "assets/calendar/branch-autumn.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 1400800,
+      "sha256": "17214be9a4f972822ba437e6e64a88b3d876fc9bb01324308b65b92ca1f338b1"
+    },
+    {
+      "path": "assets/calendar/branch-autumn.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 184628,
+      "sha256": "0c1dee4f7655fa0243dac813ff7087430b902914fb3031e33dc562041e47dc98"
+    },
+    {
+      "path": "assets/calendar/branch-spring.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 1560379,
+      "sha256": "44def64c2aeedabcd629a545a11e1778ef3cb38a1b4a3ad3a82a3e2fbbf7a334"
+    },
+    {
+      "path": "assets/calendar/branch-spring.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 227084,
+      "sha256": "2b2002169628957eb188ea2261620b5e5cf5ea2921e2590dc5577500e3da69ec"
+    },
+    {
+      "path": "assets/calendar/branch-summer.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 1338132,
+      "sha256": "890f4026efcff8a9caf7f96f6fc885b698caed80511c1bac40a9a7d7414a3504"
+    },
+    {
+      "path": "assets/calendar/branch-summer.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 151146,
+      "sha256": "1b712c19aa3f9ab47b94576a327917605f9870f96f11bd2b281c14e855e47662"
+    },
+    {
+      "path": "assets/calendar/branch-winter.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 1477348,
+      "sha256": "4c8394cbbfb36a3621ca051c52a7b1cd00986e4d573f65946271e56f1561f720"
+    },
+    {
+      "path": "assets/calendar/branch-winter.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 174454,
+      "sha256": "a5beed5f266df5dede423a4629460f5ff4194bfa9d82ce975fa14a98e27e7ff5"
+    },
+    {
+      "path": "assets/calendar/open-calendar-book.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 2770568,
+      "sha256": "f981ce0e176caa1aaefb88c72d3601194296a6db9ebbb7ce0f1c4630bed746c2"
+    },
+    {
+      "path": "assets/calendar/open-calendar-book.webp",
+      "width": 2400,
+      "height": 1600,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 710358,
+      "sha256": "ac0441681b30a386f24809f5f48c7a931ea0ff8a094a84e03ae3bbe20e2ead79"
+    },
+    {
+      "path": "assets/calendar/page-turn-sheet.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 2165427,
+      "sha256": "7ac99e6b9ac439bf1648734901827f9346828988bffd6152846766ffc5600fed"
+    },
+    {
+      "path": "assets/calendar/page-turn-sheet.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 188006,
+      "sha256": "31d426fed04586df547a1d2faab787328f2c7109a75599f5b4a531dbdf5fe05f"
+    },
+    {
+      "path": "assets/calendar/paper-edge-curl.png",
+      "width": 1774,
+      "height": 887,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 2194014,
+      "sha256": "11e0927ba2d792672deea356423f1472abe02ccf94c44d4ad15003c260386d85"
+    },
+    {
+      "path": "assets/calendar/paper-edge-curl.webp",
+      "width": 1774,
+      "height": 887,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 562098,
+      "sha256": "c584d5080602dce2904fdca444e720317d98567f8c3225bf1a6fe03eb4a70181"
+    },
+    {
+      "path": "assets/events/assembly-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 3183892,
+      "sha256": "035a9668097b7b073e1ca7335eef797638051998402619bc9177c713a270d811"
+    },
+    {
+      "path": "assets/events/assembly-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 526818,
+      "sha256": "8320b8a06b406810ad3d21997714e4c2a57e34accf25562d8eee5f4a4e6a3c79"
+    },
+    {
+      "path": "assets/events/battle-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 3143632,
+      "sha256": "d6977514fe971758b9f4301fba0c5947094aa13873c2bf3ad1989a662955a2fc"
+    },
+    {
+      "path": "assets/events/battle-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 514512,
+      "sha256": "1bff068b29d861df41c5fcbc27a7c376ac7a4256a767b6dfaf5a84d0058928c7"
+    },
+    {
+      "path": "assets/events/city-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 3445418,
+      "sha256": "3a51b51650b982b01880bdf69aba5b8a802e6a3529ba7d660a8ef7cf489260d5"
+    },
+    {
+      "path": "assets/events/city-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 615466,
+      "sha256": "542019d727adbcde48596f3734df374ba89fafd3d15423288c7937460bdf7f31"
+    },
+    {
+      "path": "assets/events/diplomacy-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 3291492,
+      "sha256": "0a25ae2f51abd97e265b618ab5b464c4e1c207a3903ba16f9815a4a18ad3f63c"
+    },
+    {
+      "path": "assets/events/diplomacy-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 552174,
+      "sha256": "df1ccd9c7b436116e8e56daa5fabc7fdf9c2e6e9666ded1b6dede0cb9f7c0214"
+    },
+    {
+      "path": "assets/events/disaster-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 3537226,
+      "sha256": "6263482f26ac75d990728db69dc4127b66eba4bc43383a2073dbdd7c6dd64bdd"
+    },
+    {
+      "path": "assets/events/disaster-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 642242,
+      "sha256": "30017425f25c65e09f133773955d88a819eb5c7071e44299454ec2fcb389ac8a"
+    },
+    {
+      "path": "assets/events/engineering-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 3309785,
+      "sha256": "cecf518a60ef69bf8022d1aea30bca1f83c62080afe2fda88536267ef6ef33cb"
+    },
+    {
+      "path": "assets/events/engineering-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 578876,
+      "sha256": "ebef53fdf8b2af828cbdcffe4c61d90fec32efca8abdb4d7884d46dceaf62af0"
+    },
+    {
+      "path": "assets/events/labour-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 3256934,
+      "sha256": "b853650b5d39c90c3b34c86f69381b95741bbf988877756fa19ed410072c5057"
+    },
+    {
+      "path": "assets/events/labour-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 547778,
+      "sha256": "5e7dadc6048dac31550049acd813750dd3b9f237c0405471a02f5ddde0c26080"
+    },
+    {
+      "path": "assets/events/memorial-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 3332372,
+      "sha256": "d973f581e64d7be55c506c6f8378b3fca893d41d053ade5c2295b75e8db80984"
+    },
+    {
+      "path": "assets/events/memorial-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 578656,
+      "sha256": "68a34f66e2ba85e49d283dac6bf2d48b5f90693137b62e4a0283a8559bae99dc"
+    },
+    {
+      "path": "assets/events/people-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 3378903,
+      "sha256": "fb216f2a92aac9f1007d53574ae3ac23b6bb99afa1a6190f3271058c3321f7a2"
+    },
+    {
+      "path": "assets/events/people-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 607196,
+      "sha256": "e269199f16e4f4f0eb46e1b4b48e8c643efd63f5abce6feb12c730fb29ebd1e6"
+    },
+    {
+      "path": "assets/events/spaceflight-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 2981274,
+      "sha256": "a1ac161a32e17b94867238a2ccf5a8de7de36a712ebf8bb6ff2a29ed4bbba67e"
+    },
+    {
+      "path": "assets/events/spaceflight-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 434650,
+      "sha256": "44460cdadc7db508a0ca3d0f90734cbe7a3375c555a9967d65e135cb9bb09ecf"
+    },
+    {
+      "path": "assets/events/zhenghe-voyage.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 3255231,
+      "sha256": "30e6e65e59daf5ea9ac4380dbadb0a4d07686c37355c8064434d2d5c1046d991"
+    },
+    {
+      "path": "assets/events/zhenghe-voyage.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": null,
+      "bytes": 561420,
+      "sha256": "0cfe47608e2a93a48bef62466688fda11d1afe881bda18efc2dfbd73b76234a9"
+    },
+    {
+      "path": "assets/hero/qianqiu-landscape-desktop-2880.webp",
+      "width": 2880,
+      "height": 1620,
+      "alpha": null,
+      "bytes": 675114,
+      "sha256": "c1e5d1eea4d6b858d8ee3721f08852dc94f2e5908be35edd7b76fa43b32ea653"
+    },
+    {
+      "path": "assets/hero/qianqiu-landscape-desktop-master.png",
+      "width": 1672,
+      "height": 941,
+      "alpha": null,
+      "bytes": 2653095,
+      "sha256": "8f6e114f7d1f45ab98736d1fe8734821ecb326bb04633e7451d669639ca10ab0"
+    },
+    {
+      "path": "assets/hero/qianqiu-landscape-mobile-1080.webp",
+      "width": 1080,
+      "height": 1920,
+      "alpha": null,
+      "bytes": 536404,
+      "sha256": "4f489fa8315c32a77252b5ddb7a780bfca1ec6c4c9c2dde23dc4893839d4ed63"
+    },
+    {
+      "path": "assets/hero/qianqiu-landscape-mobile-master.png",
+      "width": 941,
+      "height": 1672,
+      "alpha": null,
+      "bytes": 2986428,
+      "sha256": "f6c6d2bb5ca92ec4d7d8dbdc3dc0a0c4c362242d6a5b3d54277409712335e725"
+    },
+    {
+      "path": "assets/hero/qianqiu-landscape-panorama-master.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 2876222,
+      "sha256": "ac25aa35fad73aa262b1cabacb76b46feb384cc1d80cceff8c7245093a726245"
+    },
+    {
+      "path": "assets/hero/river-boat.png",
+      "width": 1774,
+      "height": 887,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 418587,
+      "sha256": "e34d5fc4ba57d2d8d5316650f6af82c81d3be692b055ac02a9b65b37174c9e41"
+    },
+    {
+      "path": "assets/hero/river-boat.webp",
+      "width": 1774,
+      "height": 887,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 121680,
+      "sha256": "b96a38e36a94373d5960326ec3f70b450f7201aa41db141841e07219f3f098ff"
+    },
+    {
+      "path": "assets/lookback/night-landscape-2880.webp",
+      "width": 2880,
+      "height": 1620,
+      "alpha": null,
+      "bytes": 922944,
+      "sha256": "f013b5aa779e33639f79677cadd81b1a1dac219dcc44a4cdc0f37ed32ac7dfb8"
+    },
+    {
+      "path": "assets/lookback/night-landscape-master.png",
+      "width": 1672,
+      "height": 941,
+      "alpha": null,
+      "bytes": 3033348,
+      "sha256": "f0da8b4b987f71b9e210699ce5bfdca296a5e8b9a6f7f64ee03dcf11986f5768"
+    },
+    {
+      "path": "assets/lookback/year-marker.png",
+      "width": 1024,
+      "height": 1536,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 1882396,
+      "sha256": "fecb424d6e16aeeda1f2ca8db257373ce694bea7ffbd2e63febe38fed6bb0ebb"
+    },
+    {
+      "path": "assets/lookback/year-marker.webp",
+      "width": 1024,
+      "height": 1536,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 243792,
+      "sha256": "d5fa4ff0d32fd3d3d084e13a283ea08e82d02565aecc6dcae0d3407845e877d8"
+    },
+    {
+      "path": "assets/scroll/era-cq-lieguo.png",
+      "width": 2171,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3365778,
+      "sha256": "cd023d4351d3dfacc1abf66c063a74fd1ad8cdfd7164b7a81ec2ca668c6ac95c"
+    },
+    {
+      "path": "assets/scroll/era-cq-lieguo.webp",
+      "width": 2171,
+      "height": 724,
+      "alpha": null,
+      "bytes": 588634,
+      "sha256": "e38131ac02f16f134f9adb9daf2213a4fd783f539ff2c6a0015f3f26714e9fea"
+    },
+    {
+      "path": "assets/scroll/era-han-hanque.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3211368,
+      "sha256": "7a12a6813969564b73bd61514f6cd06234632a0cb02a1ec14c37ad7c21269c7e"
+    },
+    {
+      "path": "assets/scroll/era-han-hanque.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 558524,
+      "sha256": "7d5f4285364a9a2e5817a95f6bc915a930a20b6cb06b114c20481b5cee88a213"
+    },
+    {
+      "path": "assets/scroll/era-ming-voyage.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3386701,
+      "sha256": "bde393aaaa58f80e8520f664dc529bf37df43569ed01c5459e28376cc5b1b1cc"
+    },
+    {
+      "path": "assets/scroll/era-ming-voyage.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 604994,
+      "sha256": "7a91d97691dbc295e4a198fff1f858c277a3bdaff919a36aa12deff0c6b8b093"
+    },
+    {
+      "path": "assets/scroll/era-minguo-street.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3363586,
+      "sha256": "4c63e45a338da76dfdcb0ec6a8c9bf77939b838aedac8e5061b653fe85c8cb9c"
+    },
+    {
+      "path": "assets/scroll/era-minguo-street.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 594126,
+      "sha256": "bbe88f3d968064b2d32b5356a7453c248ce44ca4c7e419654800a50a318500bd"
+    },
+    {
+      "path": "assets/scroll/era-prc-newchapter.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3315928,
+      "sha256": "8f9133241142c3457fa488f0c17780661c940a476aa90f7071854a5ce3825560"
+    },
+    {
+      "path": "assets/scroll/era-prc-newchapter.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 587872,
+      "sha256": "a350155d41e3d559d8fd4f960c6e40b8b799fad6b50b5060ca5837cf79eedfad"
+    },
+    {
+      "path": "assets/scroll/era-qin-fengsui.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3206552,
+      "sha256": "e7a788046676f2c1ce697fd3e16cbb72a79833e2af0143ef8acfda54152bf280"
+    },
+    {
+      "path": "assets/scroll/era-qin-fengsui.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 521130,
+      "sha256": "0ac220bba448e249811c42e772d3790221063122f6aec388d82879e12f8ed6d0"
+    },
+    {
+      "path": "assets/scroll/era-qing-garden.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3424955,
+      "sha256": "5a87614b7c023b2950b2e6ba3c69f3ea7b73395f8228e9a475d6c780fa46ee5f"
+    },
+    {
+      "path": "assets/scroll/era-qing-garden.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 605956,
+      "sha256": "e0e054707da7ac691ce41c71305f85d7a85ea0d8eddae6445ba5977d529e9b49"
+    },
+    {
+      "path": "assets/scroll/era-sj-zhulin.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3220447,
+      "sha256": "065ff309b9183edf30954ce63d31269d70fe87a4606301c2c978297770af4cef"
+    },
+    {
+      "path": "assets/scroll/era-sj-zhulin.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 539246,
+      "sha256": "f26ec530be5b34b8f4e1e6a01137a3068c36a77da0feb77f554f3a0ac0abe886"
+    },
+    {
+      "path": "assets/scroll/era-song-jiangshan.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3246275,
+      "sha256": "09e4ab5cbda82263f649f4ca8ff9fb20994f8cbaa624894f0318a269722b94f9"
+    },
+    {
+      "path": "assets/scroll/era-song-jiangshan.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 564744,
+      "sha256": "bfda9d1060e0a4d7de50970d729aa2c88ec986433978aa39cb6b908e674380a6"
+    },
+    {
+      "path": "assets/scroll/era-sui-canal.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3214448,
+      "sha256": "1283f1801457c9c32684f9cd503f155f597eb94755478bd0aa6fb674c8d5581a"
+    },
+    {
+      "path": "assets/scroll/era-sui-canal.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 530122,
+      "sha256": "84281609e50124dc17ed5a1418f72f2d55ffba7ade6dc70e95475939558730e3"
+    },
+    {
+      "path": "assets/scroll/era-tang-changan.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3422461,
+      "sha256": "f69eb40c8272c0f845adc6acef3798fcb3cdef0463c041f366c5e56a093c10a0"
+    },
+    {
+      "path": "assets/scroll/era-tang-changan.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 624744,
+      "sha256": "6203dcededfec124815bd04ae5f15121534fc53d5daad486e6b67d1eec7b3a02"
+    },
+    {
+      "path": "assets/scroll/era-wudai-jiangcheng.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3306652,
+      "sha256": "fdd09265076b29bfe473dd488dc0fc992fcd028df79ad6c4536867fdd3cfa9dc"
+    },
+    {
+      "path": "assets/scroll/era-wudai-jiangcheng.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 577546,
+      "sha256": "533d189b329658036b186b467c7290f00dc83242f481967eeb5c4c8931089d29"
+    },
+    {
+      "path": "assets/scroll/era-xia-dinghuo.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3337336,
+      "sha256": "83d81cbba6e0e9a6c66e56ec79e241456be8ead9a04688013e8fd4bb6e31721d"
+    },
+    {
+      "path": "assets/scroll/era-xia-dinghuo.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 592912,
+      "sha256": "17fe40c0dcaa947aca949d44718df5311f146e72a5652f823c034698ecc64d6f"
+    },
+    {
+      "path": "assets/scroll/era-yuan-grassland.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3355452,
+      "sha256": "cb6520815bf13f4873371052b6abfc814a5d182ae00fb316a5ce4536f077071e"
+    },
+    {
+      "path": "assets/scroll/era-yuan-grassland.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 589104,
+      "sha256": "2bca7abdee2fb98874871870ea46d17963ebde662bd96259933f375e89427b16"
+    },
+    {
+      "path": "assets/scroll/roller-left.png",
+      "width": 1024,
+      "height": 1536,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 1442562,
+      "sha256": "001bc769446aff533a5645d27df99873063b3558fcd2106d9d7cfaa608475295"
+    },
+    {
+      "path": "assets/scroll/roller-left.webp",
+      "width": 1024,
+      "height": 1536,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 141408,
+      "sha256": "0dd144e0e19a3d58e3780ee418c2999cf0b34f8a34c7b79c95316e8c3b8afb96"
+    },
+    {
+      "path": "assets/scroll/roller-right.png",
+      "width": 1024,
+      "height": 1536,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 1417633,
+      "sha256": "523d0e3103c5b91212465a4a0baf7a43aa4bb766c3f1beda919db9388bd520b5"
+    },
+    {
+      "path": "assets/scroll/roller-right.webp",
+      "width": 1024,
+      "height": 1536,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 140548,
+      "sha256": "ed91f77a831b0e2332c853e13692b057a8b41dc36d23c858fc67a070a2df4c73"
+    },
+    {
+      "path": "assets/scroll/transition-cq-qin.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3113569,
+      "sha256": "21f69a3652858f77805a6018e8d4643b949b1ccb586fb0afe6ada8dbc2a09065"
+    },
+    {
+      "path": "assets/scroll/transition-cq-qin.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 505106,
+      "sha256": "b1cd06dabd20e1b42f27cf27f08546c87468cd43ba58893923f7b3692078562f"
+    },
+    {
+      "path": "assets/scroll/transition-han-sj.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3051707,
+      "sha256": "e4920b3dddc09d859eadae0fe54fbbce2025f917cd8731b6b96080ffb0a10d56"
+    },
+    {
+      "path": "assets/scroll/transition-han-sj.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 492810,
+      "sha256": "d16990d26046bd5011d51652d7f0f683d9ce3f7046d039034db041e30472dbe8"
+    },
+    {
+      "path": "assets/scroll/transition-ming-qing.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3148907,
+      "sha256": "3c31424310084b58fb597bb3941dce3727c5a93719e3fcb859d7fee31f78f843"
+    },
+    {
+      "path": "assets/scroll/transition-ming-qing.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 546272,
+      "sha256": "feb17e6198c415ef6d7143f3c8d7f0f7406eb970e2c90bd9a7a2e088b7af2ce7"
+    },
+    {
+      "path": "assets/scroll/transition-minguo-prc.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3269357,
+      "sha256": "8db6793a6903fe581efacf8d187f0e2692607cc4f5f2ba33dfdf75f57981a4ca"
+    },
+    {
+      "path": "assets/scroll/transition-minguo-prc.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 570682,
+      "sha256": "b6cfcd8a70cb7fa3dc997ad2576155ca54b8b49e970dad3b688836ac3eb51fd3"
+    },
+    {
+      "path": "assets/scroll/transition-neutral.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 2876759,
+      "sha256": "0766faca782d316391b97658b012cae82fbbe66a6fe737bff87baa07682392c5"
+    },
+    {
+      "path": "assets/scroll/transition-neutral.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 414972,
+      "sha256": "a54c42d5abd13a0add0a8cefb179db83171802eaa574bdc741a6cada91c3498e"
+    },
+    {
+      "path": "assets/scroll/transition-qin-han.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3036574,
+      "sha256": "edb82bad5c8edbfc7ac30de16941777a61e4fbce0e9987859ccc76a6d52e6fe6"
+    },
+    {
+      "path": "assets/scroll/transition-qin-han.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 476970,
+      "sha256": "211a8343c7e30330c342a313d83f89e0923a6a2b92df560a38670e624919901d"
+    },
+    {
+      "path": "assets/scroll/transition-qing-minguo.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3201731,
+      "sha256": "5ec8edbaba3784344c0432ef1adfd4eb139a8a27d3e1367ed73fbaa0ad96bb0b"
+    },
+    {
+      "path": "assets/scroll/transition-qing-minguo.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 544050,
+      "sha256": "fe9aea5ddac69bb46f83f1801b5c47b7febf30eda7e45e45257026055c5f6a05"
+    },
+    {
+      "path": "assets/scroll/transition-sj-sui.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3026778,
+      "sha256": "e0e2a433e443f6d4848ab942b1d18f0c49e901d29c521fb5b301567e6bc519d5"
+    },
+    {
+      "path": "assets/scroll/transition-sj-sui.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 492162,
+      "sha256": "5e250871399a3d4e5733a37feda5d5c384942347974345a9237446fe8a47ff5d"
+    },
+    {
+      "path": "assets/scroll/transition-song-yuan.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3122889,
+      "sha256": "fa533ef94e46987a5300b0ca18fb1d58b8e324f2f55d95c40775bed046d16a9c"
+    },
+    {
+      "path": "assets/scroll/transition-song-yuan.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 521146,
+      "sha256": "f8e500b48c1a1f145bacd37848cf413377dc9ae335c6e69e17b24b46451856bf"
+    },
+    {
+      "path": "assets/scroll/transition-sui-tang.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3118780,
+      "sha256": "4ff747282c7efbb185269b68e6ac81f26dcd9d593f9c1b249ad37de00e73fb63"
+    },
+    {
+      "path": "assets/scroll/transition-sui-tang.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 514612,
+      "sha256": "88c277bb662f8f95768f55a62c22bf63487260b7f42d7f0e8ee2812789f427d1"
+    },
+    {
+      "path": "assets/scroll/transition-tang-wudai.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3230779,
+      "sha256": "4f7680e2c81cab42e4a2fe6d4b79c40014bc75b8a5efa8ea3d301e73557a14c5"
+    },
+    {
+      "path": "assets/scroll/transition-tang-wudai.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 559534,
+      "sha256": "d727a1f5deb49b5189aa79beb0a9500501db7b828edd527e6eea9825f1f4c9f2"
+    },
+    {
+      "path": "assets/scroll/transition-wudai-song.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3165428,
+      "sha256": "91941e971e1157216b4e794f11c5164224bc60202a1baf9cbf30a8f20f2e681b"
+    },
+    {
+      "path": "assets/scroll/transition-wudai-song.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 521866,
+      "sha256": "d6b8f0c169e9ec921710a25814cf19ca2cd7648706445045da65bf8c6968acf6"
+    },
+    {
+      "path": "assets/scroll/transition-xia-cq.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3119497,
+      "sha256": "aac595d8496cb9047300a1ce9431a1f9cdbf11c4e4221190f31df7c2993b7b85"
+    },
+    {
+      "path": "assets/scroll/transition-xia-cq.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 536864,
+      "sha256": "de03098b01c4d393a4359c02ae709a9882151a8e004ba6a18eea51e1038e3ca5"
+    },
+    {
+      "path": "assets/scroll/transition-yuan-ming.png",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 3260536,
+      "sha256": "afbe2b40fa28b496ab05615015df1bdcaa01e7b6acba6df2cc4be599a7a75d23"
+    },
+    {
+      "path": "assets/scroll/transition-yuan-ming.webp",
+      "width": 2172,
+      "height": 724,
+      "alpha": null,
+      "bytes": 560782,
+      "sha256": "8793a146e6a9b0d1459e9999262aac225408d7f24e8164c44918113fd20ba9a2"
+    },
+    {
+      "path": "assets/seasons/branch-autumn.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 2528325,
+      "sha256": "61ed45ec1c6d7642cfafa549521abf470f8a35bace0b7e5cd2afc365687dbe71"
+    },
+    {
+      "path": "assets/seasons/branch-autumn.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 601116,
+      "sha256": "7afc4cf189bf95525ce474987f66346231646fdaebf0b01c10909b817e1b1be3"
+    },
+    {
+      "path": "assets/seasons/branch-spring.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 1805551,
+      "sha256": "d7f863527fd64cdbd8392574a2f170a2ec71233e368dbdcff9e2a5efa7259935"
+    },
+    {
+      "path": "assets/seasons/branch-spring.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 307002,
+      "sha256": "b83714240f96b1795c777cd2c6483c851941320e04f0e272ea7293d87f7e03cb"
+    },
+    {
+      "path": "assets/seasons/branch-summer.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 2217195,
+      "sha256": "32540771f2482b3ced91866db5744d367e207e47ad7a407f69a054be33570007"
+    },
+    {
+      "path": "assets/seasons/branch-summer.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 471010,
+      "sha256": "89fabcdd3e23c128a22cd986150bff9db623313242f773cc05914c389ac56562"
+    },
+    {
+      "path": "assets/seasons/branch-winter.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 2446783,
+      "sha256": "537d4eb7a48969572051914bebb090ed246ae08f918e8030e9269c0617d2c82b"
+    },
+    {
+      "path": "assets/seasons/branch-winter.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        0,
+        254
+      ],
+      "bytes": 557300,
+      "sha256": "da5c7c4bfb5e3bf95a3e3b7592543f77458afcceb7548ef27fa6c3d1e2142a3a"
+    },
+    {
+      "path": "assets/seasons/jieqi-01-lichun.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3296149,
+      "sha256": "b29ad6e72c0fe534205af4f572c0eff402497d69adee14fcc7b1eb79b3ded9a5"
+    },
+    {
+      "path": "assets/seasons/jieqi-01-lichun.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 513868,
+      "sha256": "32cff7ecd00428d64c5e34130906507d279ea5554e68b7b061435cc4a3282fca"
+    },
+    {
+      "path": "assets/seasons/jieqi-02-yushui.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3266935,
+      "sha256": "de5407013e1d5f906a7a28eca52af482041dbff57d8bfd3bfd5d7c780a60a5fe"
+    },
+    {
+      "path": "assets/seasons/jieqi-02-yushui.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 488436,
+      "sha256": "2fafd281fe99cf8441500738595ac1df79a9566967518ebc7319dac1a244f0f7"
+    },
+    {
+      "path": "assets/seasons/jieqi-03-jingzhe.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 2945109,
+      "sha256": "8e90a758a31a95771f7e9121bdcfc8854a9c2985c59cc5660f4ac59d13e087a1"
+    },
+    {
+      "path": "assets/seasons/jieqi-03-jingzhe.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 409192,
+      "sha256": "fec64c3cfa9ee129159e313508148856bedbd5f7a14c866ebe2a7f142b4692aa"
+    },
+    {
+      "path": "assets/seasons/jieqi-04-chunfen.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3053755,
+      "sha256": "de28274e8cbda5528839ed4d984cc33193eaeed1828cfb1a2700b3f90fcbcbea"
+    },
+    {
+      "path": "assets/seasons/jieqi-04-chunfen.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 442760,
+      "sha256": "9fe52c46c8a042ad55d699fdf68b5bc2c450963e0845b0fe64bf840b09995f8e"
+    },
+    {
+      "path": "assets/seasons/jieqi-05-qingming.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3018104,
+      "sha256": "57fca23ec211edb1e04c5dfc7e4991089d839030fa91d9087b17146e8de93b0c"
+    },
+    {
+      "path": "assets/seasons/jieqi-05-qingming.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 422536,
+      "sha256": "feaefe5497245f482cbed6d11e6bb8d134796e06b30ab049fa49d94e52f1715e"
+    },
+    {
+      "path": "assets/seasons/jieqi-06-guyu.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3044105,
+      "sha256": "a9399cfd273c9c711dff49cc34ec25ae7869c903ee5d20169a12093336d7ea67"
+    },
+    {
+      "path": "assets/seasons/jieqi-06-guyu.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 438000,
+      "sha256": "71fd35b80dae112386557b8518bfe6f16c2c60fb882a936271e1ca6100831699"
+    },
+    {
+      "path": "assets/seasons/jieqi-07-lixia.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3192422,
+      "sha256": "f46aac3288612f14dfe52008644e8ed19927165cfc718b838194603d649f472e"
+    },
+    {
+      "path": "assets/seasons/jieqi-07-lixia.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 500012,
+      "sha256": "4c2cbf3ee838ffdb6fc9ed5e1913ca106a472a02d5b43920301b8c092270badb"
+    },
+    {
+      "path": "assets/seasons/jieqi-08-xiaoman.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3198911,
+      "sha256": "9c0249d2a2de40c044c7cb5acb08a3fa7cd82b4712ed78bb7e3c0f2dced46cc3"
+    },
+    {
+      "path": "assets/seasons/jieqi-08-xiaoman.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 490738,
+      "sha256": "b42bf17de6b7a45ff3ed9998279ec5371f386f760f52c7ee6d79c30f60376c45"
+    },
+    {
+      "path": "assets/seasons/jieqi-09-mangzhong.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3220889,
+      "sha256": "e1ae4f3482542462a98ccf5c50709b9d434e47a4b4251d0997f05cb47e8b1029"
+    },
+    {
+      "path": "assets/seasons/jieqi-09-mangzhong.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 505706,
+      "sha256": "02a2f8c1ef015f743767e96245625c2a8b9e9e12fe5ebae5326ee88e37ffb389"
+    },
+    {
+      "path": "assets/seasons/jieqi-10-xiazhi.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3207698,
+      "sha256": "2c5101038f53f14cb1ee61020560c08324f5da284d5e3254c94cd71c7e3491f2"
+    },
+    {
+      "path": "assets/seasons/jieqi-10-xiazhi.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 510076,
+      "sha256": "573d9d58fe1fce0277993572bb7a31586437a5ffd72acee2dbde0d00d2c2d976"
+    },
+    {
+      "path": "assets/seasons/jieqi-11-xiaoshu.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 2923108,
+      "sha256": "58b18f3fe9a6e559dd87a31a090efacdc9d701a63a3a21ec1d50b3b6da225580"
+    },
+    {
+      "path": "assets/seasons/jieqi-11-xiaoshu.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 406330,
+      "sha256": "7231deee1d1d391fed1dc47021ad84fc8552358512322213858afe1d501cc7dc"
+    },
+    {
+      "path": "assets/seasons/jieqi-12-dashu.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3173704,
+      "sha256": "c84cd349bb9890e40c71cea4781a81676b5347898dbb64b0d13bd20ae44371ec"
+    },
+    {
+      "path": "assets/seasons/jieqi-12-dashu.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 494434,
+      "sha256": "6e37ffe7a8d8b884557b937e696466d3754337e3f65b054d9fe7c2f93cf3eb69"
+    },
+    {
+      "path": "assets/seasons/jieqi-13-liqiu.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3152599,
+      "sha256": "66f06ebf5937253b6f456284c86782b61e5aafae0c2fdb1fab2ce706990c454d"
+    },
+    {
+      "path": "assets/seasons/jieqi-13-liqiu.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 488636,
+      "sha256": "94fe67d84ef5e104803c0e11ffc71b16c6ca5819991526bf190b9bb281b659e8"
+    },
+    {
+      "path": "assets/seasons/jieqi-14-chushu.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3149251,
+      "sha256": "92660d715ef4023d1d4786108be563be60026e9fa0a10107d857184a39f63412"
+    },
+    {
+      "path": "assets/seasons/jieqi-14-chushu.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 477108,
+      "sha256": "2b8220d181f745b36950df339432637a4058fa8c2e907c8c3a349f4c3ae91037"
+    },
+    {
+      "path": "assets/seasons/jieqi-15-bailu.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3236667,
+      "sha256": "5a47137960811c140f4819907f2a5230fe29f760380197282a19c37945b9b497"
+    },
+    {
+      "path": "assets/seasons/jieqi-15-bailu.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 493632,
+      "sha256": "efc84da55fdbf475d19db6668256cebbc2646b3193169ab43077d90ace1b023b"
+    },
+    {
+      "path": "assets/seasons/jieqi-16-qiufen.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3185658,
+      "sha256": "4767f798a9b230532edf5b44af3b99b3c8a2e4dfc823ed0a71b0100ec164c288"
+    },
+    {
+      "path": "assets/seasons/jieqi-16-qiufen.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 494466,
+      "sha256": "97737abe4713ae6f5d5945d46212ff16004f88a1b9ac3ac53122f376e9b49774"
+    },
+    {
+      "path": "assets/seasons/jieqi-17-hanlu.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3229188,
+      "sha256": "9dca4da8660dd7edd2b752500e76b442d4e0e997e695aea654850b19b58223c3"
+    },
+    {
+      "path": "assets/seasons/jieqi-17-hanlu.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 497652,
+      "sha256": "5da5d9c2ff99a9f141ecd17d7531ff9d710e17677cc8437fb545b08fa260fe30"
+    },
+    {
+      "path": "assets/seasons/jieqi-18-shuangjiang.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3325431,
+      "sha256": "44f77b8c680aad7c2671b0ab380e6463a603615ce8d6396e14d8c86a6dbe3f57"
+    },
+    {
+      "path": "assets/seasons/jieqi-18-shuangjiang.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 538648,
+      "sha256": "2c4ac35f11728357103df089370ef50436f483af6f89192d89bb23d3cbc9ca45"
+    },
+    {
+      "path": "assets/seasons/jieqi-19-lidong.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3362880,
+      "sha256": "d7a414287d0409464a34e1ac0f95505eb271c51c6eb3e9e35bf9df0e7f68af35"
+    },
+    {
+      "path": "assets/seasons/jieqi-19-lidong.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 532478,
+      "sha256": "3ae530d0d1e3bf91b2eb16e0c81efab6d38ef17e2d87590c480a9faeee84e8ab"
+    },
+    {
+      "path": "assets/seasons/jieqi-20-xiaoxue.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3460903,
+      "sha256": "60a209b952cb338c13173e319dc7dd2c9b3b932d795bb590eccbec839a9ce66d"
+    },
+    {
+      "path": "assets/seasons/jieqi-20-xiaoxue.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 562148,
+      "sha256": "c220f0d7fd1f3f40d5f6f21e423f65ba6f3b31095f05c032b72cb7df71ce778b"
+    },
+    {
+      "path": "assets/seasons/jieqi-21-daxue.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3392458,
+      "sha256": "5ec55fca0185703048d19b8963c6d33fcb15ee21d7a6799162833d4d00a30de9"
+    },
+    {
+      "path": "assets/seasons/jieqi-21-daxue.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 529526,
+      "sha256": "1c18162bc861b50ee0c5ce9ad0feddb5ed37471fa356b3b4a3164f79b9eda91a"
+    },
+    {
+      "path": "assets/seasons/jieqi-22-dongzhi.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3316254,
+      "sha256": "a1933568fcd9c5327992182faa162530a4e8784b92ff3b73e6dc6b98567de044"
+    },
+    {
+      "path": "assets/seasons/jieqi-22-dongzhi.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 531110,
+      "sha256": "d5ddfcfa36ebbb87fe62d9222a05fbef803e1bd70e4170bcd57472ec0149655c"
+    },
+    {
+      "path": "assets/seasons/jieqi-23-xiaohan.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3385898,
+      "sha256": "a96fc95090c952f80eb2586c9d4c9892dddc87f844fc8c7c96e4f8ce2eb2e774"
+    },
+    {
+      "path": "assets/seasons/jieqi-23-xiaohan.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 545270,
+      "sha256": "be3f226e1af6ddad412e0c6b4b4f2680d8a72ef5a00dd6fb962c57794bd514fb"
+    },
+    {
+      "path": "assets/seasons/jieqi-24-dahan.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 3586285,
+      "sha256": "29d574c606e3857d6a9459faa355c1314f903575fccb2fed78676250ebfdac46"
+    },
+    {
+      "path": "assets/seasons/jieqi-24-dahan.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 612056,
+      "sha256": "fc3435e3ba459309881c380eabcb7c6b9c5d25436063b40fffa040a2d61b60e8"
+    },
+    {
+      "path": "assets/seasons/moon-window-frame.png",
+      "width": 1261,
+      "height": 1247,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 664567,
+      "sha256": "e20d09f0a6a2dad636aead94061416bf1a95a6dd913195718d0496b9f45a0a15"
+    },
+    {
+      "path": "assets/seasons/moon-window-frame.webp",
+      "width": 1261,
+      "height": 1247,
+      "alpha": [
+        0,
+        255
+      ],
+      "bytes": 184792,
+      "sha256": "125c99f88e4eb624170077cb0d3066e4d0b21f01fa7995773d1cde73becc1c6b"
+    },
+    {
+      "path": "assets/textures/age-stain-overlay.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": [
+        0,
+        107
+      ],
+      "bytes": 2965843,
+      "sha256": "d8d47e65ec547aed75150393284d78f919ec52905a145e90eb8604eb0862be99"
+    },
+    {
+      "path": "assets/textures/age-stain-overlay.webp",
+      "width": 2048,
+      "height": 2048,
+      "alpha": [
+        0,
+        107
+      ],
+      "bytes": 2209606,
+      "sha256": "fe15b298499df55f2d0d5322ead55eb1d546a79612885f95edbc89ed1ac32d44"
+    },
+    {
+      "path": "assets/textures/calendar-paper-tile-master.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 2883129,
+      "sha256": "d859b6d966ab43078d6e1e89f99cfc43bddd01a9885c49ea55c61ab4c3970cfb"
+    },
+    {
+      "path": "assets/textures/calendar-paper-tile.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 281582,
+      "sha256": "57eba39b4ef585c77d7a0bed6cd7ab7014bfec9732e6226cc2f44f0fe626d244"
+    },
+    {
+      "path": "assets/textures/silk-weave-tile-master.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 2955585,
+      "sha256": "6c8b7e92e2170fd82aea35b54673b054c9b8a4326488d3d7f6394cc3c6e03e39"
+    },
+    {
+      "path": "assets/textures/silk-weave-tile.webp",
+      "width": 1254,
+      "height": 1254,
+      "alpha": null,
+      "bytes": 307518,
+      "sha256": "e300b30f57554facdd55fd1438899d32441495c5e403346e0f37f2f5191078bc"
+    },
+    {
+      "path": "assets/hero/qianqiu-landscape-reference-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 3014786,
+      "sha256": "3821ac7d3e576df08de67589deb693eeb2493b572a14f39728c1e1b99e2493d6"
+    },
+    {
+      "path": "assets/hero/qianqiu-landscape-reference-v2.webp",
+      "width": 1536,
+      "height": 1024,
+      "alpha": [
+        255,
+        255
+      ],
+      "bytes": 469338,
+      "sha256": "bc25af0b29d7fce41de22cdd05ff2b4ba72136426d4c6f1bbd448fc348e5bb95"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 360" preserveAspectRatio="none">
+  <defs>
+    <filter id="blur" x="-12%" y="-65%" width="124%" height="230%"><feGaussianBlur stdDeviation="34"/></filter>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fbf8f2" stop-opacity="0"/><stop offset=".5" stop-color="#fbf8f2" stop-opacity=".78"/><stop offset="1" stop-color="#fbf8f2" stop-opacity="0"/></linearGradient>
+  </defs>
+  <path d="M-120 210C120 112 310 274 560 188s410-70 615 10 398 54 650-34 318-26 392 42v150H-120z" fill="url(#fade)" filter="url(#blur)"/>
+</svg>

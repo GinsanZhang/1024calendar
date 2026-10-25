@@ -1,0 +1,186 @@
+/* 欢迎页是一张独立的绢本画卷，不受历页的朝代配色影响。 */
+.welcome {
+  display: grid;
+  --welcome-ink: #314e49;
+  --welcome-paper: #f2eddf;
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: 760px; min-height: max(760px, 100svh);
+  grid-template-rows: auto 1fr auto;
+  color: var(--welcome-ink); background: var(--welcome-paper);
+  font-family: var(--sans);
+  transition: opacity .45s ease, filter .45s ease;
+}
+.welcome::after { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; background-image: var(--tex-grain); opacity: .045; }
+.welcome-landscape { position: absolute; inset: 0; z-index: -3; width: 100%; height: 100%; object-fit: cover; object-position: 63% center; animation: welcome-unroll 1.8s cubic-bezier(.2,.6,.2,1) both; }
+.welcome-wash { position: absolute; inset: 0; z-index: -2; background: linear-gradient(90deg,#f2eddf 0%,rgba(242,237,223,.98) 19%,rgba(242,237,223,.86) 35%,rgba(242,237,223,.25) 63%,rgba(242,237,223,.02) 100%),linear-gradient(0deg,rgba(242,237,223,.97),transparent 20%,transparent 85%,rgba(242,237,223,.5)); }
+.welcome-header { display: flex; justify-content: space-between; align-items: center; padding: 36px 5.2%; gap: 20px; }
+.welcome-brand { display: flex; align-items: center; gap: 15px; font: 600 23px/1.3 var(--serif); letter-spacing: .15em; }
+.welcome-seal { display: grid; place-items: center; width: 35px; height: 39px; color: #fff6e5; background: #a5372c; border: 1px solid #a5372c; outline: 1px solid #a5372c; outline-offset: 3px; border-radius: 3px 1px 4px 2px; font: 25px/1 var(--serif); letter-spacing: 0; }
+.welcome-kind { font: 13px/1.5 var(--sans); letter-spacing: .06em; }
+.welcome-content { align-self: center; padding: 35px 0 70px; margin-left: 11.5%; max-width: 690px; animation: welcome-copy-in .9s .12s both; }
+.welcome-invitation { font: 16px/1.7 var(--serif); letter-spacing: .08em; margin: 0 0 24px; color: #57746b; }
+.welcome h1 { font: 500 clamp(60px,5.9vw,90px)/1.3 var(--serif); letter-spacing: .045em; margin: 0 0 25px; color: var(--welcome-ink); }
+.welcome-stop { color: #a5372c; }
+.welcome-description { font-size: 16px; line-height: 1.95; letter-spacing: .02em; margin: 0 0 34px; color: #59675e; }
+.welcome-actions { display: flex; align-items: center; gap: 27px; }
+.welcome-actions button { white-space: nowrap; }
+.welcome-enter { display: inline-flex; align-items: center; justify-content: space-between; gap: 36px; min-height: 60px; padding: 0 25px; border: 1px solid #a5372c; border-radius: 3px; color: #fff8e9; background: #a5372c; font: 500 16px/1.5 var(--sans); letter-spacing: .04em; cursor: pointer; box-shadow: 0 7px 20px -11px #7c271f; transition: background .2s,transform .2s,box-shadow .2s; }
+.welcome-enter svg { width: 29px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.3; transition: transform .2s; }
+.welcome-enter:hover { background: #8e2b23; box-shadow: 0 10px 24px -12px #7c271f; transform: translateY(-2px); }
+.welcome-enter:hover svg { transform: translateX(4px); }
+.welcome-browse { padding: 9px 0; background: none; border: 0; border-bottom: 1px solid rgba(49,78,73,.4); border-radius: 0; color: var(--welcome-ink); font: 14px/1.5 var(--sans); letter-spacing: .02em; cursor: pointer; }
+.welcome-browse:hover { border-color: currentColor; }
+.welcome button:focus-visible, .brand-home:focus-visible { outline: 2px solid #a5372c; outline-offset: 6px; }
+.welcome-footnote { margin: 20px 0 0; font-size: 12px; letter-spacing: .02em; line-height: 1.7; color: #69756a; }
+.welcome-date { position: absolute; right: 8%; bottom: 22%; display: flex; flex-direction: column; align-items: center; padding: 17px 18px 15px; border-top: 1px solid rgba(49,78,73,.5); border-bottom: 1px solid rgba(49,78,73,.5); background: rgba(242,237,223,.82); backdrop-filter: blur(5px); }
+.welcome-date-label { font: 12px/1.6 var(--sans); letter-spacing: .03em; }
+.welcome-date-main { display: flex; align-items: center; gap: 16px; margin: 7px 0 8px; }
+.welcome-date-main > span { writing-mode: vertical-rl; font: 15px/1.5 var(--serif); letter-spacing: .2em; }
+.welcome-date-main strong { font: 400 68px/1 var(--serif); }
+.welcome-lunar { font: 12px/1.7 var(--sans); letter-spacing: .02em; }
+.welcome-footer { position: relative; display: flex; align-items: center; gap: 30px; margin: 0 5.2%; padding: 24px 0 30px; border-top: 1px solid rgba(49,78,73,.18); font: 12px/1.5 var(--serif); }
+.welcome-footer-note { letter-spacing: .16em; white-space: nowrap; }
+.welcome-eras { display: flex; align-items: center; gap: 14px; width: min(490px,47vw); margin-left: auto; }
+.welcome-eras span { white-space: nowrap; font-size: 11px; }
+.welcome-eras i { height: 1px; background: rgba(49,78,73,.32); flex: 1; min-width: 8px; position: relative; }
+.welcome-eras i::after { content: ''; width: 3px; height: 3px; border-radius: 50%; background: #57746b; position: absolute; right: 0; top: -1px; }
+.welcome-eras span:last-child { color: #a5372c; }
+.welcome-art-note { color: #69756a; font: 11px/1.5 var(--sans); margin-left: 20px; white-space: nowrap; }
+.welcome.is-leaving { opacity: .45; filter: blur(2px); }
+.brand-home { background: none; border: 0; border-radius: 0; color: inherit; text-align: left; font: inherit; padding: 0; cursor: pointer; }
+@keyframes welcome-unroll { from { transform: scale(1.035); opacity: .4; } to { transform: scale(1); opacity: 1; } }
+@keyframes welcome-copy-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@media (min-width: 1700px) { .welcome-content { margin-left: max(11.5%,calc((100vw - 1320px)/2)); } }
+@media (max-width: 1050px) {
+  .welcome-content { margin-left: 8%; }
+  .welcome h1 { font-size: 66px; }
+  .welcome-date { right: 6%; bottom: 20%; }
+  .welcome-wash { background: linear-gradient(90deg,#f2eddf 0%,rgba(242,237,223,.94) 25%,rgba(242,237,223,.65) 47%,rgba(242,237,223,.05) 100%),linear-gradient(0deg,#f2eddf,transparent 22%); }
+  .welcome-art-note { display: none; }
+  .welcome-eras { width: 50%; gap: 9px; }
+}
+@media (max-width: 600px) {
+  .welcome { min-height: max(760px,100svh); }
+  .welcome-header { padding: 27px 7%; gap: 10px; }
+  .welcome-brand { font-size: 20px; gap: 12px; }
+  .welcome-seal { width: 28px; height: 32px; font-size: 22px; }
+  .welcome-kind { font-size: 12px; letter-spacing: .03em; }
+  .welcome-landscape { object-position: 61% center; }
+  .welcome-wash { background: linear-gradient(180deg,#f2eddf 0%,rgba(242,237,223,.97) 12%,rgba(242,237,223,.9) 32%,rgba(242,237,223,.6) 51%,rgba(242,237,223,.02) 70%,rgba(242,237,223,.15) 82%,#f2eddf 100%); }
+  .welcome-content { align-self: start; margin: 0 7%; padding: 39px 0 260px; max-width: none; }
+  .welcome-invitation { font-size: 13px; margin-bottom: 17px; letter-spacing: .06em; }
+  .welcome h1 { font-size: clamp(43px,11.7vw,66px); line-height: 1.35; margin-bottom: 18px; letter-spacing: .015em; }
+  .welcome-description { font-size: 14px; line-height: 1.9; margin-bottom: 25px; }
+  .welcome-actions { gap: 20px; }
+  .welcome-enter { min-height: 55px; padding: 0 20px; gap: 23px; font-size: 15px; }
+  .welcome-enter svg { width: 24px; }
+  .welcome-browse { font-size: 13px; }
+  .welcome-footnote { font-size: 11px; letter-spacing: 0; margin-top: 15px; }
+  .welcome-date { right: 8%; bottom: 112px; padding: 11px 13px; }
+  .welcome-date-label { font-size: 11px; }
+  .welcome-date-main { gap: 11px; margin: 4px 0; }
+  .welcome-date-main strong { font-size: 47px; }
+  .welcome-date-main > span { font-size: 12px; }
+  .welcome-lunar { font-size: 11px; }
+  .welcome-footer { margin: 0 7%; padding: 18px 0 25px; display: block; }
+  .welcome-footer-note { display: none; }
+  .welcome-eras { width: 100%; gap: 9px; }
+  .welcome-eras span { font-size: 11px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .welcome, .welcome *, .welcome *::after { animation: none; transition: none; }
+}
+@media (max-width: 360px) {
+  .welcome-actions { gap: 12px; flex-wrap: wrap; }
+  .welcome-enter { gap: 19px; padding: 0 18px; }
+}
+
+/* 同一幅画的坐标系：船和薄雾随画面 cover 缩放，始终贴合水面。 */
+.welcome-life { position: absolute; left: 0; top: 0; z-index: -3; width: 1536px; height: 1024px; transform-origin: 0 0; pointer-events: none; }
+.welcome-mist { position: absolute; inset: 0; width: 1536px; height: 1024px; }
+.mist-distant { animation: mist-drift 28s ease-in-out infinite alternate; }
+.mist-near { animation: mist-drift 36s -14s ease-in-out infinite alternate-reverse; }
+.welcome-boat { position: absolute; left: 0; top: 0; width: 180px; height: 90px; visibility: hidden;
+  /* 船的水线锚点沿江心 S 弯前进，不把侧面船身随切线翻到水下。 */
+  offset-path: path('M1160 800 C1148 747 1045 716 981 655 S856 587 887 558 S1047 514 1110 476 S1177 451 1210 437');
+  offset-position: 0 0; offset-anchor: 50% 80%; offset-rotate: 0deg;
+  transform-origin: 50% 80%; animation: boat-voyage 64s linear infinite; animation-delay: -7s; }
+.welcome.scene-ready .welcome-boat { visibility: visible; }
+.boat-heading { position: absolute; inset: 0; transform-origin: 50% 80%; animation: boat-heading 64s -7s linear infinite; }
+.boat-rock { position: absolute; inset: 0; animation: boat-rock 5s ease-in-out infinite; transform-origin: 50% 80%; }
+.boat-image { position: absolute; inset: 0; width: 180px; height: 90px; }
+.boat-reflection { position: absolute; left: 0; top: 75px; width: 180px; height: 90px; transform: scaleY(-.28); transform-origin: 50% 0; opacity: .15; filter: blur(1.3px); mask-image: linear-gradient(0deg,#000,transparent 90%); }
+.boat-wake { position: absolute; left: 4px; top: 70px; width: 170px; height: 23px; }
+.boat-wake i { position: absolute; inset: 0; border: 1px solid rgba(77,105,92,.42); border-top-color: rgba(242,237,223,.4); border-radius: 50%; animation: boat-ripple 5.4s ease-out infinite; }
+.boat-wake i:nth-child(2) { animation-delay: -1.8s; }
+.boat-wake i:nth-child(3) { animation-delay: -3.6s; }
+.welcome-header-tools { display: flex; gap: 24px; align-items: center; }
+.welcome-motion { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 5px 0 5px 14px; color: #45635a; border: 0; border-left: 1px solid rgba(49,78,73,.24); background: none; font: 12px/1.5 var(--sans); cursor: pointer; white-space: nowrap; }
+.welcome-motion svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 1.3; }
+.welcome-motion .motion-play { display: none; }
+.welcome-motion[aria-pressed="true"] .motion-pause { display: none; }
+.welcome-motion[aria-pressed="true"] .motion-play { display: block; }
+.welcome-motion:disabled { cursor: default; }
+.welcome.is-scene-paused .welcome-life *, .welcome.is-offscreen .welcome-life * { animation-play-state: paused; }
+@keyframes boat-voyage {
+  0% { offset-distance: 0%; transform: scale(1.12); opacity: 0; }
+  7% { opacity: 1; }
+  28% { offset-distance: 40%; transform: scale(.66); }
+  48% { offset-distance: 65%; transform: scale(.4); }
+  72% { offset-distance: 84%; transform: scale(.23); opacity: .8; }
+  88% { opacity: .55; }
+  100% { offset-distance: 100%; transform: scale(.13); opacity: 0; }
+}
+@keyframes boat-heading {
+  0%,34% { transform: scaleX(-1); }
+  44% { transform: scaleX(-.45); }
+  54% { transform: scaleX(.45); }
+  65%,100% { transform: scaleX(1); }
+}
+@keyframes boat-rock {
+  0%,100% { transform: translateY(0) rotate(-.35deg); }
+  50% { transform: translateY(1.8px) rotate(.4deg); }
+}
+@keyframes boat-ripple {
+  0% { transform: translateX(0) scale(.72,.45); opacity: 0; }
+  15% { opacity: .5; }
+  100% { transform: translateX(-28px) scale(1.7,1.4); opacity: 0; }
+}
+@keyframes mist-drift {
+  from { transform: translate3d(-24px,3px,0); opacity: .35; }
+  to { transform: translate3d(30px,-6px,0); opacity: .78; }
+}
+@media (max-width: 600px) {
+  .welcome-landscape { object-position: 78% center; }
+  .welcome-header-tools { gap: 0; }
+  .welcome-header-tools .welcome-kind { display: none; }
+  .welcome-motion { border: 0; padding-left: 0; font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .welcome-life *, .welcome-landscape { animation: none !important; }
+  .welcome-boat { offset-distance: 22%; transform: scale(.85); opacity: 1; }
+  .boat-heading { transform: scaleX(-1); }
+  .boat-wake { display: none; }
+  .mist-distant, .mist-near { opacity: .3; }
+}
+.welcome .welcome-cranes { animation: cranes-glide 38s -6s linear infinite; transform-origin: 50% 50%; }
+.welcome.is-scene-paused .welcome-cranes, .welcome.is-offscreen .welcome-cranes { animation-play-state: paused; }
+@keyframes cranes-glide {
+  0% { transform: translate3d(80px,35px,0) scale(1); opacity: 0; }
+  8% { opacity: .8; }
+  82% { opacity: .6; }
+  100% { transform: translate3d(-180px,-80px,0) scale(.58); opacity: 0; }
+}
+@media (max-width: 600px) {
+  .welcome .welcome-cranes { top: 55%; bottom: auto; width: 90px; }
+  .welcome .welcome-cranes { animation-name: cranes-glide-mobile; }
+}
+@keyframes cranes-glide-mobile {
+  0% { transform: translate3d(20px,8px,0) scale(1); opacity: 0; }
+  8% { opacity: .68; }
+  82% { opacity: .5; }
+  100% { transform: translate3d(-65px,-24px,0) scale(.65); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .welcome .welcome-cranes { animation: none !important; }
+}

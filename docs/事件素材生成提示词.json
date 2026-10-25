@@ -1,0 +1,96 @@
+{
+  "tool": "built-in image_gen",
+  "style": "Chinese mineral pigment brush painting on ivory silk, no text, no watermark",
+  "items": [
+    {
+      "key": "assembly/modern-v1",
+      "path": "/Users/ginsan/.codex/generated_images/01a170d0-1351-7140-a969-ebb4ef1fda22/exec-3201f714-c628-483b-8113-dee8be089e00.png",
+      "prompt": "Mid to late twentieth century Chinese assembly auditorium, curved rows of upholstered seats and long desks, modest microphones, a raised empty podium, warm pendant light, distant small delegates in plain twentieth century jackets, no identifiable leaders, no flags or logos. No imperial architecture. Scene appropriate 1949–2026.",
+      "status": "画面验收通过",
+      "saved_files": [
+        "assets/events/assembly/modern-v1-768.webp",
+        "assets/events/assembly/modern-v1-1536.webp"
+      ]
+    },
+    {
+      "key": "labour/v2",
+      "path": "/Users/ginsan/.codex/generated_images/01a170d0-1351-7140-a969-ebb4ef1fda22/exec-6ea05d64-4baf-413c-8d10-52f32603198d.png",
+      "prompt": "Chinese industrial railway workers gathering peacefully outside a brick workshop in the 1920s, rail tracks in foreground, steam sheds and chimneys behind, small workers in plain cloth jackets and cloth caps holding blank unmarked cloth banners. No modern machinery, no imperial robes, no rifles. Scene appropriate 1919–1930.",
+      "status": "画面验收通过",
+      "saved_files": [
+        "assets/events/labour/v2-768.webp",
+        "assets/events/labour/v2-1536.webp"
+      ]
+    },
+    {
+      "key": "battle/modern-v1",
+      "path": "/Users/ginsan/.codex/generated_images/01a170d0-1351-7140-a969-ebb4ef1fda22/exec-25470295-e16f-486f-847b-5460e95616b7.png",
+      "prompt": "Mid twentieth century mountainous battlefield, distant infantry silhouettes wearing simple mid-century uniforms moving through trenches, sandbag positions and an artillery silhouette, smoke hanging above rugged ridgelines, no gore, no heroic portraits, no medieval cavalry, no castles, no aircraft or rockets. Scene appropriate 1931–1979.",
+      "status": "画面验收通过",
+      "saved_files": [
+        "assets/events/battle/modern-v1-768.webp",
+        "assets/events/battle/modern-v1-1536.webp"
+      ]
+    },
+    {
+      "key": "nuclear/v1",
+      "path": "/Users/ginsan/.codex/generated_images/01a170d0-1351-7140-a969-ebb4ef1fda22/exec-53708dcf-845b-42d8-bde7-498974419473.png",
+      "prompt": "Remote 1960s desert nuclear test range, enormous distant mushroom-shaped dust and vapor cloud rising from ochre desert basin under a pale sky, observation bunkers very small on the horizon, barren blue-gray mountain ridges. Strictly no rocket, no launch gantry, no missile, no city, no casualties. Dignified restrained historic science atmosphere. Scene appropriate 1964–1967.",
+      "status": "画面验收通过",
+      "saved_files": [
+        "assets/events/nuclear/v1-768.webp",
+        "assets/events/nuclear/v1-1536.webp"
+      ]
+    },
+    {
+      "key": "earthquake/v1",
+      "path": "/Users/ginsan/.codex/generated_images/01a170d0-1351-7140-a969-ebb4ef1fda22/exec-0502598d-53c0-4cea-9450-6130eca18444.png",
+      "prompt": "Late twentieth century earthquake aftermath in a Chinese town, damaged low-rise brick and concrete buildings, cracked street and masonry rubble, small rescue workers carrying supplies, hazy mountain background, respectful and calm, no visible wounded or bodies, no war, no smoke from weapons, no skyscrapers. Scene appropriate 1976–2008.",
+      "status": "画面验收通过",
+      "saved_files": [
+        "assets/events/earthquake/v1-768.webp",
+        "assets/events/earthquake/v1-1536.webp"
+      ]
+    },
+    {
+      "key": "diplomacy/v1",
+      "path": "/Users/ginsan/.codex/generated_images/01a170d0-1351-7140-a969-ebb4ef1fda22/exec-8d3d969b-b7d9-4b37-88a8-61e5915937c4.png",
+      "prompt": "Modern diplomatic meeting room, two balanced delegations sitting across a long polished table, plain late twentieth century suits, folders and discreet table microphones, a handshake between two tiny distant figures at center, pale windows and quiet tree garden beyond. No recognizable leaders, no flags, no lettering. Scene appropriate 1943–2001.",
+      "status": "画面验收通过",
+      "saved_files": [
+        "assets/events/diplomacy/v1-768.webp",
+        "assets/events/diplomacy/v1-1536.webp"
+      ]
+    },
+    {
+      "key": "handover/v1",
+      "path": "/Users/ginsan/.codex/generated_images/01a170d0-1351-7140-a969-ebb4ef1fda22/exec-4c0daa1f-5f34-4c2d-ac81-5889966b2471.png",
+      "prompt": "A dignified late 1990s sovereignty handover ceremony in a large modern ceremonial hall, paired flagpoles with no flags visible, an honor guard in modern dress uniforms standing at attention, low raised dais, distant city harbor lights seen through broad windows, soft midnight blue and muted gold, no identifiable leaders, no readable signs, no imperial buildings, no crowds celebrating a battle. Generic ceremonial atmosphere appropriate 1997–1999.",
+      "status": "弃用：天际线有年代风险",
+      "saved_files": []
+    }
+  ],
+  "base_prompt": "Create one finished horizontal 3:2 illustration for a Chinese history calendar. Refined Chinese mineral pigment brush painting on pale ivory silk, muted celadon, charcoal and restrained ochre/cinnabar, delicate architectural detail, atmospheric layered depth, dignified museum handscroll aesthetic, landscape composition, no border, no lettering, no seals, no watermark, no UI. This is generic artistic imagery, not documentary reconstruction. ",
+  "revisions": [
+    {
+      "key": "handover/v2",
+      "path": "/Users/ginsan/.codex/generated_images/01a170d0-1351-7140-a969-ebb4ef1fda22/exec-95af85e5-15e6-4f12-a66e-7a7c4caf74c0.png",
+      "prompt": "Edit this image, preserving the mineral pigment Chinese brush painting style, the indoor ceremonial hall, paired bare flagpoles, modern honor guard and the full composition. Remove ALL recognizable city skyscrapers and all skyline architecture from the windows; replace the outside view with a very dark midnight sky over a quiet empty harbor, distant low unlit shoreline silhouettes only. This must be a generic late 1990s Chinese sovereignty handover hall usable for both Hong Kong 1997 and Macau 1999 with NO identifiable modern landmark or post-1999 building. No lettering, no flags, no watermark. Keep the night hall dignified and beautiful.",
+      "status": "画面验收通过",
+      "saved_files": [
+        "assets/events/handover/v2-768.webp",
+        "assets/events/handover/v2-1536.webp"
+      ]
+    },
+    {
+      "key": "earthquake/tangshan-v1",
+      "path": "/Users/ginsan/.codex/generated_images/01a170d0-1351-7140-a969-ebb4ef1fda22/exec-c745970a-2759-456e-a9a3-620e485ee5e5.png",
+      "prompt": "One finished 3:2 horizontal Chinese mineral pigment brush painting on pale ivory silk, muted celadon and ochre with charcoal. A respectful generic artistic image of the 1976 Tangshan earthquake aftermath: FLAT northern Chinese industrial city on a vast plain, collapsed low-rise brick factory buildings and simple mid-century concrete housing, cracked street, piles of broken bricks, small rescue teams in plain green 1970s work clothes carrying wooden stretchers and supplies. A few distant industrial chimneys on a FLAT skyline. ABSOLUTELY NO mountains, no hills, no rivers, no modern skyscrapers, no futuristic helmets, no visible wounded or bodies. Quiet compassionate atmosphere, meticulous painted texture, not a photo. No text, no seals, no watermark.",
+      "status": "画面验收通过",
+      "saved_files": [
+        "assets/events/earthquake/tangshan-v1-768.webp",
+        "assets/events/earthquake/tangshan-v1-1536.webp"
+      ]
+    }
+  ]
+}

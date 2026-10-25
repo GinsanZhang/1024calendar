@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><title>V2 UI 回归</title>
+<style>body{font:15px/1.7 system-ui;background:#f4efe6;color:#253a38;margin:24px}iframe{width:1512px;height:850px;position:fixed;left:-1800px;top:0;border:0}pre{white-space:pre-wrap}button{padding:8px 16px}</style>
+<h1>V2 交互回归</h1><p>自动检查真实页面的日期切换、动效取消、节气跨年日期、搜索缩略图与回望取消。视觉与按钮命中仍以浏览器实测为准。</p>
+<button id="run">重新运行</button><pre id="result" role="status">正在载入…</pre><iframe id="app" src="../index.html" title="被测V2"></iframe>
+<script>
+const frame=document.querySelector('#app'),result=document.querySelector('#result');
+const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+async function run(){
+ const tests=[]; const w=frame.contentWindow,d=w.document,$=s=>d.querySelector(s);
+ const check=(name,ok)=>{tests.push({name,ok:!!ok});if(!ok)throw new Error(name);};
+ try{
+  check('应用初始化',!!w.V2Views&&!!w.V2Overlay);
+  w.V2Views.switchView('calendar');
+  w.V2Views.pickDate(2026,10,12,true);
+  w.V2Views.pickDate(2026,10,13);
+  check('翻日立即提交最新日期',w.V2State.sel.d===13&&$('#dailyDate').textContent.includes('13'));
+  check('翻日启动纸页动画',$('#calendarTurn').getAnimations().some(a=>a.playState==='running'));
+  const first=$('#calendarTurn').getAnimations()[0];
+  w.V2Views.pickDate(2026,10,14);w.V2Views.pickDate(2026,10,15);
+  check('快速切日取消旧动画、不排队',first.playState==='idle'&&$('#calendarTurn').getAnimations().length===1&&w.V2State.sel.d===15);
+  d.documentElement.dataset.motion='paused';w.V2Views.pickDate(2026,10,16);
+  check('暂停时直接到末态',$('#calendarTurn').getAnimations().length===0&&w.V2State.sel.d===16);
+  d.documentElement.dataset.motion='playing';
+  w.V2Views.pickDate(2026,10,17);await wait(400);
+  check('翻页结束清理透明旧纸层',$('#calendarTurn').hidden&&!$('#calendarTurn').children.length);
+  check('纸页清理不撑宽页面',d.documentElement.scrollWidth<=w.innerWidth);
+  w.V2Views.setSeason(18);$('#jqOpenDate').click();
+  check('立冬跳到11月7日',w.V2State.sel.y===2026&&w.V2State.sel.m===11&&w.V2State.sel.d===7&&w.V2State.view==='calendar');
+  w.V2Views.pickDate(2027,1,1,true);w.V2Views.switchView('seasons');w.V2Views.setSeason(22);$('#jqOpenDate').click();
+  const when=w.V2Data.termDate('小寒',2027).slice(0,10).split('-').map(Number);
+  check('跨年节气使用选中年份',w.V2State.sel.y===when[0]&&w.V2State.sel.m===when[1]&&w.V2State.sel.d===when[2]);
+  await w.V2Overlay.openSearch();w.V2Overlay.renderResults('郑和');
+  check('搜索结果保留缩略图与来源',$('#searchResults').querySelectorAll('.sr-thumb img').length===2&&$('#searchResults').textContent.includes('公历史事')&&$('#searchResults').textContent.includes('长卷大事'));
+  w.V2Overlay.closeSearch();
+  w.V2Views.pickDate(2026,10,25,true);w.V2Views.switchView('calendar');
+  await w.V2Overlay.openLookback();w.V2Overlay.runLookback(500);w.V2Overlay.closeLookback();
+  await wait(2200);
+  check('取消回望后无迟发跳转',w.V2State.view==='calendar'&&!w.V2Overlay.topmost());
+  result.textContent=JSON.stringify({ok:true,tests},null,2);result.dataset.ok='true';
+ }catch(e){result.textContent=JSON.stringify({ok:false,error:String(e),tests},null,2);result.dataset.ok='false';}
+}
+frame.onload=run;document.querySelector('#run').onclick=()=>frame.contentWindow.location.reload();
+</script></html>

@@ -1,0 +1,23 @@
+.DS_Store
+.workbuddy/
+.wbapp_*.genie
+
+.env
+.env.*
+!.env.example
+
+# ── 体积治理：站点只消费 webp ──
+# 高清母版（PNG 源图 + 未使用的静态字重）集中归档在 assets-src/，
+# 该目录位于站点目录之外，不参与发布，内容整体不入版本库。
+# 仅保留说明文件，让 clone 后仍能看到归档规则。
+assets-src/*
+!assets-src/README.md
+
+# 兜底：后续若又往消费目录里生成 png，同样排除
+v2/assets/**/*.png
+assets/*.png
+archive/*-src.png
+%E4%B8%80%E9%A1%B5%E5%8D%83%E7%A7%8B_%E4%BA%A7%E5%93%81%E4%BA%A4%E4%BA%92%E5%BC%80%E5%8F%91%E4%BA%A4%E4%BB%98%E5%8C%85_v1.0/参考图_十个交互场景.png
+
+# 与同名目录内容重复的验收素材压缩包
+交互验收标准.zip

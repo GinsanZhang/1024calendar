@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light" data-season="autumn" data-stage="calendar">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>一页千秋 · 翻一页日历，穿一回千年</title>
+<meta name="description" content="从眼前的一天走进一段历史，再从一段历史望见千年。以日历、朝代长卷、四时流转三个尺度观看中国历史。" />
+<meta name="theme-color" content="#F4EFE6" />
+<link rel="stylesheet" href="assets/fonts/fonts.css?v=20261025-interaction-acceptance" />
+<link rel="stylesheet" href="css/tokens.css?v=20261025-interaction-acceptance" />
+<link rel="stylesheet" href="css/app.css?v=20261025-interaction-acceptance" />
+<link rel="stylesheet" href="css/skeleton.css?v=20261025-interaction-acceptance" />
+<link rel="stylesheet" href="css/acceptance.css?v=20261025-manual-feedback" />
+</head>
+<body data-at="hero" data-stage="calendar">
+
+<a class="skip-link" href="#stage">跳至内容</a>
+<a class="site-brand" href="#hero" aria-label="返回画境首页">一页千秋 <small>山河为卷 · 岁月成书</small></a>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ══════════════ 开场：画境自然呼吸，不阻塞操作 ══════════════ -->
+<header class="hero" id="hero">
+  <picture>
+    <source media="(max-width: 768px)" srcset="assets/hero/qianqiu-landscape-mobile-1080.webp" />
+    <img class="hero-art" src="assets/hero/qianqiu-landscape-reference-v2.webp"
+         width="2880" height="1620" alt="青绿山水间云雾环绕群峰，江面留白，小舟徐行。" fetchpriority="high" />
+  </picture>
+  <div class="hero-veil" aria-hidden="true"></div>
+  <img class="hero-mist hero-mist--back" src="assets/hero/mist-back.svg" alt="" aria-hidden="true" />
+  <img class="hero-mist hero-mist--front" src="assets/hero/mist-front.svg" alt="" aria-hidden="true" />
+  <div class="hero-boat" aria-hidden="true">
+    <img src="assets/hero/river-boat.webp" width="1536" height="1024" alt="" />
+  </div>
+
+  <div class="hero-copy">
+    <p class="hero-kicker">一 日 一 页 · 一 眼 千 年</p>
+    <div class="brand-draft"><h1 class="hero-title"><img class="hero-wordmark" src="assets/brand/yiye-qianqiu-wordmark@2x.webp" alt="一页千秋" /><img class="hero-seal" src="assets/brand/yiye-qianqiu-seal.webp" alt="" aria-hidden="true" /></h1></div>
+    <p class="hero-sub">翻一页日历，穿一回千年。</p>
+    <div class="hero-actions">
+      <button class="btn btn--zhu" id="heroEnter" type="button">翻开今天</button>
+      <span class="hero-note">或直接向下翻阅</span>
+    </div>
+  </div>
+
+  <div class="boat-wake" aria-hidden="true"><i></i><i></i><i></i></div>
+  <button class="hero-scroll" id="heroScroll" type="button">
+    <i aria-hidden="true">↓</i><span>向下探索</span>
+  </button>
+</header>
+
+
+<section class="portals" id="portals" aria-label="选择观看时间的方式">
+  <div class="portal-heading"><p class="eyebrow">三种尺度 · 同一段山河</p><h2>从一日，读到千年。</h2><p>翻日历、展长卷，或循着节气，走进四时。</p></div>
+  <div class="portal-grid">
+    <button class="portal" data-go="calendar" type="button"><span class="portal-art portal-calendar" aria-hidden="true"><span class="portal-mini-calendar"><span>2026 · 十月</span><b>25</b><span>一 二 三 四 五 六 日</span><i>一日一页</i></span></span><span class="portal-no">壹 / DAY</span><strong>日历</strong><span>翻开今天，遇见往事</span><em>翻一页 ↗</em></button>
+    <button class="portal" data-go="scroll" type="button"><span class="portal-art portal-scroll" aria-hidden="true"><img src="assets/scroll/era-tang-changan.webp" alt="" loading="lazy"></span><span class="portal-no">贰 / ERA</span><strong>朝代长卷</strong><span>横展山河，纵览千年</span><em>展一卷 ↗</em></button>
+    <button class="portal" data-go="seasons" type="button"><span class="portal-art portal-season" aria-hidden="true"><img src="assets/seasons/jieqi-18-shuangjiang.webp" alt="" loading="lazy" /></span><span class="portal-no">叁 / SEASON</span><strong>四时流转</strong><span>在二十四节气里感知时序</span><em>观四时 ↗</em></button>
+  </div>
+</section>
+
+<!-- ══════════════ 尺度尺：三个观察时间的维度 ══════════════ -->
+<nav class="scale-rail" aria-label="观看尺度">
+  <button class="scale-btn" type="button" data-go="calendar" aria-current="true">
+    <svg aria-hidden="true"><use href="assets/icons/view-navigation.svg#calendar" /></svg><b>日历</b><span>以日为单位</span>
+  </button>
+  <button class="scale-btn" type="button" data-go="scroll" aria-current="false">
+    <svg aria-hidden="true"><use href="assets/icons/view-navigation.svg#scroll" /></svg><b>朝代长卷</b><span>以千年为尺度</span>
+  </button>
+  <button class="scale-btn" type="button" data-go="seasons" aria-current="false">
+    <svg aria-hidden="true"><use href="assets/icons/view-navigation.svg#seasons" /></svg><b>四时流转</b><span>以四季为循环</span>
+  </button>
+</nav>
+
+<div class="rail-foot">
+  <button class="rail-tool" id="searchOpen" type="button" aria-label="检索史事">
+    <svg aria-hidden="true"><use href="assets/icons/tools.svg#search" /></svg>
+  </button>
+  <button class="rail-tool" id="themeToggle" type="button" aria-label="切换明暗">
+    <svg aria-hidden="true"><use href="assets/icons/tools.svg#theme" /></svg>
+  </button>
+  <button class="tool-text" id="motionToggle" type="button" aria-pressed="false"><svg aria-hidden="true"><use href="assets/icons/motion.svg#pause" /></svg><span>暂停动效</span></button>
+  <button class="tool-text" id="homeButton" type="button">回到画境</button>
+</div>
+
+<main class="stage" id="stage" tabindex="-1">
+  <div class="stage-heading"><div><p class="eyebrow" id="viewKicker">壹 · 以日为单位</p><h2 id="viewTitle">日历里的山河</h2></div><div class="stage-actions"><button class="btn btn--ghost" id="todayButton" type="button">回到今天 <kbd>T</kbd></button><button class="btn btn--ghost" id="randomButton" type="button">随机穿越 <kbd>R</kbd></button></div></div>
+
+  <!-- ─────────── 日历：纵向翻阅 ─────────── -->
+  <section class="view view-calendar" data-view="calendar" data-active aria-label="日历">
+    <div class="cal-layout">
+
+      <div class="cal-page" id="calPage">
+        <img class="calendar-branch" id="calendarBranch" src="assets/calendar/branch-autumn.webp" alt="" aria-hidden="true" />
+        <img class="calendar-curl" src="assets/calendar/paper-edge-curl.webp" alt="" aria-hidden="true" />
+        <div class="calendar-turn" id="calendarTurn" aria-hidden="true" inert hidden></div><!-- 纸张原素材 assets/calendar/page-turn-sheet.webp -->
+        <button class="cal-collapse" id="calendarCollapse" type="button" aria-expanded="true" aria-controls="calSheet">收起月历</button>
+        <div class="cal-head">
+          <div class="cal-title">
+            <div class="mon"><span id="calMonth">十月</span><small id="calYear">2026</small></div>
+            <div class="sub" id="calGanzhi">丙午年 · 马</div>
+          </div>
+          <div class="cal-nav">
+            <button class="icon-btn" id="calPrev" type="button" aria-label="上一月">
+              <svg aria-hidden="true"><use href="assets/icons/navigation.svg#previous" /></svg>
+            </button>
+            <button class="icon-btn" id="calNext" type="button" aria-label="下一月">
+              <svg aria-hidden="true"><use href="assets/icons/navigation.svg#next" /></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="cal-sheet" id="calSheet">
+          <div class="cal-week" id="calWeek"></div>
+          <div class="cal-grid" id="calGrid"></div>
+        </div>
+
+        <div class="cal-foot">
+          <span class="legend"><i aria-hidden="true"></i>公历史事</span><span class="legend legend-lunar"><i aria-hidden="true"></i>农历纪事</span><span class="legend legend-term">◇ 节气</span>
+          <span class="hint-keys">← → 翻日 · ↑ ↓ 翻周 · 1 2 3 换尺度</span>
+        </div>
+      </div>
+
+      <aside class="daily" id="daily" aria-live="polite">
+        <p class="eyebrow daily-date" id="dailyDate"></p>
+        <div class="daily-top">
+          <span class="daily-num" id="dailyNum">24</span>
+          <div class="daily-side">
+            <span class="w" id="dailyWeek">星期六</span>
+            <span class="l" id="dailyLunar">农历 九月十四</span>
+            <span class="g" id="dailyGanzhi">丙午年 · 马</span>
+          </div>
+        </div>
+        <span class="jq-chip" id="dailyJq" hidden></span>
+
+        <div class="daily-head">
+          <span class="eyebrow">当日纪事</span>
+          <span class="eyebrow" id="dailyCount">史册留白</span>
+        </div>
+
+        <label class="era-filter">朝代筛选 <select id="eraFilter" aria-label="筛选当日史事朝代"><option value="">全部朝代</option></select></label>
+        <div class="ev-list" id="dailyList"></div>
+        <div class="daily-rewind"><span>向岁月深处走一走</span><div><button type="button" class="rewind-shortcut" data-years="100">100 年</button><button type="button" class="rewind-shortcut" data-years="300">300 年</button><button type="button" class="rewind-shortcut" data-years="500">500 年</button><button type="button" class="rewind-shortcut" data-years="800">800 年</button><button type="button" class="rewind-shortcut" data-years="1000">1000 年</button></div></div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ─────────── 朝代长卷：横向展卷 ─────────── -->
+  <section class="view view-scroll" data-view="scroll" aria-label="朝代长卷">
+    <div class="scroll-controls"><button type="button" id="eraPrev" class="btn btn--ghost">← 前一时期</button><span id="eraPosition" role="status"></span><button type="button" id="eraNext" class="btn btn--ghost">后一时期 →</button></div>
+    <div class="scroll-mount"><img class="mount-roller mount-roller--left" src="assets/scroll/roller-left.webp" alt="" aria-hidden="true"><div class="scroll-track" id="scrollTrack" tabindex="0" aria-label="横向朝代长卷，左右拖曳或使用方向键"></div><img class="mount-roller mount-roller--right" src="assets/scroll/roller-right.webp" alt="" aria-hidden="true"></div>
+    <div class="timeline" id="timeline" aria-label="朝代时间轴"></div>
+    <div class="era-details" id="eraDetails" aria-live="polite"></div>
+  </section>
+
+  <!-- ─────────── 四时流转：环形循环 ─────────── -->
+  <section class="view view-seasons" data-view="seasons" aria-label="四时流转">
+    <div class="season-layout">
+      <div class="ring-wrap">
+        <div class="season-scene" id="seasonScene"></div><img class="season-frame" src="assets/seasons/moon-window-frame.webp" alt="" aria-hidden="true" /><canvas class="phenology-canvas" id="phenologyCanvas" aria-hidden="true"></canvas>
+        <div class="ring-halo" aria-hidden="true"></div>
+        <div class="ring" id="ring"></div>
+        <div class="ring-core">
+          <span class="jq-name" id="jqName">霜降</span>
+          <span class="jq-pos" id="jqPos">九月中</span>
+          <span class="jq-motif" id="jqMotif"></span>
+        </div>
+      </div>
+
+      <div class="season-panel">
+        <div class="season-tabs" role="tablist" aria-label="四季">
+          <button class="season-tab" type="button" role="tab" data-season="spring" aria-selected="false">春</button>
+          <button class="season-tab" type="button" role="tab" data-season="summer" aria-selected="false">夏</button>
+          <button class="season-tab" type="button" role="tab" data-season="autumn" aria-selected="true">秋</button>
+          <button class="season-tab" type="button" role="tab" data-season="winter" aria-selected="false">冬</button>
+        </div>
+        <p class="eyebrow" id="jqDate"></p><h3 class="season-title" id="seasonTitle">霜降</h3><p class="eyebrow">节气释义 · 月令七十二候</p>
+        <p class="jq-meaning" id="jqMeaning"></p>
+        <p class="jq-source" id="jqSource"></p>
+        <button class="btn btn--zhu jq-open-date" id="jqOpenDate" type="button">翻到节气当日</button>
+        <div class="jq-nav"><button class="btn btn--ghost" id="currentTerm" type="button">此刻节气</button>
+          <button class="btn btn--ghost" id="jqPrev" type="button">上一节气</button>
+          <button class="btn btn--ghost" id="jqNext" type="button">下一节气</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer class="site-footer"><span>一页千秋 · 翻一页日历，穿一回千年</span><span>史料据本地清单 · 画作为艺术意象</span><details class="asset-register"><summary>已接入素材清单</summary><div id="assetRegister"></div></details></footer>
+
+<!-- 长卷时间轴 -->
+
+
+<button class="lookback-trigger" id="lookbackTrigger" type="button">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 7v5l3 2"/><circle cx="12" cy="12" r="8.2"/><path d="M12 3.8V2"/></svg>
+  回望千年
+</button>
+
+<!-- ══════════════ 入画 ══════════════ -->
+<div class="enter" id="enter" role="dialog" aria-modal="true" aria-label="史事画卷">
+  <div class="enter-ink" id="enterInk"></div>
+  <div class="enter-stage">
+    <figure class="enter-art" id="enterArt">
+      <div id="enterPlaceholder" class="reader-placeholder"></div><img id="enterImg" alt="" />
+    </figure>
+
+    <div class="enter-caption" id="enterCaption">
+      <div class="enter-meta">
+        <span id="enterEra"></span><span class="dot" aria-hidden="true"></span>
+        <span id="enterYear"></span><span class="dot" aria-hidden="true"></span>
+        <span id="enterJz"></span>
+        <span class="cal-tag" id="enterCalTag"></span>
+      </div>
+      <h2 class="enter-title" id="enterTitle"></h2>
+      <p class="enter-desc" id="enterDesc"></p>
+      <p class="enter-artname" id="enterArtNote">AI 生成画作 · 艺术意象，非事件实录 · <span id="enterArtName"></span></p>
+      <div class="enter-foot">
+        <div class="enter-info">
+          <span class="enter-src" id="enterSrc"></span>
+          <p class="enter-order" id="enterOrder"></p>
+        </div>
+        <div class="enter-nav">
+          <button type="button" id="enterPrev"><span class="nb-label">上一则</span><span class="nb-title"></span></button>
+          <button type="button" id="enterNext"><span class="nb-label">下一则</span><span class="nb-title"></span></button>
+        </div>
+      </div>
+    </div>
+
+    <button class="enter-close" id="enterClose" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      返回日历
+    </button>
+  </div>
+</div>
+
+<!-- ══════════════ 溯时 ══════════════ -->
+<div class="lookback" id="lookback" role="dialog" aria-modal="true" aria-label="回望千年">
+  <img class="lookback-art" src="assets/lookback/night-landscape-2880.webp" alt="" aria-hidden="true" />
+  <button class="lookback-close" id="lookbackClose" type="button">关闭 Esc</button>
+  <div class="lookback-inner">
+    <h2 class="lookback-heading" id="lbHeading">回望千年</h2><p class="lookback-kicker" id="lbFrom">自 2026 年回望</p>
+    <div class="lookback-depth" aria-hidden="true"></div><div class="lookback-streaks" aria-hidden="true"></div>
+    <div class="lookback-year-wrap"><img class="lookback-marker" src="assets/lookback/year-marker.webp" alt="" aria-hidden="true" /><span class="lookback-card-era" id="lbCardEra">今</span><p class="lookback-year" id="lbYear">2026</p></div>
+    <div class="lookback-line" aria-hidden="true"></div>
+    <p class="lookback-route" id="lbRoute"></p><p class="lookback-era" id="lbEra">选一段距离，回到那个时候</p>
+    <div class="lookback-opts">
+      <button class="lb-opt" type="button" data-years="100" aria-pressed="false">100 年</button>
+      <button class="lb-opt" type="button" data-years="300" aria-pressed="false">300 年</button>
+      <button class="lb-opt" type="button" data-years="500" aria-pressed="false">500 年</button>
+      <button class="lb-opt" type="button" data-years="800" aria-pressed="false">800 年</button>
+      <button class="lb-opt" type="button" data-years="1000" aria-pressed="false">1000 年</button>
+    </div>
+    <p class="lookback-hint">纪年回溯后，长卷会停在那个朝代</p>
+  </div>
+</div>
+
+<!-- ══════════════ 检索 ══════════════ -->
+<div class="search" id="search" role="dialog" aria-modal="true" aria-label="检索史事">
+  <div class="search-box">
+    <div class="search-field">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="11" cy="11" r="6.4"/><path d="M16 16l4.4 4.4"/></svg>
+      <input class="search-input" id="searchInput" type="search" placeholder="人物、事件、朝代、年份、纪年或出处" autocomplete="off" aria-label="检索" />
+      <button type="button" id="searchClose" class="search-kbd" aria-label="关闭搜索">关闭 Esc</button>
+    </div>
+    <div class="search-examples"><button type="button" data-query="郑和">郑和</button><button type="button" data-query="赤壁">赤壁</button><button type="button" data-query="除夕">除夕</button><button type="button" data-query="永乐">永乐</button></div><div class="search-results" id="searchResults"></div>
+    <div class="search-foot">
+      <span id="searchCount" role="status">—</span>
+      <span>↑ ↓ 选择 · Enter 入画</span>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="../assets/vendor/lunar.js"></script>
+<script src="../assets/data/day-a.js?v=20261025-interaction-acceptance"></script>
+<script src="../assets/data/day-b.js?v=20261025-interaction-acceptance"></script>
+<script src="../assets/data/lunar.js?v=20261025-interaction-acceptance"></script>
+<script src="../assets/data/jieqi.js"></script>
+<script src="../assets/data/eras.js?v=20261025-interaction-acceptance"></script>
+<script src="../assets/phenology-art.js"></script>
+<script src="../assets/data/event-art.js?v=20261025-interaction-acceptance"></script>
+<script src="../assets/event-art.js?v=20261025-interaction-acceptance"></script>
+<script src="js/core.js?v=20261025-interaction-acceptance"></script>
+<script src="js/data.js?v=20261025-interaction-acceptance"></script>
+<script src="js/assets.js?v=20261025-interaction-acceptance"></script>
+<script src="js/views.js?v=20261025-interaction-acceptance"></script>
+<script src="js/overlay.js?v=20261025-interaction-acceptance"></script>
+<script src="js/main.js?v=20261025-interaction-acceptance"></script>
+<script src="js/skeleton.js?v=20261025-interaction-acceptance"></script>
+</body>
+</html>

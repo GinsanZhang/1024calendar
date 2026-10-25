@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>一页千秋 · 绢本青绿设计系统</title>
+<link rel="stylesheet" href="css/tokens.css" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 56px clamp(20px, 5vw, 72px) 96px;
+    background: var(--paper); color: var(--ink);
+    font-family: var(--sans); font-size: var(--fs-body); line-height: var(--lh-body);
+  }
+  h1, h2, h3, p { margin: 0; }
+  header { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+  h1 { font-family: var(--serif); font-size: 34px; letter-spacing: .14em; font-weight: 400; }
+  .sub { font-size: var(--fs-micro); letter-spacing: .18em; color: var(--muted); margin-top: 8px; }
+  section { margin-top: 56px; }
+  h2 { font-family: var(--serif); font-size: 15px; font-weight: 400; letter-spacing: .2em; color: var(--muted); padding-bottom: 12px; border-bottom: 1px solid var(--line-2); margin-bottom: 24px; }
+  h2 span { color: var(--zhu); margin-right: 10px; font-family: var(--num); }
+  .grid { display: grid; gap: 16px; }
+  .cols-5 { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .cols-3 { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+
+  .sw { border-radius: var(--r-control); overflow: hidden; border: 1px solid var(--line-2); background: var(--card); }
+  .sw i { display: block; height: 64px; }
+  .sw div { padding: 9px 11px; display: grid; gap: 2px; }
+  .sw b { font-family: var(--num); font-size: var(--fs-micro); font-weight: 400; letter-spacing: .02em; }
+  .sw span { font-size: var(--fs-micro); color: var(--muted); }
+  .ratio { font-family: var(--num); font-size: var(--fs-micro); color: var(--gold); }
+
+  .typ { display: grid; gap: 18px; }
+  .typ > div { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 20px; align-items: baseline; padding-bottom: 14px; border-bottom: 1px dashed var(--line-2); }
+  .typ small { font-family: var(--num); font-size: var(--fs-micro); color: var(--muted); letter-spacing: .02em; }
+
+  .bars { display: grid; gap: 10px; }
+  .bar { display: flex; align-items: center; gap: 14px; }
+  .bar span { font-family: var(--num); font-size: var(--fs-micro); color: var(--muted); width: 46px; }
+  .bar i { display: block; height: 10px; background: var(--era); border-radius: 2px; }
+
+  .radii { display: flex; gap: 18px; flex-wrap: wrap; }
+  .radii div { width: 96px; height: 96px; background: var(--card); border: 1px solid var(--line); display: grid; place-items: center; font-family: var(--num); font-size: var(--fs-micro); color: var(--muted); }
+
+  .cards { display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+  .cards article { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-caption); padding: 20px; display: grid; gap: 6px; }
+  .cards b { font-family: var(--num); font-size: var(--fs-micro); color: var(--muted); font-weight: 400; }
+  .cards p { font-size: var(--fs-sm); color: var(--ink-2); }
+  .e1 { box-shadow: var(--e-1); } .e2 { box-shadow: var(--e-2); } .e3 { box-shadow: var(--e-3); }
+
+  .motion { display: grid; gap: 12px; }
+  .mrow { display: grid; grid-template-columns: 150px minmax(0, 1fr) 60px; gap: 16px; align-items: center; }
+  .mrow button { text-align: left; border: 1px solid var(--line); border-radius: var(--r-2); padding: 7px 12px; font-size: var(--fs-xs); color: var(--ink-2); background: var(--card); }
+  .mrow button:hover { border-color: var(--zhu); color: var(--zhu); }
+  .track { position: relative; height: 2px; background: var(--line); border-radius: 1px; }
+  .track i { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--zhu); border-radius: 1px; }
+  .mrow span { font-family: var(--num); font-size: var(--fs-micro); color: var(--muted); }
+
+  .comps { display: flex; gap: 18px; flex-wrap: wrap; align-items: center; }
+  .btn { display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border-radius: var(--r-pill); font-size: var(--fs-sm); letter-spacing: .06em; border: 1px solid transparent; background: none; color: inherit; cursor: pointer; }
+  .btn.zhu { background: var(--zhu); color: var(--on-zhu); }
+  .btn.zhu:hover { background: var(--zhu-deep); }
+  .btn.ghost { border-color: var(--line-strong); color: var(--ink); }
+  .dayx { width: 64px; min-height: 62px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; border-radius: var(--r-2); position: relative; padding-bottom: 12px; }
+  .dayx b { font-family: var(--serif); font-size: 17px; font-weight: 400; }
+  .dayx span { font-size: var(--fs-micro); color: var(--muted); }
+  .dayx::after { content: ""; position: absolute; left: 50%; bottom: 5px; width: 4px; height: 4px; margin-left: -2px; border-radius: 50%; background: var(--zhu); }
+  .dayx.sel b { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--zhu); color: var(--on-zhu); }
+  .chip { display: inline-flex; padding: 3px 12px; border-radius: var(--r-pill); background: var(--season-wash); border: 1px solid color-mix(in srgb, var(--season) 26%, transparent); font-size: var(--fs-micro); letter-spacing: .1em; color: var(--season-ink); }
+  .toggle { border: 1px solid var(--line-strong); border-radius: var(--r-pill); padding: 8px 16px; font-size: var(--fs-xs); color: var(--ink-2); background: var(--card); cursor: pointer; }
+  .toggle:hover { border-color: var(--zhu); color: var(--zhu); }
+  .note { font-size: var(--fs-sm); color: var(--muted); max-width: 68ch; }
+  code { font-family: var(--num); font-size: .92em; color: var(--gold); }
+  :focus-visible { outline: 2px solid var(--zhu); outline-offset: 4px; }
+  button, select { min-height: var(--target-touch); cursor: pointer; }
+  .notice { margin-top: 24px; border-left: 3px solid var(--gold); padding: 16px 20px; background: var(--paper-2); font-size: 13px; color: var(--ink-2); }
+  .reference { display: block; width: 100%; height: auto; border: 1px solid var(--line); margin-top: 20px; }
+  .preview-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px; }
+  .paper-spec { padding: 32px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-paper); box-shadow: var(--e-paper); }
+  .window-spec { display: grid; justify-items: center; padding: 24px; background: var(--paper-2); }
+  .window-spec img { width: min(100%,280px); aspect-ratio: 1; object-fit: cover; border: 8px double var(--pigment-bark); border-radius: var(--r-circle); }
+  .preview-pair .note { margin-top: 16px; font-size: 12px; }
+  .ratio-fail { color: var(--zhu); }
+  .tools { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  a { color: var(--qing); text-underline-offset: 4px; }
+  @media(max-width:640px) {
+    .typ > div { grid-template-columns: minmax(0,1fr); gap: 8px; }
+    .preview-pair { grid-template-columns: minmax(0,1fr); }
+    .mrow { grid-template-columns: 112px minmax(0,1fr) 54px; gap: 8px; }
+    #eras { grid-template-columns: repeat(3,minmax(0,1fr)) !important; }
+    .cols-3 { grid-template-columns: minmax(0,1fr); }
+  }
+  @media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none !important; transition:none !important; scroll-behavior:auto !important; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>绢本青绿 · 山水画册</h1>
+    <p class="sub">一页千秋 · V2 · 设计系统复核</p>
+  </div>
+  <div class="tools"><a href="design.md">完整设计规范</a><button class="toggle" id="theme" type="button" aria-pressed="false">切换夜观</button></div>
+</header>
+
+<div class="notice">本页为设计系统复核样张，不代表产品页面已还原。品牌书法字标、本地正文字体、最终绢纸纹理、圆窗装裱与回望景深素材尚待补齐。规范以 <a href="design.md">design.md</a> 为准。</div>
+<section>
+  <h2>产品视觉依据</h2>
+  <p class="note">中央书法题字、左右夹景、纸历翻页、横向卷幅、山水圆窗、夜色回望，是最终逐屏验收的视觉锚点。总览中的编号与说明不是网站栏目。</p>
+  <img class="reference" src="design/reference-board.png" width="1536" height="1024" alt="一页千秋产品设计总览，包含首屏、纸历、入画、长卷、圆窗四时、回望、搜索与手机示意。" />
+</section>
+
+<section>
+  <h2><span>01</span>中性色阶</h2>
+  <p class="note" style="margin-bottom:18px">纸是底，墨是字。以下显示当前主题的不透明纯色色对；<code>--whisper</code> 只做装饰。图片、透明度、纹理和混合层须在真实页面另测。</p>
+  <div class="tools" style="margin-bottom:18px"><label for="surface">对比度参照</label><select class="toggle" id="surface"><option value="--paper">绢纸底 paper</option><option value="--paper-2">题跋纸 paper-2</option><option value="--card">局部纸页 card</option></select><span class="note" id="contrastContext" aria-live="polite"></span></div>
+  <div class="grid cols-5">
+    <div class="sw"><i style="background:var(--paper)"></i><div><b>paper</b><span>绢纸底</span></div></div>
+    <div class="sw"><i style="background:var(--paper-2)"></i><div><b>paper-2</b><span>抬升面</span></div></div>
+    <div class="sw"><i style="background:var(--card)"></i><div><b>card</b><span>卡片</span></div></div>
+    <div class="sw"><i style="background:var(--ink)"></i><div><b>ink</b><span class="ratio" data-contrast="--ink"></span></div></div>
+    <div class="sw"><i style="background:var(--ink-2)"></i><div><b>ink-2</b><span class="ratio" data-contrast="--ink-2"></span></div></div>
+    <div class="sw"><i style="background:var(--muted)"></i><div><b>muted</b><span class="ratio" data-contrast="--muted"></span></div></div>
+    <div class="sw"><i style="background:var(--whisper)"></i><div><b>whisper</b><span>仅装饰，不承载文字</span></div></div>
+    <div class="sw"><i style="background:var(--paper-deep)"></i><div><b>paper-deep</b><span>纸背</span></div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span>02</span>强调色 · 各司其职</h2>
+  <div class="grid cols-3">
+    <div class="sw"><i style="background:var(--zhu)"></i><div><b>--zhu 朱砂</b><span data-contrast="--zhu"></span></div></div>
+    <div class="sw"><i style="background:var(--gold)"></i><div><b>--gold 赭金</b><span data-contrast="--gold"></span></div></div>
+    <div class="sw"><i style="background:var(--qing)"></i><div><b>--qing 青绿</b><span data-contrast="--qing"></span></div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span>03</span>朝代色 · 装饰值与可读值分离</h2>
+  <p class="note" style="margin-bottom:18px">上方为原始时代装饰色；文字读取 <code>--era-&lt;key&gt;-ink</code>，按当前主题和参照面即时复算。业务脚本的旧色表尚待迁移。</p>
+  <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(84px,1fr))" id="eras"></div>
+</section>
+
+<section>
+  <h2><span>04</span>字阶</h2>
+  <div class="typ">
+    <div><small>品牌字标 · 待补书法资产<br>系统宋体仅为占位</small><p style="font-family:var(--serif);font-size:var(--fs-display);line-height:1.3;letter-spacing:.06em">一页千秋</p></div>
+    <div><small>--fs-h1 42/1.22</small><p style="font-family:var(--serif);font-size:var(--fs-h1);line-height:1.22;letter-spacing:.04em">开国大典</p></div>
+    <div><small>--fs-h3 18/1.45</small><p style="font-family:var(--serif);font-size:var(--fs-h3);line-height:1.45">郑和首次下西洋</p></div>
+    <div><small>--fs-reading 16–18/1.9</small><p style="font:var(--fs-reading)/1.9 var(--serif)">翻一页日历，穿一回千年。正文以宋体落在稳定纸面，保持自然的字距与清晰的墨色。</p></div>
+    <div><small>--fs-sm 13/1.72</small><p style="font-size:var(--fs-sm);line-height:1.72;color:var(--ink-2)">描述、释义、题跋：次级正文，仍保持 8.41:1。</p></div>
+    <div><small>出处 / 标签 12/1.8</small><p style="font-size:var(--fs-caption);line-height:1.8;letter-spacing:.02em;color:var(--muted)">出处 · 纪年 · 图例　长内容换行，不靠缩字号排下。</p></div>
+  </div>
+</section>
+
+<section>
+  <h2><span>05</span>间距 · 圆角 · 投影</h2>
+  <div class="bars" style="margin-bottom:32px">
+    <div class="bar"><span>s1 4</span><i style="width:4px"></i></div>
+    <div class="bar"><span>s2 8</span><i style="width:8px"></i></div>
+    <div class="bar"><span>s3 12</span><i style="width:12px"></i></div>
+    <div class="bar"><span>s4 16</span><i style="width:16px"></i></div>
+    <div class="bar"><span>s5 24</span><i style="width:24px"></i></div>
+    <div class="bar"><span>s6 32</span><i style="width:32px"></i></div>
+    <div class="bar"><span>s7 48</span><i style="width:48px"></i></div>
+    <div class="bar"><span>s8 64</span><i style="width:64px"></i></div>
+    <div class="bar"><span>s9 96</span><i style="width:96px"></i></div>
+  </div>
+
+  <div class="radii" style="margin-bottom:32px">
+    <div style="border-radius:var(--r-paper)">纸角 3</div>
+    <div style="border-radius:var(--r-caption)">题跋 2</div>
+    <div style="border-radius:var(--r-control)">控件 6</div>
+    <div style="border-radius:var(--r-pill)">999</div>
+  </div>
+
+  <div class="cards">
+    <article class="e1"><b>--e-1</b><p>贴地：日期格、chip</p></article>
+    <article class="e2"><b>--e-2</b><p>抬起：历纸与纸边</p></article>
+    <article class="e3"><b>--e-3</b><p>悬浮：题跋、检索框</p></article>
+  </div>
+</section>
+
+<section>
+  <h2><span>06</span>动效 · 四种动作与反馈</h2>
+  <p class="note" style="margin-bottom:18px">慢背景、快操作、重转场、轻反馈。点击任意一行重播。</p>
+  <div class="motion" id="motion">
+    <div class="mrow"><button type="button" data-token="--dur-tap">tap 响应</button><div class="track"><i></i></div><span></span></div>
+    <div class="mrow"><button type="button" data-token="--dur-focus">focus 就位</button><div class="track"><i></i></div><span></span></div>
+    <div class="mrow"><button type="button" data-token="--dur-page">翻 · 纵向翻页</button><div class="track"><i></i></div><span></span></div>
+    <div class="mrow"><button type="button" data-token="--dur-view">展 · 横向展卷</button><div class="track"><i></i></div><span></span></div>
+    <div class="mrow"><button type="button" data-token="--dur-ink">入 · 由点入画</button><div class="track"><i></i></div><span></span></div>
+    <div class="mrow"><button type="button" data-token="--dur-rewind">溯 · 纪年回望</button><div class="track"><i></i></div><span></span></div>
+  </div>
+</section>
+
+
+
+<section>
+  <h2><span>07</span>组件</h2>
+  <div class="comps" style="margin-bottom:28px">
+    <button class="btn zhu">翻开今天</button>
+    <button class="btn ghost">上一节气</button>
+    <span class="chip">霜降</span>
+    <div class="dayx"><b>24</b><span>十五</span></div>
+    <div class="dayx sel"><b>6</b><span>廿六</span></div>
+    <div class="dayx"><b>8</b><span>十九</span></div>
+  </div>
+  <div class="cards">
+    <article>
+      <b>史事条目</b>
+      <p style="font-family:var(--serif);font-size:17px;color:var(--ink)">郑和首次下西洋</p>
+      <p style="font-size:var(--fs-sm);color:var(--ink-2)">永乐三年，船队自刘家港出海，经占城、爪哇至古里。</p>
+      <p style="font-size:var(--fs-micro);color:var(--muted)">明 · 永乐三年 ·《明史·郑和传》</p>
+    </article>
+    <article style="background:var(--paper-2)">
+      <b>空白日引导</b>
+      <p style="font-family:var(--serif);font-size:21px">此日史册留白</p>
+      <p style="font-size:var(--fs-sm);color:var(--muted)">这一天没有确切到日的记载。可以向前或向后，去最近的往事里看看。</p>
+      <p style="font-size:var(--fs-micro);color:var(--zhu);letter-spacing:.1em">← 上一段往事　下一段往事 →</p>
+    </article>
+  </div>
+</section>
+
+<section>
+  <h2><span>08</span>物理组件结构示意</h2>
+  <p class="note">只检查纸页与圆窗的结构。最终纸纤维、木/铜框与应季枝叶尚待制作，现有图片仅占位。</p>
+  <div class="preview-pair">
+    <article class="paper-spec"><h3 style="font:26px var(--serif)">2026年10月</h3><p class="note">年月同字体同字号。纸角使用 3px，书脊、卷边与纸堆分别表现。</p><p style="font:16px/1.9 var(--serif);margin-top:24px">画与纸相接，正文落在清晰纸面。题跋避免通用大圆角玻璃卡。</p></article>
+    <figure class="window-spec"><img src="../assets/dynasties/song-768.webp" width="768" height="512" loading="lazy" alt="用于圆窗结构示意的现有青绿山水画" /><figcaption class="note">山水圆窗：框、内景、外枝分层。此图不表示24节气素材已完成。</figcaption></figure>
+  </div>
+  <p class="note" id="buttonContrast" style="margin-top:24px"></p>
+  <div class="notice">业务 app.css 仍有硬编码反白、旧圆角与布局，data.js 仍使用旧朝代色表；本轮只更新设计系统。新浏览器渲染验收未完成。<a href="design/contrast-audit.json">纯色色对报告</a> · <a href="design.md">差异与完整验收要求</a></div>
+</section>
+
+<script>
+(() => {
+  const root = document.documentElement;
+  const get = name => getComputedStyle(root).getPropertyValue(name).trim();
+  const lum = hex => hex.slice(1).match(/../g).map(c => parseInt(c,16)/255)
+    .map(c => c <= .04045 ? c/12.92 : ((c+.055)/1.055)**2.4)
+    .reduce((sum,c,i) => sum+c*[.2126,.7152,.0722][i],0);
+  const ratio = (a,b) => { const [lo,hi]=[lum(a),lum(b)].sort((x,y)=>x-y); return (hi+.05)/(lo+.05); };
+  const surface = document.getElementById('surface');
+  function render() {
+    const bg=get(surface.value);
+    document.getElementById('contrastContext').textContent=(root.dataset.theme==='dark'?'夜观':'浅色')+' · '+bg;
+    document.querySelectorAll('[data-contrast]').forEach(node => {
+      const value=ratio(get(node.dataset.contrast),bg);
+      node.textContent=value.toFixed(2)+':1 · '+(value>=4.5?'通过':'未通过');
+      node.classList.toggle('ratio-fail',value<4.5);
+    });
+    const wrap=document.getElementById('eras'); wrap.replaceChildren();
+    (window.ERAS||[]).forEach(era => {
+      const ink=get('--era-'+era.k+'-ink'), value=ratio(ink,bg);
+      const node=document.createElement('article');
+      node.style.cssText='border:1px solid var(--line);background:var(--card);padding:12px;min-width:0';
+      const swatch=document.createElement('div'); swatch.style.cssText='height:16px;margin-bottom:12px'; swatch.style.background=era.color;
+      const name=document.createElement('p'); name.style.cssText='font:16px var(--serif)'; name.style.color=ink; name.textContent=era.name;
+      const code=document.createElement('p'); code.style.cssText='font-size:11px;overflow-wrap:anywhere'; code.style.color=ink; code.textContent=ink;
+      const label=document.createElement('p'); label.className='ratio'; label.textContent=value.toFixed(2)+':1 · '+(value>=4.5?'通过':'未通过');
+      label.classList.toggle('ratio-fail',value<4.5);
+      node.append(swatch,name,code,label); wrap.append(node);
+    });
+    document.getElementById('buttonContrast').textContent='朱砂按钮使用 on-zhu '+get('--on-zhu')+'：默认 '+ratio(get('--on-zhu'),get('--zhu')).toFixed(2)+':1；悬停 '+ratio(get('--on-zhu'),get('--zhu-deep')).toFixed(2)+':1。';
+    document.querySelectorAll('[data-token]').forEach(button=>{button.parentElement.querySelector('span').textContent=get(button.dataset.token);});
+  }
+  document.getElementById('theme').addEventListener('click',event=>{
+    const dark=root.dataset.theme!=='dark';root.dataset.theme=dark?'dark':'light';
+    event.currentTarget.setAttribute('aria-pressed',String(dark));event.currentTarget.textContent=dark?'切换日观':'切换夜观';render();
+  });
+  surface.addEventListener('change',render);
+  const script=document.createElement('script');script.src='../assets/data/eras.js';script.onload=render;
+  script.onerror=()=>{document.getElementById('eras').textContent='时期数据加载失败，请检查本地资源。';};document.head.append(script);
+  document.getElementById('motion').addEventListener('click',event=>{
+    const button=event.target.closest('button[data-token]');if(!button)return;
+    const bar=button.parentElement.querySelector('i');bar.getAnimations().forEach(animation=>animation.cancel());
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches){bar.style.width='100%';return;}
+    const raw=get(button.dataset.token),duration=parseFloat(raw)*(raw.endsWith('ms')?1:1000);
+    bar.animate([{width:'0%'},{width:'100%'}],{duration,easing:get('--ease-out'),fill:'forwards'});
+  });
+  render();
+})();
+</script>
+</body>
+</html>

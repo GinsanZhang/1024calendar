@@ -1,0 +1,2603 @@
+{
+  "method": "sRGB relative luminance; compare unrounded ratios against threshold",
+  "scope": "Opaque token pairs only. No alpha compositing, images, focus, geometry or browser rendering.",
+  "checks": [
+    {
+      "group": "light/--paper",
+      "token": "--ink",
+      "foreground": "#1F1D1A",
+      "background": "#F4EFE6",
+      "ratio": 14.6813,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--paper",
+      "token": "--ink-2",
+      "foreground": "#4A443B",
+      "background": "#F4EFE6",
+      "ratio": 8.4064,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--paper",
+      "token": "--muted",
+      "foreground": "#675E52",
+      "background": "#F4EFE6",
+      "ratio": 5.5569,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--paper",
+      "token": "--zhu",
+      "foreground": "#B23A2E",
+      "background": "#F4EFE6",
+      "ratio": 5.183,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--paper",
+      "token": "--qing",
+      "foreground": "#3E6B62",
+      "background": "#F4EFE6",
+      "ratio": 5.2625,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--paper",
+      "token": "--gold",
+      "foreground": "#826631",
+      "background": "#F4EFE6",
+      "ratio": 4.7087,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--paper",
+      "token": "--era-ink",
+      "foreground": "#B23A2E",
+      "background": "#F4EFE6",
+      "ratio": 5.183,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--paper",
+      "token": "--season-ink",
+      "foreground": "#4B7567",
+      "background": "#F4EFE6",
+      "ratio": 4.5391,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper",
+      "token": "--era-xia-ink",
+      "foreground": "#866647",
+      "background": "#F4EFE6",
+      "ratio": 4.578,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper",
+      "token": "--era-cq-ink",
+      "foreground": "#65714D",
+      "background": "#F4EFE6",
+      "ratio": 4.5583,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper",
+      "token": "--era-qin-ink",
+      "foreground": "#39332C",
+      "background": "#F4EFE6",
+      "ratio": 10.8891,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper",
+      "token": "--era-han-ink",
+      "foreground": "#9A3C2E",
+      "background": "#F4EFE6",
+      "ratio": 5.9925,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper",
+      "token": "--era-sj-ink",
+      "foreground": "#5B6A79",
+      "background": "#F4EFE6",
+      "ratio": 4.8475,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper",
+      "token": "--era-sui-ink",
+      "foreground": "#795B45",
+      "background": "#F4EFE6",
+      "ratio": 5.4003,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper",
+      "token": "--era-tang-ink",
+      "foreground": "#94631B",
+      "background": "#F4EFE6",
+      "ratio": 4.5165,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper",
+      "token": "--era-wudai-ink",
+      "foreground": "#6A6053",
+      "background": "#F4EFE6",
+      "ratio": 5.3757,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper",
+      "token": "--era-song-ink",
+      "foreground": "#4B7567",
+      "background": "#F4EFE6",
+      "ratio": 4.5391,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper",
+      "token": "--era-yuan-ink",
+      "foreground": "#4E5A8B",
+      "background": "#F4EFE6",
+      "ratio": 5.8039,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper",
+      "token": "--era-ming-ink",
+      "foreground": "#AE3F2F",
+      "background": "#F4EFE6",
+      "ratio": 5.1624,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper",
+      "token": "--era-qing-ink",
+      "foreground": "#3D6A8B",
+      "background": "#F4EFE6",
+      "ratio": 5.0472,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper",
+      "token": "--era-minguo-ink",
+      "foreground": "#6D594D",
+      "background": "#F4EFE6",
+      "ratio": 5.7545,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper",
+      "token": "--era-prc-ink",
+      "foreground": "#B0392E",
+      "background": "#F4EFE6",
+      "ratio": 5.283,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--paper-2",
+      "token": "--ink",
+      "foreground": "#1F1D1A",
+      "background": "#FBF8F2",
+      "ratio": 15.8624,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--paper-2",
+      "token": "--ink-2",
+      "foreground": "#4A443B",
+      "background": "#FBF8F2",
+      "ratio": 9.0827,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--paper-2",
+      "token": "--muted",
+      "foreground": "#675E52",
+      "background": "#FBF8F2",
+      "ratio": 6.004,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--paper-2",
+      "token": "--zhu",
+      "foreground": "#B23A2E",
+      "background": "#FBF8F2",
+      "ratio": 5.6,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--paper-2",
+      "token": "--qing",
+      "foreground": "#3E6B62",
+      "background": "#FBF8F2",
+      "ratio": 5.6858,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--paper-2",
+      "token": "--gold",
+      "foreground": "#826631",
+      "background": "#FBF8F2",
+      "ratio": 5.0875,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--paper-2",
+      "token": "--era-ink",
+      "foreground": "#B23A2E",
+      "background": "#FBF8F2",
+      "ratio": 5.6,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--paper-2",
+      "token": "--season-ink",
+      "foreground": "#4B7567",
+      "background": "#FBF8F2",
+      "ratio": 4.9043,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper-2",
+      "token": "--era-xia-ink",
+      "foreground": "#866647",
+      "background": "#FBF8F2",
+      "ratio": 4.9463,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper-2",
+      "token": "--era-cq-ink",
+      "foreground": "#65714D",
+      "background": "#FBF8F2",
+      "ratio": 4.925,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper-2",
+      "token": "--era-qin-ink",
+      "foreground": "#39332C",
+      "background": "#FBF8F2",
+      "ratio": 11.7651,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper-2",
+      "token": "--era-han-ink",
+      "foreground": "#9A3C2E",
+      "background": "#FBF8F2",
+      "ratio": 6.4746,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper-2",
+      "token": "--era-sj-ink",
+      "foreground": "#5B6A79",
+      "background": "#FBF8F2",
+      "ratio": 5.2375,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper-2",
+      "token": "--era-sui-ink",
+      "foreground": "#795B45",
+      "background": "#FBF8F2",
+      "ratio": 5.8347,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper-2",
+      "token": "--era-tang-ink",
+      "foreground": "#94631B",
+      "background": "#FBF8F2",
+      "ratio": 4.8799,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper-2",
+      "token": "--era-wudai-ink",
+      "foreground": "#6A6053",
+      "background": "#FBF8F2",
+      "ratio": 5.8082,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper-2",
+      "token": "--era-song-ink",
+      "foreground": "#4B7567",
+      "background": "#FBF8F2",
+      "ratio": 4.9043,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper-2",
+      "token": "--era-yuan-ink",
+      "foreground": "#4E5A8B",
+      "background": "#FBF8F2",
+      "ratio": 6.2708,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper-2",
+      "token": "--era-ming-ink",
+      "foreground": "#AE3F2F",
+      "background": "#FBF8F2",
+      "ratio": 5.5778,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper-2",
+      "token": "--era-qing-ink",
+      "foreground": "#3D6A8B",
+      "background": "#FBF8F2",
+      "ratio": 5.4533,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper-2",
+      "token": "--era-minguo-ink",
+      "foreground": "#6D594D",
+      "background": "#FBF8F2",
+      "ratio": 6.2174,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--paper-2",
+      "token": "--era-prc-ink",
+      "foreground": "#B0392E",
+      "background": "#FBF8F2",
+      "ratio": 5.708,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--card",
+      "token": "--ink",
+      "foreground": "#1F1D1A",
+      "background": "#FCFAF5",
+      "ratio": 16.1194,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--card",
+      "token": "--ink-2",
+      "foreground": "#4A443B",
+      "background": "#FCFAF5",
+      "ratio": 9.2298,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--card",
+      "token": "--muted",
+      "foreground": "#675E52",
+      "background": "#FCFAF5",
+      "ratio": 6.1012,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--card",
+      "token": "--zhu",
+      "foreground": "#B23A2E",
+      "background": "#FCFAF5",
+      "ratio": 5.6907,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--card",
+      "token": "--qing",
+      "foreground": "#3E6B62",
+      "background": "#FCFAF5",
+      "ratio": 5.7779,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--card",
+      "token": "--gold",
+      "foreground": "#826631",
+      "background": "#FCFAF5",
+      "ratio": 5.1699,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--card",
+      "token": "--era-ink",
+      "foreground": "#B23A2E",
+      "background": "#FCFAF5",
+      "ratio": 5.6907,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/--card",
+      "token": "--season-ink",
+      "foreground": "#4B7567",
+      "background": "#FCFAF5",
+      "ratio": 4.9837,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--card",
+      "token": "--era-xia-ink",
+      "foreground": "#866647",
+      "background": "#FCFAF5",
+      "ratio": 5.0264,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--card",
+      "token": "--era-cq-ink",
+      "foreground": "#65714D",
+      "background": "#FCFAF5",
+      "ratio": 5.0047,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--card",
+      "token": "--era-qin-ink",
+      "foreground": "#39332C",
+      "background": "#FCFAF5",
+      "ratio": 11.9557,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--card",
+      "token": "--era-han-ink",
+      "foreground": "#9A3C2E",
+      "background": "#FCFAF5",
+      "ratio": 6.5795,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--card",
+      "token": "--era-sj-ink",
+      "foreground": "#5B6A79",
+      "background": "#FCFAF5",
+      "ratio": 5.3223,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--card",
+      "token": "--era-sui-ink",
+      "foreground": "#795B45",
+      "background": "#FCFAF5",
+      "ratio": 5.9292,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--card",
+      "token": "--era-tang-ink",
+      "foreground": "#94631B",
+      "background": "#FCFAF5",
+      "ratio": 4.9589,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--card",
+      "token": "--era-wudai-ink",
+      "foreground": "#6A6053",
+      "background": "#FCFAF5",
+      "ratio": 5.9022,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--card",
+      "token": "--era-song-ink",
+      "foreground": "#4B7567",
+      "background": "#FCFAF5",
+      "ratio": 4.9837,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--card",
+      "token": "--era-yuan-ink",
+      "foreground": "#4E5A8B",
+      "background": "#FCFAF5",
+      "ratio": 6.3724,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--card",
+      "token": "--era-ming-ink",
+      "foreground": "#AE3F2F",
+      "background": "#FCFAF5",
+      "ratio": 5.6681,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--card",
+      "token": "--era-qing-ink",
+      "foreground": "#3D6A8B",
+      "background": "#FCFAF5",
+      "ratio": 5.5416,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--card",
+      "token": "--era-minguo-ink",
+      "foreground": "#6D594D",
+      "background": "#FCFAF5",
+      "ratio": 6.3181,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/light/--card",
+      "token": "--era-prc-ink",
+      "foreground": "#B0392E",
+      "background": "#FCFAF5",
+      "ratio": 5.8005,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/button/--zhu",
+      "token": "--on-zhu",
+      "foreground": "#FFF9F4",
+      "background": "#B23A2E",
+      "ratio": 5.6841,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/button/--zhu-deep",
+      "token": "--on-zhu",
+      "foreground": "#FFF9F4",
+      "background": "#962C22",
+      "ratio": 7.5027,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/spring",
+      "token": "--season-ink",
+      "foreground": "#46705F",
+      "background": "#F1F3EA",
+      "ratio": 5.0085,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/spring/paper",
+      "token": "--season-ink",
+      "foreground": "#46705F",
+      "background": "#F4EFE6",
+      "ratio": 4.8983,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/summer",
+      "token": "--season-ink",
+      "foreground": "#315852",
+      "background": "#EAF0EC",
+      "ratio": 6.8624,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/summer/paper",
+      "token": "--season-ink",
+      "foreground": "#315852",
+      "background": "#F4EFE6",
+      "ratio": 6.9236,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/autumn",
+      "token": "--season-ink",
+      "foreground": "#8A5C19",
+      "background": "#F4EEE0",
+      "ratio": 5.0069,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/autumn/paper",
+      "token": "--season-ink",
+      "foreground": "#8A5C19",
+      "background": "#F4EFE6",
+      "ratio": 5.0574,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/winter",
+      "token": "--season-ink",
+      "foreground": "#4A5583",
+      "background": "#EDEFF4",
+      "ratio": 6.2549,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "light/winter/paper",
+      "token": "--season-ink",
+      "foreground": "#4A5583",
+      "background": "#F4EFE6",
+      "ratio": 6.283,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--paper",
+      "token": "--ink",
+      "foreground": "#EDE6DA",
+      "background": "#14120F",
+      "ratio": 15.0753,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--paper",
+      "token": "--ink-2",
+      "foreground": "#CFC6B7",
+      "background": "#14120F",
+      "ratio": 11.0531,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--paper",
+      "token": "--muted",
+      "foreground": "#A79C8B",
+      "background": "#14120F",
+      "ratio": 6.9191,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--paper",
+      "token": "--zhu",
+      "foreground": "#E06A52",
+      "background": "#14120F",
+      "ratio": 5.6563,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--paper",
+      "token": "--qing",
+      "foreground": "#7FB2A6",
+      "background": "#14120F",
+      "ratio": 7.8539,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--paper",
+      "token": "--gold",
+      "foreground": "#C4A366",
+      "background": "#14120F",
+      "ratio": 7.8153,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--paper",
+      "token": "--era-ink",
+      "foreground": "#E06A52",
+      "background": "#14120F",
+      "ratio": 5.6563,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--paper",
+      "token": "--season-ink",
+      "foreground": "#9ABCAB",
+      "background": "#14120F",
+      "ratio": 9.0417,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper",
+      "token": "--era-xia-ink",
+      "foreground": "#A68565",
+      "background": "#14120F",
+      "ratio": 5.4884,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper",
+      "token": "--era-cq-ink",
+      "foreground": "#84906B",
+      "background": "#14120F",
+      "ratio": 5.5047,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper",
+      "token": "--era-qin-ink",
+      "foreground": "#968A79",
+      "background": "#14120F",
+      "ratio": 5.5275,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper",
+      "token": "--era-han-ink",
+      "foreground": "#D07061",
+      "background": "#14120F",
+      "ratio": 5.4954,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper",
+      "token": "--era-sj-ink",
+      "foreground": "#7D8D9D",
+      "background": "#14120F",
+      "ratio": 5.4923,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper",
+      "token": "--era-sui-ink",
+      "foreground": "#A6846B",
+      "background": "#14120F",
+      "ratio": 5.4615,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper",
+      "token": "--era-tang-ink",
+      "foreground": "#C28223",
+      "background": "#14120F",
+      "ratio": 5.7972,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper",
+      "token": "--era-wudai-ink",
+      "foreground": "#958A7B",
+      "background": "#14120F",
+      "ratio": 5.5195,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper",
+      "token": "--era-song-ink",
+      "foreground": "#6A9586",
+      "background": "#14120F",
+      "ratio": 5.57,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper",
+      "token": "--era-yuan-ink",
+      "foreground": "#7F8AB7",
+      "background": "#14120F",
+      "ratio": 5.5393,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper",
+      "token": "--era-ming-ink",
+      "foreground": "#D46D5D",
+      "background": "#14120F",
+      "ratio": 5.4711,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper",
+      "token": "--era-qing-ink",
+      "foreground": "#6091B4",
+      "background": "#14120F",
+      "ratio": 5.526,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper",
+      "token": "--era-minguo-ink",
+      "foreground": "#9E8779",
+      "background": "#14120F",
+      "ratio": 5.5161,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper",
+      "token": "--era-prc-ink",
+      "foreground": "#D66B60",
+      "background": "#14120F",
+      "ratio": 5.4589,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--paper-2",
+      "token": "--ink",
+      "foreground": "#EDE6DA",
+      "background": "#191712",
+      "ratio": 14.4394,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--paper-2",
+      "token": "--ink-2",
+      "foreground": "#CFC6B7",
+      "background": "#191712",
+      "ratio": 10.5869,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--paper-2",
+      "token": "--muted",
+      "foreground": "#A79C8B",
+      "background": "#191712",
+      "ratio": 6.6273,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--paper-2",
+      "token": "--zhu",
+      "foreground": "#E06A52",
+      "background": "#191712",
+      "ratio": 5.4177,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--paper-2",
+      "token": "--qing",
+      "foreground": "#7FB2A6",
+      "background": "#191712",
+      "ratio": 7.5226,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--paper-2",
+      "token": "--gold",
+      "foreground": "#C4A366",
+      "background": "#191712",
+      "ratio": 7.4857,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--paper-2",
+      "token": "--era-ink",
+      "foreground": "#E06A52",
+      "background": "#191712",
+      "ratio": 5.4177,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--paper-2",
+      "token": "--season-ink",
+      "foreground": "#9ABCAB",
+      "background": "#191712",
+      "ratio": 8.6603,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper-2",
+      "token": "--era-xia-ink",
+      "foreground": "#A68565",
+      "background": "#191712",
+      "ratio": 5.2568,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper-2",
+      "token": "--era-cq-ink",
+      "foreground": "#84906B",
+      "background": "#191712",
+      "ratio": 5.2725,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper-2",
+      "token": "--era-qin-ink",
+      "foreground": "#968A79",
+      "background": "#191712",
+      "ratio": 5.2943,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper-2",
+      "token": "--era-han-ink",
+      "foreground": "#D07061",
+      "background": "#191712",
+      "ratio": 5.2636,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper-2",
+      "token": "--era-sj-ink",
+      "foreground": "#7D8D9D",
+      "background": "#191712",
+      "ratio": 5.2607,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper-2",
+      "token": "--era-sui-ink",
+      "foreground": "#A6846B",
+      "background": "#191712",
+      "ratio": 5.2312,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper-2",
+      "token": "--era-tang-ink",
+      "foreground": "#C28223",
+      "background": "#191712",
+      "ratio": 5.5526,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper-2",
+      "token": "--era-wudai-ink",
+      "foreground": "#958A7B",
+      "background": "#191712",
+      "ratio": 5.2867,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper-2",
+      "token": "--era-song-ink",
+      "foreground": "#6A9586",
+      "background": "#191712",
+      "ratio": 5.3351,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper-2",
+      "token": "--era-yuan-ink",
+      "foreground": "#7F8AB7",
+      "background": "#191712",
+      "ratio": 5.3057,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper-2",
+      "token": "--era-ming-ink",
+      "foreground": "#D46D5D",
+      "background": "#191712",
+      "ratio": 5.2403,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper-2",
+      "token": "--era-qing-ink",
+      "foreground": "#6091B4",
+      "background": "#191712",
+      "ratio": 5.2929,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper-2",
+      "token": "--era-minguo-ink",
+      "foreground": "#9E8779",
+      "background": "#191712",
+      "ratio": 5.2834,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--paper-2",
+      "token": "--era-prc-ink",
+      "foreground": "#D66B60",
+      "background": "#191712",
+      "ratio": 5.2286,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--card",
+      "token": "--ink",
+      "foreground": "#EDE6DA",
+      "background": "#1E1B16",
+      "ratio": 13.8383,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--card",
+      "token": "--ink-2",
+      "foreground": "#CFC6B7",
+      "background": "#1E1B16",
+      "ratio": 10.1462,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--card",
+      "token": "--muted",
+      "foreground": "#A79C8B",
+      "background": "#1E1B16",
+      "ratio": 6.3514,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--card",
+      "token": "--zhu",
+      "foreground": "#E06A52",
+      "background": "#1E1B16",
+      "ratio": 5.1921,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--card",
+      "token": "--qing",
+      "foreground": "#7FB2A6",
+      "background": "#1E1B16",
+      "ratio": 7.2094,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--card",
+      "token": "--gold",
+      "foreground": "#C4A366",
+      "background": "#1E1B16",
+      "ratio": 7.174,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--card",
+      "token": "--era-ink",
+      "foreground": "#E06A52",
+      "background": "#1E1B16",
+      "ratio": 5.1921,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/--card",
+      "token": "--season-ink",
+      "foreground": "#9ABCAB",
+      "background": "#1E1B16",
+      "ratio": 8.2998,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--card",
+      "token": "--era-xia-ink",
+      "foreground": "#A68565",
+      "background": "#1E1B16",
+      "ratio": 5.038,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--card",
+      "token": "--era-cq-ink",
+      "foreground": "#84906B",
+      "background": "#1E1B16",
+      "ratio": 5.053,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--card",
+      "token": "--era-qin-ink",
+      "foreground": "#968A79",
+      "background": "#1E1B16",
+      "ratio": 5.0739,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--card",
+      "token": "--era-han-ink",
+      "foreground": "#D07061",
+      "background": "#1E1B16",
+      "ratio": 5.0445,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--card",
+      "token": "--era-sj-ink",
+      "foreground": "#7D8D9D",
+      "background": "#1E1B16",
+      "ratio": 5.0417,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--card",
+      "token": "--era-sui-ink",
+      "foreground": "#A6846B",
+      "background": "#1E1B16",
+      "ratio": 5.0134,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--card",
+      "token": "--era-tang-ink",
+      "foreground": "#C28223",
+      "background": "#1E1B16",
+      "ratio": 5.3215,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--card",
+      "token": "--era-wudai-ink",
+      "foreground": "#958A7B",
+      "background": "#1E1B16",
+      "ratio": 5.0666,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--card",
+      "token": "--era-song-ink",
+      "foreground": "#6A9586",
+      "background": "#1E1B16",
+      "ratio": 5.113,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--card",
+      "token": "--era-yuan-ink",
+      "foreground": "#7F8AB7",
+      "background": "#1E1B16",
+      "ratio": 5.0848,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--card",
+      "token": "--era-ming-ink",
+      "foreground": "#D46D5D",
+      "background": "#1E1B16",
+      "ratio": 5.0222,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--card",
+      "token": "--era-qing-ink",
+      "foreground": "#6091B4",
+      "background": "#1E1B16",
+      "ratio": 5.0725,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--card",
+      "token": "--era-minguo-ink",
+      "foreground": "#9E8779",
+      "background": "#1E1B16",
+      "ratio": 5.0635,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "canonical-era/dark/--card",
+      "token": "--era-prc-ink",
+      "foreground": "#D66B60",
+      "background": "#1E1B16",
+      "ratio": 5.011,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/button/--zhu",
+      "token": "--on-zhu",
+      "foreground": "#14120F",
+      "background": "#E06A52",
+      "ratio": 5.6563,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/button/--zhu-deep",
+      "token": "--on-zhu",
+      "foreground": "#14120F",
+      "background": "#D9634C",
+      "ratio": 5.1991,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/spring",
+      "token": "--season-ink",
+      "foreground": "#9ABCAB",
+      "background": "#151A15",
+      "ratio": 8.5305,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/spring/paper",
+      "token": "--season-ink",
+      "foreground": "#9ABCAB",
+      "background": "#14120F",
+      "ratio": 9.0417,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/summer",
+      "token": "--season-ink",
+      "foreground": "#83B4A9",
+      "background": "#131917",
+      "ratio": 7.6892,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/summer/paper",
+      "token": "--season-ink",
+      "foreground": "#83B4A9",
+      "background": "#14120F",
+      "ratio": 8.0723,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/autumn",
+      "token": "--season-ink",
+      "foreground": "#D4B273",
+      "background": "#1A1712",
+      "ratio": 8.8623,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/autumn/paper",
+      "token": "--season-ink",
+      "foreground": "#D4B273",
+      "background": "#14120F",
+      "ratio": 9.273,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/winter",
+      "token": "--season-ink",
+      "foreground": "#A8B3DE",
+      "background": "#14161C",
+      "ratio": 8.7557,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "dark/winter/paper",
+      "token": "--season-ink",
+      "foreground": "#A8B3DE",
+      "background": "#14120F",
+      "ratio": 9.0528,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--paper",
+      "token": "xia",
+      "foreground": "#866647",
+      "background": "#F4EFE6",
+      "ratio": 4.578,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--paper-2",
+      "token": "xia",
+      "foreground": "#866647",
+      "background": "#FBF8F2",
+      "ratio": 4.9463,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--card",
+      "token": "xia",
+      "foreground": "#866647",
+      "background": "#FCFAF5",
+      "ratio": 5.0264,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper",
+      "token": "xia",
+      "foreground": "#9B7652",
+      "background": "#14120F",
+      "ratio": 4.5469,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "xia",
+      "foreground": "#9B7652",
+      "background": "#191712",
+      "ratio": 4.3551,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "xia",
+      "foreground": "#9B7652",
+      "background": "#1E1B16",
+      "ratio": 4.1738,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/light/--paper",
+      "token": "cq",
+      "foreground": "#65714D",
+      "background": "#F4EFE6",
+      "ratio": 4.5583,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--paper-2",
+      "token": "cq",
+      "foreground": "#65714D",
+      "background": "#FBF8F2",
+      "ratio": 4.925,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--card",
+      "token": "cq",
+      "foreground": "#65714D",
+      "background": "#FCFAF5",
+      "ratio": 5.0047,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper",
+      "token": "cq",
+      "foreground": "#758259",
+      "background": "#14120F",
+      "ratio": 4.5351,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "cq",
+      "foreground": "#758259",
+      "background": "#191712",
+      "ratio": 4.3438,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "cq",
+      "foreground": "#758259",
+      "background": "#1E1B16",
+      "ratio": 4.163,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/light/--paper",
+      "token": "qin",
+      "foreground": "#39332C",
+      "background": "#F4EFE6",
+      "ratio": 10.8891,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--paper-2",
+      "token": "qin",
+      "foreground": "#39332C",
+      "background": "#FBF8F2",
+      "ratio": 11.7651,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--card",
+      "token": "qin",
+      "foreground": "#39332C",
+      "background": "#FCFAF5",
+      "ratio": 11.9557,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper",
+      "token": "qin",
+      "foreground": "#897B68",
+      "background": "#14120F",
+      "ratio": 4.5378,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "qin",
+      "foreground": "#897B68",
+      "background": "#191712",
+      "ratio": 4.3464,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "qin",
+      "foreground": "#897B68",
+      "background": "#1E1B16",
+      "ratio": 4.1655,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/light/--paper",
+      "token": "han",
+      "foreground": "#9A3C2E",
+      "background": "#F4EFE6",
+      "ratio": 5.9925,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--paper-2",
+      "token": "han",
+      "foreground": "#9A3C2E",
+      "background": "#FBF8F2",
+      "ratio": 6.4746,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--card",
+      "token": "han",
+      "foreground": "#9A3C2E",
+      "background": "#FCFAF5",
+      "ratio": 6.5795,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper",
+      "token": "han",
+      "foreground": "#C95B49",
+      "background": "#14120F",
+      "ratio": 4.5195,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "han",
+      "foreground": "#C95B49",
+      "background": "#191712",
+      "ratio": 4.3289,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "han",
+      "foreground": "#C95B49",
+      "background": "#1E1B16",
+      "ratio": 4.1487,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/light/--paper",
+      "token": "sj",
+      "foreground": "#5B6A79",
+      "background": "#F4EFE6",
+      "ratio": 4.8475,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--paper-2",
+      "token": "sj",
+      "foreground": "#5B6A79",
+      "background": "#FBF8F2",
+      "ratio": 5.2375,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--card",
+      "token": "sj",
+      "foreground": "#5B6A79",
+      "background": "#FCFAF5",
+      "ratio": 5.3223,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper",
+      "token": "sj",
+      "foreground": "#6D7F91",
+      "background": "#14120F",
+      "ratio": 4.5362,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "sj",
+      "foreground": "#6D7F91",
+      "background": "#191712",
+      "ratio": 4.3448,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "sj",
+      "foreground": "#6D7F91",
+      "background": "#1E1B16",
+      "ratio": 4.164,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/light/--paper",
+      "token": "sui",
+      "foreground": "#795B45",
+      "background": "#F4EFE6",
+      "ratio": 5.4003,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--paper-2",
+      "token": "sui",
+      "foreground": "#795B45",
+      "background": "#FBF8F2",
+      "ratio": 5.8347,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--card",
+      "token": "sui",
+      "foreground": "#795B45",
+      "background": "#FCFAF5",
+      "ratio": 5.9292,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper",
+      "token": "sui",
+      "foreground": "#9B7559",
+      "background": "#14120F",
+      "ratio": 4.5251,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "sui",
+      "foreground": "#9B7559",
+      "background": "#191712",
+      "ratio": 4.3343,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "sui",
+      "foreground": "#9B7559",
+      "background": "#1E1B16",
+      "ratio": 4.1538,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/light/--paper",
+      "token": "tang",
+      "foreground": "#94631B",
+      "background": "#F4EFE6",
+      "ratio": 4.5165,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--paper-2",
+      "token": "tang",
+      "foreground": "#94631B",
+      "background": "#FBF8F2",
+      "ratio": 4.8799,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--card",
+      "token": "tang",
+      "foreground": "#94631B",
+      "background": "#FCFAF5",
+      "ratio": 4.9589,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper",
+      "token": "tang",
+      "foreground": "#C28223",
+      "background": "#14120F",
+      "ratio": 5.7972,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "tang",
+      "foreground": "#C28223",
+      "background": "#191712",
+      "ratio": 5.5526,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "tang",
+      "foreground": "#C28223",
+      "background": "#1E1B16",
+      "ratio": 5.3215,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--paper",
+      "token": "wudai",
+      "foreground": "#6A6053",
+      "background": "#F4EFE6",
+      "ratio": 5.3757,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--paper-2",
+      "token": "wudai",
+      "foreground": "#6A6053",
+      "background": "#FBF8F2",
+      "ratio": 5.8082,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--card",
+      "token": "wudai",
+      "foreground": "#6A6053",
+      "background": "#FCFAF5",
+      "ratio": 5.9022,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper",
+      "token": "wudai",
+      "foreground": "#887B6B",
+      "background": "#14120F",
+      "ratio": 4.5339,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "wudai",
+      "foreground": "#887B6B",
+      "background": "#191712",
+      "ratio": 4.3427,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "wudai",
+      "foreground": "#887B6B",
+      "background": "#1E1B16",
+      "ratio": 4.1619,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/light/--paper",
+      "token": "song",
+      "foreground": "#4B7567",
+      "background": "#F4EFE6",
+      "ratio": 4.5391,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--paper-2",
+      "token": "song",
+      "foreground": "#4B7567",
+      "background": "#FBF8F2",
+      "ratio": 4.9043,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--card",
+      "token": "song",
+      "foreground": "#4B7567",
+      "background": "#FCFAF5",
+      "ratio": 4.9837,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper",
+      "token": "song",
+      "foreground": "#568676",
+      "background": "#14120F",
+      "ratio": 4.5116,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "song",
+      "foreground": "#568676",
+      "background": "#191712",
+      "ratio": 4.3213,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "song",
+      "foreground": "#568676",
+      "background": "#1E1B16",
+      "ratio": 4.1415,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/light/--paper",
+      "token": "yuan",
+      "foreground": "#4E5A8B",
+      "background": "#F4EFE6",
+      "ratio": 5.8039,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--paper-2",
+      "token": "yuan",
+      "foreground": "#4E5A8B",
+      "background": "#FBF8F2",
+      "ratio": 6.2708,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--card",
+      "token": "yuan",
+      "foreground": "#4E5A8B",
+      "background": "#FCFAF5",
+      "ratio": 6.3724,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper",
+      "token": "yuan",
+      "foreground": "#6F7BAE",
+      "background": "#14120F",
+      "ratio": 4.5588,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "yuan",
+      "foreground": "#6F7BAE",
+      "background": "#191712",
+      "ratio": 4.3665,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "yuan",
+      "foreground": "#6F7BAE",
+      "background": "#1E1B16",
+      "ratio": 4.1847,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/light/--paper",
+      "token": "ming",
+      "foreground": "#AE3F2F",
+      "background": "#F4EFE6",
+      "ratio": 5.1624,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--paper-2",
+      "token": "ming",
+      "foreground": "#AE3F2F",
+      "background": "#FBF8F2",
+      "ratio": 5.5778,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--card",
+      "token": "ming",
+      "foreground": "#AE3F2F",
+      "background": "#FCFAF5",
+      "ratio": 5.6681,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper",
+      "token": "ming",
+      "foreground": "#CE5947",
+      "background": "#14120F",
+      "ratio": 4.5802,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "ming",
+      "foreground": "#CE5947",
+      "background": "#191712",
+      "ratio": 4.387,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "ming",
+      "foreground": "#CE5947",
+      "background": "#1E1B16",
+      "ratio": 4.2044,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/light/--paper",
+      "token": "qing",
+      "foreground": "#3D6A8B",
+      "background": "#F4EFE6",
+      "ratio": 5.0472,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--paper-2",
+      "token": "qing",
+      "foreground": "#3D6A8B",
+      "background": "#FBF8F2",
+      "ratio": 5.4533,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--card",
+      "token": "qing",
+      "foreground": "#3D6A8B",
+      "background": "#FCFAF5",
+      "ratio": 5.5416,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper",
+      "token": "qing",
+      "foreground": "#4C83AB",
+      "background": "#14120F",
+      "ratio": 4.578,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "qing",
+      "foreground": "#4C83AB",
+      "background": "#191712",
+      "ratio": 4.3849,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "qing",
+      "foreground": "#4C83AB",
+      "background": "#1E1B16",
+      "ratio": 4.2024,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/light/--paper",
+      "token": "minguo",
+      "foreground": "#6D594D",
+      "background": "#F4EFE6",
+      "ratio": 5.7545,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--paper-2",
+      "token": "minguo",
+      "foreground": "#6D594D",
+      "background": "#FBF8F2",
+      "ratio": 6.2174,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--card",
+      "token": "minguo",
+      "foreground": "#6D594D",
+      "background": "#FCFAF5",
+      "ratio": 6.3181,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper",
+      "token": "minguo",
+      "foreground": "#927868",
+      "background": "#14120F",
+      "ratio": 4.5485,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "minguo",
+      "foreground": "#927868",
+      "background": "#191712",
+      "ratio": 4.3566,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "minguo",
+      "foreground": "#927868",
+      "background": "#1E1B16",
+      "ratio": 4.1753,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/light/--paper",
+      "token": "prc",
+      "foreground": "#B0392E",
+      "background": "#F4EFE6",
+      "ratio": 5.283,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--paper-2",
+      "token": "prc",
+      "foreground": "#B0392E",
+      "background": "#FBF8F2",
+      "ratio": 5.708,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/light/--card",
+      "token": "prc",
+      "foreground": "#B0392E",
+      "background": "#FCFAF5",
+      "ratio": 5.8005,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper",
+      "token": "prc",
+      "foreground": "#D05548",
+      "background": "#14120F",
+      "ratio": 4.5184,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "prc",
+      "foreground": "#D05548",
+      "background": "#191712",
+      "ratio": 4.3278,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "prc",
+      "foreground": "#D05548",
+      "background": "#1E1B16",
+      "ratio": 4.1477,
+      "minimum": 4.5,
+      "passed": false
+    }
+  ],
+  "failures": [
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "xia",
+      "foreground": "#9B7652",
+      "background": "#191712",
+      "ratio": 4.3551,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "xia",
+      "foreground": "#9B7652",
+      "background": "#1E1B16",
+      "ratio": 4.1738,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "cq",
+      "foreground": "#758259",
+      "background": "#191712",
+      "ratio": 4.3438,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "cq",
+      "foreground": "#758259",
+      "background": "#1E1B16",
+      "ratio": 4.163,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "qin",
+      "foreground": "#897B68",
+      "background": "#191712",
+      "ratio": 4.3464,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "qin",
+      "foreground": "#897B68",
+      "background": "#1E1B16",
+      "ratio": 4.1655,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "han",
+      "foreground": "#C95B49",
+      "background": "#191712",
+      "ratio": 4.3289,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "han",
+      "foreground": "#C95B49",
+      "background": "#1E1B16",
+      "ratio": 4.1487,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "sj",
+      "foreground": "#6D7F91",
+      "background": "#191712",
+      "ratio": 4.3448,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "sj",
+      "foreground": "#6D7F91",
+      "background": "#1E1B16",
+      "ratio": 4.164,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "sui",
+      "foreground": "#9B7559",
+      "background": "#191712",
+      "ratio": 4.3343,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "sui",
+      "foreground": "#9B7559",
+      "background": "#1E1B16",
+      "ratio": 4.1538,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "wudai",
+      "foreground": "#887B6B",
+      "background": "#191712",
+      "ratio": 4.3427,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "wudai",
+      "foreground": "#887B6B",
+      "background": "#1E1B16",
+      "ratio": 4.1619,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "song",
+      "foreground": "#568676",
+      "background": "#191712",
+      "ratio": 4.3213,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "song",
+      "foreground": "#568676",
+      "background": "#1E1B16",
+      "ratio": 4.1415,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "yuan",
+      "foreground": "#6F7BAE",
+      "background": "#191712",
+      "ratio": 4.3665,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "yuan",
+      "foreground": "#6F7BAE",
+      "background": "#1E1B16",
+      "ratio": 4.1847,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "ming",
+      "foreground": "#CE5947",
+      "background": "#191712",
+      "ratio": 4.387,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "ming",
+      "foreground": "#CE5947",
+      "background": "#1E1B16",
+      "ratio": 4.2044,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "qing",
+      "foreground": "#4C83AB",
+      "background": "#191712",
+      "ratio": 4.3849,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "qing",
+      "foreground": "#4C83AB",
+      "background": "#1E1B16",
+      "ratio": 4.2024,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "minguo",
+      "foreground": "#927868",
+      "background": "#191712",
+      "ratio": 4.3566,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "minguo",
+      "foreground": "#927868",
+      "background": "#1E1B16",
+      "ratio": 4.1753,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "prc",
+      "foreground": "#D05548",
+      "background": "#191712",
+      "ratio": 4.3278,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "prc",
+      "foreground": "#D05548",
+      "background": "#1E1B16",
+      "ratio": 4.1477,
+      "minimum": 4.5,
+      "passed": false
+    }
+  ],
+  "canonical_failures": [],
+  "legacy_failures": [
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "xia",
+      "foreground": "#9B7652",
+      "background": "#191712",
+      "ratio": 4.3551,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "xia",
+      "foreground": "#9B7652",
+      "background": "#1E1B16",
+      "ratio": 4.1738,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "cq",
+      "foreground": "#758259",
+      "background": "#191712",
+      "ratio": 4.3438,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "cq",
+      "foreground": "#758259",
+      "background": "#1E1B16",
+      "ratio": 4.163,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "qin",
+      "foreground": "#897B68",
+      "background": "#191712",
+      "ratio": 4.3464,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "qin",
+      "foreground": "#897B68",
+      "background": "#1E1B16",
+      "ratio": 4.1655,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "han",
+      "foreground": "#C95B49",
+      "background": "#191712",
+      "ratio": 4.3289,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "han",
+      "foreground": "#C95B49",
+      "background": "#1E1B16",
+      "ratio": 4.1487,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "sj",
+      "foreground": "#6D7F91",
+      "background": "#191712",
+      "ratio": 4.3448,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "sj",
+      "foreground": "#6D7F91",
+      "background": "#1E1B16",
+      "ratio": 4.164,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "sui",
+      "foreground": "#9B7559",
+      "background": "#191712",
+      "ratio": 4.3343,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "sui",
+      "foreground": "#9B7559",
+      "background": "#1E1B16",
+      "ratio": 4.1538,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "wudai",
+      "foreground": "#887B6B",
+      "background": "#191712",
+      "ratio": 4.3427,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "wudai",
+      "foreground": "#887B6B",
+      "background": "#1E1B16",
+      "ratio": 4.1619,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "song",
+      "foreground": "#568676",
+      "background": "#191712",
+      "ratio": 4.3213,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "song",
+      "foreground": "#568676",
+      "background": "#1E1B16",
+      "ratio": 4.1415,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "yuan",
+      "foreground": "#6F7BAE",
+      "background": "#191712",
+      "ratio": 4.3665,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "yuan",
+      "foreground": "#6F7BAE",
+      "background": "#1E1B16",
+      "ratio": 4.1847,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "ming",
+      "foreground": "#CE5947",
+      "background": "#191712",
+      "ratio": 4.387,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "ming",
+      "foreground": "#CE5947",
+      "background": "#1E1B16",
+      "ratio": 4.2044,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "qing",
+      "foreground": "#4C83AB",
+      "background": "#191712",
+      "ratio": 4.3849,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "qing",
+      "foreground": "#4C83AB",
+      "background": "#1E1B16",
+      "ratio": 4.2024,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "minguo",
+      "foreground": "#927868",
+      "background": "#191712",
+      "ratio": 4.3566,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "minguo",
+      "foreground": "#927868",
+      "background": "#1E1B16",
+      "ratio": 4.1753,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--paper-2",
+      "token": "prc",
+      "foreground": "#D05548",
+      "background": "#191712",
+      "ratio": 4.3278,
+      "minimum": 4.5,
+      "passed": false
+    },
+    {
+      "group": "legacy-era/dark/--card",
+      "token": "prc",
+      "foreground": "#D05548",
+      "background": "#1E1B16",
+      "ratio": 4.1477,
+      "minimum": 4.5,
+      "passed": false
+    }
+  ]
+}
