@@ -12,7 +12,7 @@
 - 本地宋体为 Adobe Source Han Serif CN 2.003R 可变 WOFF2，许可见 `fonts/OFL-Source-Han-Serif.txt`；样式入口为 `fonts/fonts.css`。
 - 品牌字标与印章的 SVG 是引用 PNG 的容器，并非转曲矢量。网页 `img` 接入优先使用对应 WebP；不要把外链 PNG 的 SVG 容器当成独立图片文件。
 - 画作均为 AI 艺术意象，不作为历史场景实录。生成提示词见上级物料清单。
-- `manifest.json` 记录所有 PNG/WebP 的实际像素、Alpha 范围、字节数与 SHA-256（2026-10-25 快照）。其中 PNG 的 `path` 是移动前的历史路径，母版现位于 `assets-src/v2/`；大尺寸 WebP 为导出尺寸，PNG 母版记录原生生成尺寸；放大导出不会增加原生细节。
+- `manifest.json` v2 将发布资源与母版分开：`rasters` 登记当前 89 个 WebP 的实际像素、Alpha 范围、字节数与 SHA-256；`archivedSources` 保留 90 个 PNG 母版的历史元数据与 `assets-src/v2/` 归档位置。母版不随 Git 分发，不作为发布必需文件；放大导出不会增加原生细节。素材校验同时检查发布文件存在、完整登记、大小及 SHA-256。
 
 ## 目录
 

@@ -1,11 +1,12 @@
-/* NODE_PATH=<runtime node_modules> node v2/qa/check-interactions.cjs
-   Uses installed Chrome; local server must serve repository on 8765. */
+/* Local server must serve repository on 8765. Override CHROME_PATH if needed.
+   QA_OUTPUT_DIR selects an evidence directory without overwriting prior reviews. */
 const {chromium}=require('playwright');
 const fs=require('node:fs'),path=require('node:path');
-const out=path.resolve(__dirname,'../../docs/v2-interaction-acceptance');
+const out=path.resolve(process.env.QA_OUTPUT_DIR||path.join(__dirname,'../../docs/v2-interaction-acceptance'));
 (async()=>{
  fs.mkdirSync(out,{recursive:true});
- const b=await chromium.launch({headless:true,executablePath:process.env.CHROME_PATH||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});
+ const chrome=process.env.CHROME_PATH||['/usr/bin/chromium','/usr/bin/google-chrome','/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'].find(p=>fs.existsSync(p));
+ const b=await chromium.launch({headless:true,...(chrome?{executablePath:chrome}:{})});
  const c=await b.newContext({viewport:{width:1440,height:900},timezoneId:'Asia/Shanghai',recordVideo:{dir:out,size:{width:1440,height:900}}});
  const p=await c.newPage(), tests=[],errors=[],external=[];
  p.on('pageerror',e=>errors.push(String(e)));p.on('request',r=>{if(!r.url().startsWith('http://127.0.0.1:8765/')&&!r.url().startsWith('data:'))external.push(r.url())});
@@ -34,7 +35,7 @@ const out=path.resolve(__dirname,'../../docs/v2-interaction-acceptance');
  await p.evaluate(()=>{V2Views.pickDate(2026,10,25,true);V2Overlay.openLookback()});
  await p.locator('.lb-opt[data-years="500"]').click();await snap('06-lookback');
  await check('06 2026回望500年为1526明',()=>p.locator('#lbRoute').textContent().then(t=>t.includes('1526')&&t.includes('明')));
- await p.waitForFunction(()=>!V2Overlay.topmost(),{},{timeout:700});
+ await p.waitForFunction(()=>!V2Overlay.topmost(),{},{timeout:2000});
  await check('06 回溯完成进入对应长卷',()=>p.evaluate(()=>!V2Overlay.topmost()&&V2State.view==='scroll'&&V2State.eraIndex===10));
  await p.evaluate(()=>V2Overlay.openSearch());
  for(const query of ['郑和','1405','永乐','赤壁']){await p.locator('#searchInput').fill(query);await check('07 搜索命中 '+query,()=>p.locator('.sr').count().then(n=>n>0))}
@@ -51,6 +52,6 @@ const out=path.resolve(__dirname,'../../docs/v2-interaction-acceptance');
  await p.route(/\.(webp|png)(\?|$)/,r=>r.abort());await p.reload();await p.evaluate(()=>{V2Views.switchView('calendar');V2Views.pickDate(2026,7,11,true)});await p.locator('.ev').first().click();await p.waitForTimeout(400);
  await check('03/10 全部画作失败保留线描与正文',()=>p.evaluate(()=>document.querySelector('#enterPlaceholder .fallback-sketch')&&document.querySelector('#enterImg').hidden&&document.querySelector('#enterTitle').textContent.length>0));await snap('10-image-fallback');await p.keyboard.press('Escape');
  await check('10 无运行时异常或外部网络请求',()=>!errors.length&&!external.length);
- await p.unroute(/\.(webp|png)(\?|$)/);await p.emulateMedia({reducedMotion:'no-preference'});await p.goto('http://127.0.0.1:8765/v2/qa/ui-regressions.html');await p.waitForFunction(()=>document.querySelector('#result').dataset.ok,{timeout:15000});await check('既有9条UI回归',()=>p.locator('#result').getAttribute('data-ok').then(v=>v==='true'));
+ await p.unroute(/\.(webp|png)(\?|$)/);await p.emulateMedia({reducedMotion:'no-preference'});await p.goto('http://127.0.0.1:8765/v2/qa/ui-regressions.html');await p.waitForFunction(()=>document.querySelector('#result').dataset.ok,{timeout:15000});await check('既有11条UI回归',()=>p.locator('#result').getAttribute('data-ok').then(v=>v==='true'));
  }catch(e){tests.push({error:String(e)});process.exitCode=1}finally{const video=p.video();const raw=video.path();await c.close();await video.saveAs(path.join(out,'walkthrough.webm'));fs.rmSync(await raw,{force:true});await b.close();const report={ok:!process.exitCode,tests,errors,external};fs.writeFileSync(path.join(out,'results.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));}
 })();

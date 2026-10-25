@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="css/tokens.css?v=20261025-interaction-acceptance" />
 <link rel="stylesheet" href="css/app.css?v=20261025-interaction-acceptance" />
 <link rel="stylesheet" href="css/skeleton.css?v=20261025-interaction-acceptance" />
-<link rel="stylesheet" href="css/acceptance.css?v=20261025-manual-feedback" />
+<link rel="stylesheet" href="css/acceptance.css?v=20261025-delivery-polish" />
 </head>
 <body data-at="hero" data-stage="calendar">
 
@@ -83,7 +83,7 @@
 </div>
 
 <main class="stage" id="stage" tabindex="-1">
-  <div class="stage-heading"><div><p class="eyebrow" id="viewKicker">壹 · 以日为单位</p><h2 id="viewTitle">日历里的山河</h2></div><div class="stage-actions"><button class="btn btn--ghost" id="todayButton" type="button">回到今天 <kbd>T</kbd></button><button class="btn btn--ghost" id="randomButton" type="button">随机穿越 <kbd>R</kbd></button></div></div>
+  <div class="stage-heading"><div><p class="eyebrow" id="viewKicker">壹 · 以日为单位</p><h2 id="viewTitle">日历里的山河</h2></div><div class="stage-actions"><button class="btn btn--ghost" id="todayButton" type="button" aria-label="回到今天"><span class="action-full">回到今天</span><span class="action-short" aria-hidden="true">今天</span><kbd>T</kbd></button><button class="btn btn--ghost" id="randomButton" type="button" aria-label="随机穿越"><span class="action-full">随机穿越</span><span class="action-short" aria-hidden="true">穿越</span><kbd>R</kbd></button></div></div>
 
   <!-- ─────────── 日历：纵向翻阅 ─────────── -->
   <section class="view view-calendar" data-view="calendar" data-active aria-label="日历">
@@ -93,13 +93,13 @@
         <img class="calendar-branch" id="calendarBranch" src="assets/calendar/branch-autumn.webp" alt="" aria-hidden="true" />
         <img class="calendar-curl" src="assets/calendar/paper-edge-curl.webp" alt="" aria-hidden="true" />
         <div class="calendar-turn" id="calendarTurn" aria-hidden="true" inert hidden></div><!-- 纸张原素材 assets/calendar/page-turn-sheet.webp -->
-        <button class="cal-collapse" id="calendarCollapse" type="button" aria-expanded="true" aria-controls="calSheet">收起月历</button>
         <div class="cal-head">
           <div class="cal-title">
             <div class="mon"><span id="calMonth">十月</span><small id="calYear">2026</small></div>
             <div class="sub" id="calGanzhi">丙午年 · 马</div>
           </div>
           <div class="cal-nav">
+            <button class="cal-collapse" id="calendarCollapse" type="button" aria-label="收起月历" title="收起月历" aria-expanded="true" aria-controls="calSheet">收起月历</button>
             <button class="icon-btn" id="calPrev" type="button" aria-label="上一月">
               <svg aria-hidden="true"><use href="assets/icons/navigation.svg#previous" /></svg>
             </button>
@@ -285,7 +285,7 @@
 <script src="js/core.js?v=20261025-interaction-acceptance"></script>
 <script src="js/data.js?v=20261025-interaction-acceptance"></script>
 <script src="js/assets.js?v=20261025-interaction-acceptance"></script>
-<script src="js/views.js?v=20261025-interaction-acceptance"></script>
+<script src="js/views.js?v=20261025-delivery-polish"></script>
 <script src="js/overlay.js?v=20261025-interaction-acceptance"></script>
 <script src="js/main.js?v=20261025-interaction-acceptance"></script>
 <script src="js/skeleton.js?v=20261025-interaction-acceptance"></script>

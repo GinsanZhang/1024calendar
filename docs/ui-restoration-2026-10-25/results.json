@@ -1,0 +1,207 @@
+{
+  "ok": true,
+  "tests": [
+    {
+      "name": "01 首页静态主题与三个入口可用",
+      "ok": true
+    },
+    {
+      "name": "01 云雾运行且周期在16–28秒",
+      "ok": true
+    },
+    {
+      "name": "02 闰年与跨年月份均为连续42格",
+      "ok": true
+    },
+    {
+      "name": "02 翻页结束清理旧纸层",
+      "ok": true
+    },
+    {
+      "name": "03 慢图立即响应、关闭后不会迟发重开",
+      "ok": true
+    },
+    {
+      "name": "03 画作意象及出处说明可见",
+      "ok": true
+    },
+    {
+      "name": "03 关闭恢复来源焦点",
+      "ok": true
+    },
+    {
+      "name": "04 十四时期92条可访问且不伪造月日",
+      "ok": true
+    },
+    {
+      "name": "04 返回保持长卷位置",
+      "ok": true
+    },
+    {
+      "name": "05 当前节气缩略图在可视范围",
+      "ok": true
+    },
+    {
+      "name": "05 二十四节气节点与交节时间",
+      "ok": true
+    },
+    {
+      "name": "06 2026回望500年为1526明",
+      "ok": true
+    },
+    {
+      "name": "06 回溯完成进入对应长卷",
+      "ok": true
+    },
+    {
+      "name": "07 搜索命中 郑和",
+      "ok": true
+    },
+    {
+      "name": "07 搜索命中 1405",
+      "ok": true
+    },
+    {
+      "name": "07 搜索命中 永乐",
+      "ok": true
+    },
+    {
+      "name": "07 搜索命中 赤壁",
+      "ok": true
+    },
+    {
+      "name": "07 中文输入法Enter不抢占",
+      "ok": true
+    },
+    {
+      "name": "08 示例空日无伪造史事且前后目标可达",
+      "ok": true
+    },
+    {
+      "name": "08 跳到真实有史日",
+      "ok": true
+    },
+    {
+      "name": "09 320px light calendar 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 320px light scroll 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 320px light seasons 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 320px dark calendar 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 320px dark scroll 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 320px dark seasons 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 390px light calendar 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 390px light scroll 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 390px light seasons 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 390px dark calendar 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 390px dark scroll 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 390px dark seasons 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 820px light calendar 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 820px light scroll 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 820px light seasons 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 820px dark calendar 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 820px dark scroll 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 820px dark seasons 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 1440px light calendar 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 1440px light scroll 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 1440px light seasons 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 1440px dark calendar 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 1440px dark scroll 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 1440px dark seasons 无横向溢出",
+      "ok": true
+    },
+    {
+      "name": "09 手机首屏可见首条史事标题",
+      "ok": true
+    },
+    {
+      "name": "09 浏览器返回关闭画卷",
+      "ok": true
+    },
+    {
+      "name": "10 减少动态直接落到长卷",
+      "ok": true
+    },
+    {
+      "name": "03/10 全部画作失败保留线描与正文",
+      "ok": true
+    },
+    {
+      "name": "10 无运行时异常或外部网络请求",
+      "ok": true
+    },
+    {
+      "name": "既有11条UI回归",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "external": []
+}

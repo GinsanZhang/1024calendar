@@ -1,4 +1,4 @@
-/* 人工验收 01–06：围绕参考构图修正，复用现有史料与本地素材。 */
+/* 十场景交付样式：画境、纸册、圆印与移动阅读。 */
 :root {--dur-mist-back:22000ms;--dur-mist-front:18000ms;}
 .hero-copy {animation:none;opacity:1;transform:none;padding-top:9vh;z-index:4;}
 .hero-title {width:min(62vw,620px);}
@@ -8,7 +8,8 @@
 .hero-veil {background:linear-gradient(180deg,#F5EBD020,transparent 40%);}
 .hero-art {object-position:center center;object-fit:cover;}
 .hero-boat {left:50%;top:72%;width:clamp(108px,10vw,160px);}
-.boat-wake {left:50%;top:calc(72% + 50px);width:clamp(108px,10vw,160px);}
+.boat-wake {left:54%;top:calc(72% + 32px);width:54px;height:7px;opacity:.32;}
+.boat-wake i {border-width:1px 0 0;border-color:#557A7070;}
 .hero-scroll {display:flex;flex-direction:column;gap:8px;bottom:8vh;left:50%;font:13px var(--serif);letter-spacing:.13em;animation:none;color:#253A38;}
 .hero-scroll i {display:grid;place-items:center;width:42px;height:42px;background:#F8F0D6C9;border:1px solid #736A4A55;border-radius:50%;font:25px/1 var(--serif);font-style:normal;}
 .hero-scroll i::after {display:none;}
@@ -17,14 +18,15 @@
 @keyframes mist-drift {from{transform:translateX(-5%) translateY(0);}to{transform:translateX(6%) translateY(-10px);}}
 html[data-performance="low"] .hero-mist--back {animation:mist-drift var(--dur-mist-back) ease-in-out infinite alternate;}
 body[data-at="hero"] .scale-rail {left:3.2vw;width:160px;padding:0;gap:8px;}
-body[data-at="hero"] .scale-btn {display:flex;flex-direction:row;align-items:center;gap:10px;background:transparent;border:0;padding:10px 4px;color:#263E36;text-shadow:0 1px 8px #FFF4DB;min-height:44px;}
+body[data-at="hero"] .scale-btn {display:flex;flex-direction:row;align-items:center;gap:10px;background:color-mix(in srgb,var(--card) 97%,transparent);border:0;border-radius:4px;padding:10px 12px;color:var(--ink);text-shadow:none;min-height:44px;}
 body[data-at="hero"] .scale-btn::before {display:none;}
-body[data-at="hero"] .scale-btn[aria-current="true"] {color:#773D27;}
+body[data-at="hero"] .scale-btn[aria-current="true"] {color:var(--zhu);}
 body[data-at="hero"] .scale-btn>svg {width:17px;height:17px;}
 body[data-at="hero"] .scale-btn b {font:15px var(--serif);letter-spacing:.08em;}
-body[data-at="hero"] .rail-foot {background:#FBF6E6B8;border:1px solid #806D4930;backdrop-filter:none;}
+body[data-at="hero"] .rail-foot {background:color-mix(in srgb,var(--card) 97%,transparent);border:1px solid var(--line);backdrop-filter:none;}
+.site-brand {color:#253A38;}
 /* 日历装裱为一册双页，右页题日和史事共用纸面。 */
-.cal-layout {position:relative;gap:0;background:var(--card);border:1px solid var(--line);box-shadow:var(--e-paper);max-width:1140px;margin:auto;align-items:stretch;}
+.cal-layout {position:relative;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;background:var(--card);border:1px solid var(--line);box-shadow:var(--e-paper);max-width:1120px;margin:auto;align-items:stretch;}
 .cal-page {border:0;border-radius:0;box-shadow:none;background-color:transparent;padding:28px 24px 20px;}
 .daily {border:0;border-radius:0;box-shadow:none;background:transparent;padding:30px;gap:12px;}
 .cal-page::after {display:none;}
@@ -42,7 +44,7 @@ body[data-at="hero"] .rail-foot {background:#FBF6E6B8;border:1px solid #806D4930
 .daily-rewind {gap:8px;padding-top:14px;}
 .ev {padding-block:15px;}
 /* 朱砂先行、画面随后展开，纸面不能在首帧遮掉墨晕。 */
-.enter-stage {background:transparent;}
+.enter-stage {background:transparent;grid-template-columns:minmax(0,1fr) clamp(360px,32vw,440px);}
 .enter-caption {background:var(--paper);}
 .enter-ink {background:radial-gradient(ellipse at var(--ix,50%) var(--iy,50%),#AB3B2DEB 0%,#B64A35E0 45%,#843A2DEB 76%,#6F352CE6);}
 /* 长卷：两端木轴固定在可视窗口，画幅与时间轴共同装裱。 */
@@ -65,10 +67,11 @@ body[data-stage="scroll"] .timeline {background:var(--paper-deep);padding:0 24px
 .ring-wrap {position:relative;}
 .season-frame {inset:3%;width:94%;height:94%;}
 .phenology-canvas {inset:8%;width:84%;height:84%;}
-.ring {position:absolute;inset:auto auto -103px 0;width:min(100vw - var(--rail-w) - 14vw,1050px);height:86px;transform:none!important;display:flex;gap:12px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;scrollbar-width:thin;}
-.node {position:static;flex:0 0 60px;width:60px;height:80px;transform:none;scroll-snap-align:center;}
-.node>button {position:static;transform:none;width:60px;min-height:76px;gap:6px;padding:4px;font-size:12px;}
-.node>button img {width:44px;height:44px;object-fit:cover;}
+.ring {position:absolute;inset:auto auto -103px 0;width:min(100vw - var(--rail-w) - 14vw,1050px);height:96px;transform:none!important;display:flex;gap:12px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;scrollbar-width:thin;}
+.node {position:static;flex:0 0 calc((100% - 84px)/8);width:auto;height:92px;transform:none;scroll-snap-align:center;}
+.node>button {position:static;transform:none;width:100%;min-height:88px;gap:6px;padding:4px;font-size:12px;}
+.node>button img {width:60px;height:60px;object-fit:cover;}
+.ring-wrap>.season-branch {inset:auto -4% 0 auto;width:56%;height:56%;z-index:2;}
 .node[data-on]>button img {outline-offset:3px;}
 .season-panel {gap:14px;}
 .season-title {font-size:50px;}
@@ -99,31 +102,87 @@ body[data-stage="scroll"] .timeline {background:var(--paper-deep);padding:0 24px
 .lookback-route,.lookback-era {z-index:2;}
 .lookback-opts {gap:18px;margin-top:12px;}
 .lb-opt {min-width:105px;border-color:#B39B6C80;color:#E4D4B3;background:#0A141CCC;}
-.lb-opt[aria-pressed="true"] {color:#FFF2D2;border-color:#DCC28C;background:#B3914C4D;box-shadow:0 0 18px #D4B27325;}
+.lb-opt[aria-pressed="true"] {color:#FFF2D2;border-color:#DCC28C;background:#725023;box-shadow:0 0 18px #D4B27325;}
+
+/* 印记属于数字层，日期触区与公历/农历墨点各自保留。 */
+.day {padding:4px 1px 7px;gap:0;}
+.day .d-num {position:relative;isolation:isolate;min-width:32px;line-height:32px;}
+.day .d-num::before {content:'';position:absolute;inset:0;z-index:-1;background:var(--zhu);mask:url('../assets/icons/date-seal-mask.svg') center/contain no-repeat;opacity:0;}
+.day[aria-selected="true"] {background:transparent;border-color:transparent;box-shadow:none;}
+.day[aria-selected="true"] .d-num {color:var(--on-zhu);background:none;}
+.day[aria-selected="true"] .d-num::before {opacity:1;}
+.day[data-today] {border-color:transparent;}
+.day[data-today]::before {display:none;}
+.day[data-today][data-lunar]::before {display:block;}
+.day[data-today] .d-num::after {content:'';position:absolute;inset:-2px;border:1px solid var(--zhu);border-radius:50%;pointer-events:none;}
+.day[data-out] {opacity:1;background:transparent;}
+.day[data-out] .d-lunar {opacity:1;}
+.ev-desc {font-size:16px;line-height:1.85;}
+.ev-src,.legend,.event-group,.era-filter,.tick .tick-label {font-size:12px;}
+.era-filter select {min-height:44px;}
+.daily-date {text-align:center;}
+.daily-top {justify-content:center;}
+.action-short {display:none;}
+/* 图标保持轻巧，实际通用触区统一为 44px。 */
+.rail-tool,.cal-nav .icon-btn {width:44px;height:44px;min-width:44px;min-height:44px;}
+.tool-text,.rewind-shortcut,.search-examples button,.asset-register summary {min-height:44px;}
+.hero-scroll i {width:44px;height:44px;}
+/* 检索沿右上工具展开，保留原画境作为上下文。 */
+.search {justify-items:end;padding:80px 24px 24px;background:#100E0C38;backdrop-filter:blur(2px);}
+.search-input {min-height:44px;}
 @media(max-width:900px) {
- .hero-art {object-fit:cover;}
- .hero-copy {padding-top:17vh;}.hero-title {width:90vw;}.hero-wordmark {width:74vw;}.hero-sub{font-size:17px;letter-spacing:.08em;}
+ .hero-copy {padding-top:17vh;}.hero-title {width:90vw;}.hero-wordmark {width:74vw;}.hero-sub {font-size:17px;letter-spacing:.08em;}
  body[data-at="hero"] .scale-rail {left:0;width:100%;gap:0;padding:0;}
- body[data-at="hero"] .scale-btn {flex-direction:column;gap:4px;padding:8px 4px;text-shadow:none;}
+ body[data-at="hero"] .scale-btn {flex-direction:column;gap:4px;padding:8px 4px;text-shadow:none;background:none;}
+ body[data-at="hero"] .scale-btn[aria-current="true"] {background:var(--zhu-wash);}
  body[data-at="hero"] .scale-btn b {font-size:13px;}
- .hero-scroll {bottom:100px;}.hero-boat {top:65%;}.boat-wake {top:calc(65% + 40px);}
+ .hero-scroll {bottom:100px;}.hero-boat {top:65%;}.boat-wake {top:calc(65% + 27px);left:61%;width:38px;}
+ .rail-tool {width:44px;height:44px;}.tool-text {min-height:44px;padding:6px 8px;}
+ body[data-at="hero"] .rail-foot,.rail-foot {top:8px;right:12px;left:auto;padding:0;gap:0;}
+ .scale-rail {padding:4px 8px calc(4px + env(safe-area-inset-bottom));}
+ .scale-btn,body[data-at="hero"] .scale-btn {min-height:56px;padding:6px 4px;}
+ .scale-btn b {line-height:1.4;}
+ .stage-heading {padding:60px 14px 8px;align-items:center;gap:8px;}
+ .stage-heading h2 {font-size:24px;letter-spacing:.02em;padding:0;}
+ .stage-actions {flex-wrap:nowrap;gap:4px;flex-shrink:0;}
+ .stage-actions .btn {min-height:44px;min-width:44px;padding:6px 10px;font-size:14px;justify-content:center;}
  .cal-layout {display:grid;grid-template-columns:minmax(0,1fr);gap:14px;background:none;border:0;box-shadow:none;}
- .cal-page {background:var(--card);border:1px solid var(--line);box-shadow:var(--e-paper);padding:12px 10px;}
- .cal-page::before {display:none;}.daily {padding:12px 10px;gap:6px 10px;background:var(--card);border:1px solid var(--line);}.daily-num {font-size:56px;}
- .daily-head {margin:0;}.daily-top {margin:0;}
+ .cal-page {background:var(--card);border:1px solid var(--line);box-shadow:var(--e-paper);padding:8px 10px;}
+ .cal-page::before {display:none;}
+ .cal-head {align-items:center;gap:2px;margin-bottom:4px;}
+ .cal-title .mon {font-size:22px;letter-spacing:0;gap:3px;white-space:nowrap;}
+ .cal-title .mon small {margin-left:0;letter-spacing:0;}
+ .cal-nav {gap:0;}.cal-nav .icon-btn {width:44px;height:44px;}
+ .cal-collapse {position:static!important;display:grid;place-items:center;min-width:44px;width:44px;height:44px;padding:0;font-size:0!important;border:1px solid var(--line);border-radius:50%;}
+ .cal-collapse::before {content:'−';font:20px/1 var(--sans);}.cal-collapse[aria-expanded="false"]::before {content:'+';}
+ .cal-week {padding-bottom:4px;margin-bottom:2px;}.cal-week span {font-size:12px;}
+ .day {min-height:44px;padding:0;gap:0;}.day .d-num {font-size:17px;min-width:26px;line-height:26px;}.day .d-lunar {font-size:12px;line-height:14px;}
+ .cal-foot {margin-top:4px;padding-top:4px;gap:6px;font-size:12px;}
+ .daily {padding:10px;gap:4px 8px;background:var(--card);border:1px solid var(--line);grid-template-columns:1fr auto;}
+ .daily-top {grid-column:1;grid-row:2;margin:0;gap:8px;justify-content:start;}.daily-num {font-size:56px;}.daily-head {margin:0;}
+ .daily-date {grid-column:1;grid-row:1;margin:0;letter-spacing:0;text-align:left;}
+ .legend,.daily-head .eyebrow,.era-filter,.event-group,.daily-date {font-size:12px;}
+ .daily-head {grid-column:2;grid-row:1;align-self:center;justify-content:end;}.daily-head .eyebrow:first-child {display:none;}
+ .era-filter {grid-column:2;grid-row:2;display:grid;gap:0;align-items:center;margin:0;}.era-filter select {min-height:44px;font-size:12px;}
+ .event-group {margin:0;padding-top:4px;letter-spacing:.04em;}
+ .ev {grid-template-columns:42px minmax(0,1fr);gap:8px;padding:10px 0;}.ev-desc {font-size:16px;line-height:1.85;}.ev-src {font-size:12px;line-height:1.7;}
+ .sr .m,.search-group,.blank-btn .what span {font-size:12px;}
  .calendar-turn {padding:64px 10px 12px;}
- .cal-foot,.legend,.daily-head .eyebrow,.era-filter,.event-group,.cal-collapse {font-size:11px;}
  .scroll-mount {padding:12px 13px 0;}.mount-roller {width:25px;height:calc(100% + 60px);}.mount-roller--left {left:-8px;}.mount-roller--right {right:-8px;}
- .scroll-track {height:300px;}.era-details {padding:0;}.era-plaque {bottom:25%;}
- body[data-stage="scroll"] .timeline {padding:0 12px;}
- .season-layout {grid-template-columns:1fr;gap:22px;padding:0 0 100px;}
- .ring-wrap {position:relative;max-width:370px;margin:0 auto 90px;}
- .ring {width:100%;bottom:-90px;height:82px;gap:8px;}.node {flex-basis:56px;}.node>button {width:56px;min-width:56px;}
- .season-panel {padding:0 8px;}.season-title {font-size:36px;}.jq-meaning {font-size:18px;}
- .lookback-inner {padding:70px 10px 48px;min-height:100svh;gap:14px;}
- .lookback-year-wrap {width:132px;height:220px;}.lookback-year {font-size:23px;}
- .lookback-depth {inset:32% -5% auto;height:230px;}.lookback-depth span {width:62px;height:140px;font-size:21px;padding:12px 4px;border-width:3px;}
- .lookback-depth small {font-size:10px;}.lookback-opts {gap:8px;}.lb-opt {min-width:75px;padding:0 10px;}
- .lookback-route {font-size:17px;}.lookback-era {font-size:16px;}.lookback-hint {font-size:11px;}
+ .scroll-track {height:300px;}.era-details {padding:0;}.era-plaque {bottom:25%;}body[data-stage="scroll"] .timeline {padding:0 12px;}
+ .season-layout {grid-template-columns:1fr;gap:22px;padding:0 0 100px;}.ring-wrap {position:relative;max-width:370px;margin:0 auto 90px;}
+ .ring {width:100%;bottom:-90px;height:82px;gap:8px;}.node {flex-basis:56px;}.node>button {width:56px;min-width:56px;min-height:76px;}.node>button img {width:44px;height:44px;}
+ .season-panel {padding:0 8px;}.season-title {font-size:36px;}.jq-meaning {font-size:18px;}.season-tabs {margin-bottom:0;}
+ .lookback-inner {padding:70px 10px 48px;min-height:100svh;gap:14px;}.lookback-year-wrap {width:132px;height:220px;}.lookback-year {font-size:23px;}
+ .lookback-depth {inset:32% -5% auto;height:230px;}.lookback-depth span {width:62px;height:140px;font-size:21px;padding:12px 4px;border-width:3px;}.lookback-depth small {font-size:12px;}
+ .lookback-opts {gap:8px;}.lb-opt {min-width:75px;padding:0 10px;}.lookback-route {font-size:17px;}.lookback-era {font-size:16px;}.lookback-hint {font-size:12px;}
+ .search {justify-items:center;padding:72px 12px 12px;}.search-examples {gap:8px;}.search-examples button {min-width:44px;min-height:44px;}
 }
-@media(prefers-reduced-motion:reduce) {.hero-mist,.lookback-streaks {animation:none!important;}}
+@media(max-width:600px) {
+ .action-full {display:none;}.action-short {display:inline;}.stage-heading h2 {font-size:22px;white-space:nowrap;}.stage-actions .btn {padding-inline:8px;}
+ .cal-title .mon {font-size:20px;}.cal-layout {gap:8px;}.daily-top {gap:12px;}.daily-num {font-size:52px;}
+ .cal-title .mon #calYear::after {content:'·';margin-inline:3px;}
+ .event-group:first-child {position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);}
+}
+@media(prefers-reduced-motion:reduce) {.hero-mist,.lookback-streaks {animation:none!important;}.boat-wake {display:none;}}
+html[data-motion="paused"] .boat-wake {display:none;}

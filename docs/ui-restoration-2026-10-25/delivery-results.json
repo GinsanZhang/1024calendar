@@ -1,0 +1,4867 @@
+{
+  "browser": "154.0.8037.57",
+  "timezone": "Asia/Shanghai",
+  "dpr": 1,
+  "checks": [
+    {
+      "name": "UI-01 light 首页三导航对最深/最浅背景均达4.5:1",
+      "ok": true,
+      "details": [
+        {
+          "text": "日历",
+          "foreground": [
+            166,
+            56,
+            46,
+            255
+          ],
+          "background": [
+            252,
+            248,
+            240,
+            247
+          ],
+          "worstContrast": 5.736986264748368
+        },
+        {
+          "text": "朝代长卷",
+          "foreground": [
+            37,
+            58,
+            56,
+            255
+          ],
+          "background": [
+            252,
+            248,
+            240,
+            247
+          ],
+          "worstContrast": 10.632165300365186
+        },
+        {
+          "text": "四时流转",
+          "foreground": [
+            37,
+            58,
+            56,
+            255
+          ],
+          "background": [
+            252,
+            248,
+            240,
+            247
+          ],
+          "worstContrast": 10.632165300365186
+        }
+      ]
+    },
+    {
+      "name": "light 首页工具在主题切换后仍达4.5:1",
+      "ok": true,
+      "details": [
+        {
+          "text": "",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            252,
+            248,
+            240,
+            247
+          ],
+          "worstContrast": 5.766543320851079
+        },
+        {
+          "text": "",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            252,
+            248,
+            240,
+            247
+          ],
+          "worstContrast": 5.766543320851079
+        },
+        {
+          "text": "暂停动效",
+          "foreground": [
+            37,
+            58,
+            56,
+            255
+          ],
+          "background": [
+            252,
+            248,
+            240,
+            247
+          ],
+          "worstContrast": 10.632165300365186
+        },
+        {
+          "text": "回到画境",
+          "foreground": [
+            37,
+            58,
+            56,
+            255
+          ],
+          "background": [
+            252,
+            248,
+            240,
+            247
+          ],
+          "worstContrast": 10.632165300365186
+        }
+      ]
+    },
+    {
+      "name": "UI-01 dark 首页三导航对最深/最浅背景均达4.5:1",
+      "ok": true,
+      "details": [
+        {
+          "text": "日历",
+          "foreground": [
+            238,
+            155,
+            128,
+            255
+          ],
+          "background": [
+            38,
+            60,
+            58,
+            247
+          ],
+          "worstContrast": 4.898187580944711
+        },
+        {
+          "text": "朝代长卷",
+          "foreground": [
+            237,
+            226,
+            201,
+            255
+          ],
+          "background": [
+            38,
+            60,
+            58,
+            247
+          ],
+          "worstContrast": 8.297546723314337
+        },
+        {
+          "text": "四时流转",
+          "foreground": [
+            237,
+            226,
+            201,
+            255
+          ],
+          "background": [
+            38,
+            60,
+            58,
+            247
+          ],
+          "worstContrast": 8.297546723314337
+        }
+      ]
+    },
+    {
+      "name": "dark 首页工具在主题切换后仍达4.5:1",
+      "ok": true,
+      "details": [
+        {
+          "text": "",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            38,
+            60,
+            58,
+            247
+          ],
+          "worstContrast": 5.588670503524793
+        },
+        {
+          "text": "",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            38,
+            60,
+            58,
+            247
+          ],
+          "worstContrast": 5.588670503524793
+        },
+        {
+          "text": "暂停动效",
+          "foreground": [
+            237,
+            226,
+            201,
+            255
+          ],
+          "background": [
+            38,
+            60,
+            58,
+            247
+          ],
+          "worstContrast": 8.297546723314337
+        },
+        {
+          "text": "回到画境",
+          "foreground": [
+            237,
+            226,
+            201,
+            255
+          ],
+          "background": [
+            38,
+            60,
+            58,
+            247
+          ],
+          "worstContrast": 8.297546723314337
+        }
+      ]
+    },
+    {
+      "name": "1440x900 light 月历42格且无横溢",
+      "ok": true
+    },
+    {
+      "name": "UI-02 1440x900 light 通用触区至少44px",
+      "ok": true,
+      "details": []
+    },
+    {
+      "name": "UI-04 1440x900 light 圆印与文字对比度",
+      "ok": true,
+      "details": {
+        "foreground": "rgb(255, 249, 244)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 6.2322905742039865
+      }
+    },
+    {
+      "name": "UI-05 1440x900 light 摘要16px出处12px",
+      "ok": true
+    },
+    {
+      "name": "UI-05 1440x900 light 跨月农历无透明衰减且4.5:1",
+      "ok": true,
+      "details": {
+        "opacity": 1,
+        "contrast": 6.175832169128552
+      }
+    },
+    {
+      "name": "1440x900 light scroll 无横溢",
+      "ok": true
+    },
+    {
+      "name": "1440x900 light seasons 无横溢",
+      "ok": true
+    },
+    {
+      "name": "1440x900 light 枝叶位于圆窗裁切之外",
+      "ok": true
+    },
+    {
+      "name": "1440x900 dark 月历42格且无横溢",
+      "ok": true
+    },
+    {
+      "name": "UI-02 1440x900 dark 通用触区至少44px",
+      "ok": true,
+      "details": []
+    },
+    {
+      "name": "UI-04 1440x900 dark 圆印与文字对比度",
+      "ok": true,
+      "details": {
+        "foreground": "rgb(20, 18, 15)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 8.579033176036964
+      }
+    },
+    {
+      "name": "UI-05 1440x900 dark 摘要16px出处12px",
+      "ok": true
+    },
+    {
+      "name": "UI-05 1440x900 dark 跨月农历无透明衰减且4.5:1",
+      "ok": true,
+      "details": {
+        "opacity": 1,
+        "contrast": 6.142386381856825
+      }
+    },
+    {
+      "name": "1440x900 dark scroll 无横溢",
+      "ok": true
+    },
+    {
+      "name": "1440x900 dark seasons 无横溢",
+      "ok": true
+    },
+    {
+      "name": "1440x900 dark 枝叶位于圆窗裁切之外",
+      "ok": true
+    },
+    {
+      "name": "1536x864 light 月历42格且无横溢",
+      "ok": true
+    },
+    {
+      "name": "UI-02 1536x864 light 通用触区至少44px",
+      "ok": true,
+      "details": []
+    },
+    {
+      "name": "UI-04 1536x864 light 圆印与文字对比度",
+      "ok": true,
+      "details": {
+        "foreground": "rgb(255, 249, 244)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 6.2322905742039865
+      }
+    },
+    {
+      "name": "UI-05 1536x864 light 摘要16px出处12px",
+      "ok": true
+    },
+    {
+      "name": "UI-05 1536x864 light 跨月农历无透明衰减且4.5:1",
+      "ok": true,
+      "details": {
+        "opacity": 1,
+        "contrast": 6.175832169128552
+      }
+    },
+    {
+      "name": "1536x864 light scroll 无横溢",
+      "ok": true
+    },
+    {
+      "name": "1536x864 light seasons 无横溢",
+      "ok": true
+    },
+    {
+      "name": "1536x864 light 枝叶位于圆窗裁切之外",
+      "ok": true
+    },
+    {
+      "name": "1536x864 dark 月历42格且无横溢",
+      "ok": true
+    },
+    {
+      "name": "UI-02 1536x864 dark 通用触区至少44px",
+      "ok": true,
+      "details": []
+    },
+    {
+      "name": "UI-04 1536x864 dark 圆印与文字对比度",
+      "ok": true,
+      "details": {
+        "foreground": "rgb(20, 18, 15)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 8.579033176036964
+      }
+    },
+    {
+      "name": "UI-05 1536x864 dark 摘要16px出处12px",
+      "ok": true
+    },
+    {
+      "name": "UI-05 1536x864 dark 跨月农历无透明衰减且4.5:1",
+      "ok": true,
+      "details": {
+        "opacity": 1,
+        "contrast": 6.142386381856825
+      }
+    },
+    {
+      "name": "1536x864 dark scroll 无横溢",
+      "ok": true
+    },
+    {
+      "name": "1536x864 dark seasons 无横溢",
+      "ok": true
+    },
+    {
+      "name": "1536x864 dark 枝叶位于圆窗裁切之外",
+      "ok": true
+    },
+    {
+      "name": "1024x768 light 月历42格且无横溢",
+      "ok": true
+    },
+    {
+      "name": "UI-02 1024x768 light 通用触区至少44px",
+      "ok": true,
+      "details": []
+    },
+    {
+      "name": "UI-04 1024x768 light 圆印与文字对比度",
+      "ok": true,
+      "details": {
+        "foreground": "rgb(255, 249, 244)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 6.2322905742039865
+      }
+    },
+    {
+      "name": "UI-05 1024x768 light 摘要16px出处12px",
+      "ok": true
+    },
+    {
+      "name": "UI-05 1024x768 light 跨月农历无透明衰减且4.5:1",
+      "ok": true,
+      "details": {
+        "opacity": 1,
+        "contrast": 6.175832169128552
+      }
+    },
+    {
+      "name": "1024x768 light scroll 无横溢",
+      "ok": true
+    },
+    {
+      "name": "1024x768 light seasons 无横溢",
+      "ok": true
+    },
+    {
+      "name": "1024x768 light 枝叶位于圆窗裁切之外",
+      "ok": true
+    },
+    {
+      "name": "1024x768 dark 月历42格且无横溢",
+      "ok": true
+    },
+    {
+      "name": "UI-02 1024x768 dark 通用触区至少44px",
+      "ok": true,
+      "details": []
+    },
+    {
+      "name": "UI-04 1024x768 dark 圆印与文字对比度",
+      "ok": true,
+      "details": {
+        "foreground": "rgb(20, 18, 15)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 8.579033176036964
+      }
+    },
+    {
+      "name": "UI-05 1024x768 dark 摘要16px出处12px",
+      "ok": true
+    },
+    {
+      "name": "UI-05 1024x768 dark 跨月农历无透明衰减且4.5:1",
+      "ok": true,
+      "details": {
+        "opacity": 1,
+        "contrast": 6.142386381856825
+      }
+    },
+    {
+      "name": "1024x768 dark scroll 无横溢",
+      "ok": true
+    },
+    {
+      "name": "1024x768 dark seasons 无横溢",
+      "ok": true
+    },
+    {
+      "name": "1024x768 dark 枝叶位于圆窗裁切之外",
+      "ok": true
+    },
+    {
+      "name": "768x1024 light 月历42格且无横溢",
+      "ok": true
+    },
+    {
+      "name": "UI-02 768x1024 light 通用触区至少44px",
+      "ok": true,
+      "details": []
+    },
+    {
+      "name": "UI-04 768x1024 light 圆印与文字对比度",
+      "ok": true,
+      "details": {
+        "foreground": "rgb(255, 249, 244)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 6.2322905742039865
+      }
+    },
+    {
+      "name": "UI-05 768x1024 light 摘要16px出处12px",
+      "ok": true
+    },
+    {
+      "name": "UI-05 768x1024 light 跨月农历无透明衰减且4.5:1",
+      "ok": true,
+      "details": {
+        "opacity": 1,
+        "contrast": 6.175832169128552
+      }
+    },
+    {
+      "name": "768x1024 light scroll 无横溢",
+      "ok": true
+    },
+    {
+      "name": "768x1024 light seasons 无横溢",
+      "ok": true
+    },
+    {
+      "name": "768x1024 light 枝叶位于圆窗裁切之外",
+      "ok": true
+    },
+    {
+      "name": "768x1024 dark 月历42格且无横溢",
+      "ok": true
+    },
+    {
+      "name": "UI-02 768x1024 dark 通用触区至少44px",
+      "ok": true,
+      "details": []
+    },
+    {
+      "name": "UI-04 768x1024 dark 圆印与文字对比度",
+      "ok": true,
+      "details": {
+        "foreground": "rgb(20, 18, 15)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 8.579033176036964
+      }
+    },
+    {
+      "name": "UI-05 768x1024 dark 摘要16px出处12px",
+      "ok": true
+    },
+    {
+      "name": "UI-05 768x1024 dark 跨月农历无透明衰减且4.5:1",
+      "ok": true,
+      "details": {
+        "opacity": 1,
+        "contrast": 6.142386381856825
+      }
+    },
+    {
+      "name": "768x1024 dark scroll 无横溢",
+      "ok": true
+    },
+    {
+      "name": "768x1024 dark seasons 无横溢",
+      "ok": true
+    },
+    {
+      "name": "768x1024 dark 枝叶位于圆窗裁切之外",
+      "ok": true
+    },
+    {
+      "name": "390x844 light 月历42格且无横溢",
+      "ok": true
+    },
+    {
+      "name": "UI-02 390x844 light 通用触区至少44px",
+      "ok": true,
+      "details": []
+    },
+    {
+      "name": "UI-04 390x844 light 圆印与文字对比度",
+      "ok": true,
+      "details": {
+        "foreground": "rgb(255, 249, 244)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 6.2322905742039865
+      }
+    },
+    {
+      "name": "UI-05 390x844 light 摘要16px出处12px",
+      "ok": true
+    },
+    {
+      "name": "UI-05 390x844 light 跨月农历无透明衰减且4.5:1",
+      "ok": true,
+      "details": {
+        "opacity": 1,
+        "contrast": 6.175832169128552
+      }
+    },
+    {
+      "name": "UI-03 390x844 light 首条史事标题完整在底栏上方",
+      "ok": true,
+      "details": {
+        "title": {
+          "x": 76,
+          "y": 632.28125,
+          "width": 274,
+          "height": 27,
+          "right": 350,
+          "bottom": 659.28125
+        },
+        "footer": {
+          "x": 0,
+          "y": 779,
+          "width": 375,
+          "height": 65,
+          "right": 375,
+          "bottom": 844
+        }
+      }
+    },
+    {
+      "name": "390x844 light 顶部工具不遮挡标题操作",
+      "ok": true
+    },
+    {
+      "name": "390x844 light scroll 无横溢",
+      "ok": true
+    },
+    {
+      "name": "390x844 light seasons 无横溢",
+      "ok": true
+    },
+    {
+      "name": "390x844 light 枝叶位于圆窗裁切之外",
+      "ok": true
+    },
+    {
+      "name": "390x844 dark 月历42格且无横溢",
+      "ok": true
+    },
+    {
+      "name": "UI-02 390x844 dark 通用触区至少44px",
+      "ok": true,
+      "details": []
+    },
+    {
+      "name": "UI-04 390x844 dark 圆印与文字对比度",
+      "ok": true,
+      "details": {
+        "foreground": "rgb(20, 18, 15)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 8.579033176036964
+      }
+    },
+    {
+      "name": "UI-05 390x844 dark 摘要16px出处12px",
+      "ok": true
+    },
+    {
+      "name": "UI-05 390x844 dark 跨月农历无透明衰减且4.5:1",
+      "ok": true,
+      "details": {
+        "opacity": 1,
+        "contrast": 6.142386381856825
+      }
+    },
+    {
+      "name": "UI-03 390x844 dark 首条史事标题完整在底栏上方",
+      "ok": true,
+      "details": {
+        "title": {
+          "x": 76,
+          "y": 632.28125,
+          "width": 274,
+          "height": 27,
+          "right": 350,
+          "bottom": 659.28125
+        },
+        "footer": {
+          "x": 0,
+          "y": 779,
+          "width": 375,
+          "height": 65,
+          "right": 375,
+          "bottom": 844
+        }
+      }
+    },
+    {
+      "name": "390x844 dark 顶部工具不遮挡标题操作",
+      "ok": true
+    },
+    {
+      "name": "390x844 dark scroll 无横溢",
+      "ok": true
+    },
+    {
+      "name": "390x844 dark seasons 无横溢",
+      "ok": true
+    },
+    {
+      "name": "390x844 dark 枝叶位于圆窗裁切之外",
+      "ok": true
+    },
+    {
+      "name": "320x740 light 月历42格且无横溢",
+      "ok": true
+    },
+    {
+      "name": "UI-02 320x740 light 通用触区至少44px",
+      "ok": true,
+      "details": []
+    },
+    {
+      "name": "UI-04 320x740 light 圆印与文字对比度",
+      "ok": true,
+      "details": {
+        "foreground": "rgb(255, 249, 244)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 6.2322905742039865
+      }
+    },
+    {
+      "name": "UI-05 320x740 light 摘要16px出处12px",
+      "ok": true
+    },
+    {
+      "name": "UI-05 320x740 light 跨月农历无透明衰减且4.5:1",
+      "ok": true,
+      "details": {
+        "opacity": 1,
+        "contrast": 6.175832169128552
+      }
+    },
+    {
+      "name": "UI-03 320x740 light 首条史事标题完整在底栏上方",
+      "ok": true,
+      "details": {
+        "title": {
+          "x": 76,
+          "y": 632.28125,
+          "width": 204,
+          "height": 27,
+          "right": 280,
+          "bottom": 659.28125
+        },
+        "footer": {
+          "x": 0,
+          "y": 675,
+          "width": 305,
+          "height": 65,
+          "right": 305,
+          "bottom": 740
+        }
+      }
+    },
+    {
+      "name": "320x740 light 顶部工具不遮挡标题操作",
+      "ok": true
+    },
+    {
+      "name": "320x740 light scroll 无横溢",
+      "ok": true
+    },
+    {
+      "name": "320x740 light seasons 无横溢",
+      "ok": true
+    },
+    {
+      "name": "320x740 light 枝叶位于圆窗裁切之外",
+      "ok": true
+    },
+    {
+      "name": "320x740 dark 月历42格且无横溢",
+      "ok": true
+    },
+    {
+      "name": "UI-02 320x740 dark 通用触区至少44px",
+      "ok": true,
+      "details": []
+    },
+    {
+      "name": "UI-04 320x740 dark 圆印与文字对比度",
+      "ok": true,
+      "details": {
+        "foreground": "rgb(20, 18, 15)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 8.579033176036964
+      }
+    },
+    {
+      "name": "UI-05 320x740 dark 摘要16px出处12px",
+      "ok": true
+    },
+    {
+      "name": "UI-05 320x740 dark 跨月农历无透明衰减且4.5:1",
+      "ok": true,
+      "details": {
+        "opacity": 1,
+        "contrast": 6.142386381856825
+      }
+    },
+    {
+      "name": "UI-03 320x740 dark 首条史事标题完整在底栏上方",
+      "ok": true,
+      "details": {
+        "title": {
+          "x": 76,
+          "y": 632.28125,
+          "width": 204,
+          "height": 27,
+          "right": 280,
+          "bottom": 659.28125
+        },
+        "footer": {
+          "x": 0,
+          "y": 675,
+          "width": 305,
+          "height": 65,
+          "right": 305,
+          "bottom": 740
+        }
+      }
+    },
+    {
+      "name": "320x740 dark 顶部工具不遮挡标题操作",
+      "ok": true
+    },
+    {
+      "name": "320x740 dark scroll 无横溢",
+      "ok": true
+    },
+    {
+      "name": "320x740 dark seasons 无横溢",
+      "ok": true
+    },
+    {
+      "name": "320x740 dark 枝叶位于圆窗裁切之外",
+      "ok": true
+    },
+    {
+      "name": "320px 1月翻月控件不超出纸面",
+      "ok": true
+    },
+    {
+      "name": "320px 11月翻月控件不超出纸面",
+      "ok": true
+    },
+    {
+      "name": "320px 12月翻月控件不超出纸面",
+      "ok": true
+    },
+    {
+      "name": "收起月历保留日期和正确语义",
+      "ok": true
+    },
+    {
+      "name": "展开月历恢复全部日期",
+      "ok": true
+    },
+    {
+      "name": "无异常或HTTP错误及外部请求",
+      "ok": true
+    }
+  ],
+  "metrics": [
+    {
+      "scene": "hero",
+      "theme": "light",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "controls": [
+        {
+          "id": "searchOpen",
+          "x": 1130.96875,
+          "y": 27,
+          "width": 44,
+          "height": 44,
+          "right": 1174.96875,
+          "bottom": 71
+        },
+        {
+          "id": "themeToggle",
+          "x": 1178.96875,
+          "y": 27,
+          "width": 44,
+          "height": 44,
+          "right": 1222.96875,
+          "bottom": 71
+        },
+        {
+          "id": "motionToggle",
+          "x": 1226.96875,
+          "y": 27,
+          "width": 93.015625,
+          "height": 44,
+          "right": 1319.984375,
+          "bottom": 71
+        },
+        {
+          "id": "todayButton",
+          "x": 1146.34375,
+          "y": 1709.3125,
+          "width": 106.53125,
+          "height": 45.125,
+          "right": 1252.875,
+          "bottom": 1754.4375
+        },
+        {
+          "id": "randomButton",
+          "x": 1260.875,
+          "y": 1709.3125,
+          "width": 106.53125,
+          "height": 45.125,
+          "right": 1367.40625,
+          "bottom": 1754.4375
+        },
+        {
+          "id": "calPrev",
+          "x": 667.5,
+          "y": 1839.25,
+          "width": 44,
+          "height": 44,
+          "right": 711.5,
+          "bottom": 1883.25
+        },
+        {
+          "id": "calNext",
+          "x": 715.5,
+          "y": 1839.25,
+          "width": 44,
+          "height": 44,
+          "right": 759.5,
+          "bottom": 1883.25
+        },
+        {
+          "id": "eraFilter",
+          "x": 875.515625,
+          "y": 2077.765625,
+          "width": 87,
+          "height": 44,
+          "right": 962.515625,
+          "bottom": 2121.765625
+        },
+        {
+          "id": "100 年",
+          "x": 813.5,
+          "y": 2383.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 878.203125,
+          "bottom": 2427.671875
+        },
+        {
+          "id": "300 年",
+          "x": 886.203125,
+          "y": 2383.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 950.90625,
+          "bottom": 2427.671875
+        },
+        {
+          "id": "500 年",
+          "x": 958.90625,
+          "y": 2383.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 1023.609375,
+          "bottom": 2427.671875
+        },
+        {
+          "id": "800 年",
+          "x": 1031.609375,
+          "y": 2383.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 1096.3125,
+          "bottom": 2427.671875
+        },
+        {
+          "id": "1000 年",
+          "x": 1104.3125,
+          "y": 2383.671875,
+          "width": 72.125,
+          "height": 44,
+          "right": 1176.4375,
+          "bottom": 2427.671875
+        }
+      ],
+      "nav": [
+        {
+          "text": "日历",
+          "foreground": [
+            166,
+            56,
+            46,
+            255
+          ],
+          "background": [
+            252,
+            248,
+            240,
+            247
+          ],
+          "worstContrast": 5.736986264748368
+        },
+        {
+          "text": "朝代长卷",
+          "foreground": [
+            37,
+            58,
+            56,
+            255
+          ],
+          "background": [
+            252,
+            248,
+            240,
+            247
+          ],
+          "worstContrast": 10.632165300365186
+        },
+        {
+          "text": "四时流转",
+          "foreground": [
+            37,
+            58,
+            56,
+            255
+          ],
+          "background": [
+            252,
+            248,
+            240,
+            247
+          ],
+          "worstContrast": 10.632165300365186
+        }
+      ],
+      "toolContrast": [
+        {
+          "text": "",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            252,
+            248,
+            240,
+            247
+          ],
+          "worstContrast": 5.766543320851079
+        },
+        {
+          "text": "",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            252,
+            248,
+            240,
+            247
+          ],
+          "worstContrast": 5.766543320851079
+        },
+        {
+          "text": "暂停动效",
+          "foreground": [
+            37,
+            58,
+            56,
+            255
+          ],
+          "background": [
+            252,
+            248,
+            240,
+            247
+          ],
+          "worstContrast": 10.632165300365186
+        },
+        {
+          "text": "回到画境",
+          "foreground": [
+            37,
+            58,
+            56,
+            255
+          ],
+          "background": [
+            252,
+            248,
+            240,
+            247
+          ],
+          "worstContrast": 10.632165300365186
+        }
+      ],
+      "title": {
+        "x": 881.5,
+        "y": 2194.765625,
+        "width": 369,
+        "height": 33,
+        "right": 1250.5,
+        "bottom": 2227.765625
+      },
+      "footer": {
+        "x": 46.078125,
+        "y": 0,
+        "width": 160,
+        "height": 900,
+        "right": 206.078125,
+        "bottom": 900
+      },
+      "header": {
+        "x": 0,
+        "y": 1616.5,
+        "width": 1425,
+        "height": 178.75,
+        "right": 1425,
+        "bottom": 1795.25
+      },
+      "tools": {
+        "x": 1127.96875,
+        "y": 24,
+        "width": 271.03125,
+        "height": 50,
+        "right": 1399,
+        "bottom": 74
+      },
+      "selected": {
+        "foreground": "rgb(255, 249, 244)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 6.2322905742039865
+      },
+      "neighbor": {
+        "opacity": 1,
+        "contrast": 6.175832169128552
+      },
+      "descriptionSize": 16,
+      "sourceSize": 12
+    },
+    {
+      "scene": "hero",
+      "theme": "dark",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "controls": [
+        {
+          "id": "searchOpen",
+          "x": 1130.96875,
+          "y": 27,
+          "width": 44,
+          "height": 44,
+          "right": 1174.96875,
+          "bottom": 71
+        },
+        {
+          "id": "themeToggle",
+          "x": 1178.96875,
+          "y": 27,
+          "width": 44,
+          "height": 44,
+          "right": 1222.96875,
+          "bottom": 71
+        },
+        {
+          "id": "motionToggle",
+          "x": 1226.96875,
+          "y": 27,
+          "width": 93.015625,
+          "height": 44,
+          "right": 1319.984375,
+          "bottom": 71
+        },
+        {
+          "id": "todayButton",
+          "x": 1146.34375,
+          "y": 1709.3125,
+          "width": 106.53125,
+          "height": 45.125,
+          "right": 1252.875,
+          "bottom": 1754.4375
+        },
+        {
+          "id": "randomButton",
+          "x": 1260.875,
+          "y": 1709.3125,
+          "width": 106.53125,
+          "height": 45.125,
+          "right": 1367.40625,
+          "bottom": 1754.4375
+        },
+        {
+          "id": "calPrev",
+          "x": 667.5,
+          "y": 1839.25,
+          "width": 44,
+          "height": 44,
+          "right": 711.5,
+          "bottom": 1883.25
+        },
+        {
+          "id": "calNext",
+          "x": 715.5,
+          "y": 1839.25,
+          "width": 44,
+          "height": 44,
+          "right": 759.5,
+          "bottom": 1883.25
+        },
+        {
+          "id": "eraFilter",
+          "x": 875.515625,
+          "y": 2077.765625,
+          "width": 87,
+          "height": 44,
+          "right": 962.515625,
+          "bottom": 2121.765625
+        },
+        {
+          "id": "100 年",
+          "x": 813.5,
+          "y": 2383.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 878.203125,
+          "bottom": 2427.671875
+        },
+        {
+          "id": "300 年",
+          "x": 886.203125,
+          "y": 2383.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 950.90625,
+          "bottom": 2427.671875
+        },
+        {
+          "id": "500 年",
+          "x": 958.90625,
+          "y": 2383.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 1023.609375,
+          "bottom": 2427.671875
+        },
+        {
+          "id": "800 年",
+          "x": 1031.609375,
+          "y": 2383.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 1096.3125,
+          "bottom": 2427.671875
+        },
+        {
+          "id": "1000 年",
+          "x": 1104.3125,
+          "y": 2383.671875,
+          "width": 72.125,
+          "height": 44,
+          "right": 1176.4375,
+          "bottom": 2427.671875
+        }
+      ],
+      "nav": [
+        {
+          "text": "日历",
+          "foreground": [
+            238,
+            155,
+            128,
+            255
+          ],
+          "background": [
+            38,
+            60,
+            58,
+            247
+          ],
+          "worstContrast": 4.898187580944711
+        },
+        {
+          "text": "朝代长卷",
+          "foreground": [
+            237,
+            226,
+            201,
+            255
+          ],
+          "background": [
+            38,
+            60,
+            58,
+            247
+          ],
+          "worstContrast": 8.297546723314337
+        },
+        {
+          "text": "四时流转",
+          "foreground": [
+            237,
+            226,
+            201,
+            255
+          ],
+          "background": [
+            38,
+            60,
+            58,
+            247
+          ],
+          "worstContrast": 8.297546723314337
+        }
+      ],
+      "toolContrast": [
+        {
+          "text": "",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            38,
+            60,
+            58,
+            247
+          ],
+          "worstContrast": 5.588670503524793
+        },
+        {
+          "text": "",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            38,
+            60,
+            58,
+            247
+          ],
+          "worstContrast": 5.588670503524793
+        },
+        {
+          "text": "暂停动效",
+          "foreground": [
+            237,
+            226,
+            201,
+            255
+          ],
+          "background": [
+            38,
+            60,
+            58,
+            247
+          ],
+          "worstContrast": 8.297546723314337
+        },
+        {
+          "text": "回到画境",
+          "foreground": [
+            237,
+            226,
+            201,
+            255
+          ],
+          "background": [
+            38,
+            60,
+            58,
+            247
+          ],
+          "worstContrast": 8.297546723314337
+        }
+      ],
+      "title": {
+        "x": 881.5,
+        "y": 2194.765625,
+        "width": 369,
+        "height": 33,
+        "right": 1250.5,
+        "bottom": 2227.765625
+      },
+      "footer": {
+        "x": 46.078125,
+        "y": 0,
+        "width": 160,
+        "height": 900,
+        "right": 206.078125,
+        "bottom": 900
+      },
+      "header": {
+        "x": 0,
+        "y": 1616.5,
+        "width": 1425,
+        "height": 178.75,
+        "right": 1425,
+        "bottom": 1795.25
+      },
+      "tools": {
+        "x": 1127.96875,
+        "y": 24,
+        "width": 271.03125,
+        "height": 50,
+        "right": 1399,
+        "bottom": 74
+      },
+      "selected": {
+        "foreground": "rgb(20, 18, 15)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 8.579033176036964
+      },
+      "neighbor": {
+        "opacity": 1,
+        "contrast": 6.142386381856825
+      },
+      "descriptionSize": 16,
+      "sourceSize": 12
+    },
+    {
+      "scene": "calendar",
+      "theme": "light",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "controls": [
+        {
+          "id": "searchOpen",
+          "x": 1130.96875,
+          "y": 27,
+          "width": 44,
+          "height": 44,
+          "right": 1174.96875,
+          "bottom": 71
+        },
+        {
+          "id": "themeToggle",
+          "x": 1178.96875,
+          "y": 27,
+          "width": 44,
+          "height": 44,
+          "right": 1222.96875,
+          "bottom": 71
+        },
+        {
+          "id": "motionToggle",
+          "x": 1226.96875,
+          "y": 27,
+          "width": 93.015625,
+          "height": 44,
+          "right": 1319.984375,
+          "bottom": 71
+        },
+        {
+          "id": "todayButton",
+          "x": 1146.34375,
+          "y": 92.3125,
+          "width": 106.53125,
+          "height": 45.125,
+          "right": 1252.875,
+          "bottom": 137.4375
+        },
+        {
+          "id": "randomButton",
+          "x": 1260.875,
+          "y": 92.3125,
+          "width": 106.53125,
+          "height": 45.125,
+          "right": 1367.40625,
+          "bottom": 137.4375
+        },
+        {
+          "id": "calPrev",
+          "x": 667.5,
+          "y": 222.25,
+          "width": 44,
+          "height": 44,
+          "right": 711.5,
+          "bottom": 266.25
+        },
+        {
+          "id": "calNext",
+          "x": 715.5,
+          "y": 222.25,
+          "width": 44,
+          "height": 44,
+          "right": 759.5,
+          "bottom": 266.25
+        },
+        {
+          "id": "eraFilter",
+          "x": 875.515625,
+          "y": 460.765625,
+          "width": 87,
+          "height": 44,
+          "right": 962.515625,
+          "bottom": 504.765625
+        },
+        {
+          "id": "100 年",
+          "x": 813.5,
+          "y": 766.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 878.203125,
+          "bottom": 810.671875
+        },
+        {
+          "id": "300 年",
+          "x": 886.203125,
+          "y": 766.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 950.90625,
+          "bottom": 810.671875
+        },
+        {
+          "id": "500 年",
+          "x": 958.90625,
+          "y": 766.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 1023.609375,
+          "bottom": 810.671875
+        },
+        {
+          "id": "800 年",
+          "x": 1031.609375,
+          "y": 766.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 1096.3125,
+          "bottom": 810.671875
+        },
+        {
+          "id": "1000 年",
+          "x": 1104.3125,
+          "y": 766.671875,
+          "width": 72.125,
+          "height": 44,
+          "right": 1176.4375,
+          "bottom": 810.671875
+        }
+      ],
+      "nav": [
+        {
+          "text": "日历",
+          "foreground": [
+            166,
+            56,
+            46,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 3.2265189175363282
+        },
+        {
+          "text": "朝代长卷",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 3.2099810376738382
+        },
+        {
+          "text": "四时流转",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 3.2099810376738382
+        }
+      ],
+      "toolContrast": [
+        {
+          "text": "",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 2.58093501252316
+        },
+        {
+          "text": "",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 2.58093501252316
+        },
+        {
+          "text": "暂停动效",
+          "foreground": [
+            37,
+            58,
+            56,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 4.758644157483993
+        },
+        {
+          "text": "回到画境",
+          "foreground": [
+            37,
+            58,
+            56,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 4.758644157483993
+        }
+      ],
+      "title": {
+        "x": 881.5,
+        "y": 577.765625,
+        "width": 369,
+        "height": 33,
+        "right": 1250.5,
+        "bottom": 610.765625
+      },
+      "footer": {
+        "x": 0,
+        "y": 0,
+        "width": 142,
+        "height": 900,
+        "right": 142,
+        "bottom": 900
+      },
+      "header": {
+        "x": 0,
+        "y": -0.5,
+        "width": 1425,
+        "height": 178.75,
+        "right": 1425,
+        "bottom": 178.25
+      },
+      "tools": {
+        "x": 1127.96875,
+        "y": 24,
+        "width": 271.03125,
+        "height": 50,
+        "right": 1399,
+        "bottom": 74
+      },
+      "selected": {
+        "foreground": "rgb(255, 249, 244)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 6.2322905742039865
+      },
+      "neighbor": {
+        "opacity": 1,
+        "contrast": 6.175832169128552
+      },
+      "descriptionSize": 16,
+      "sourceSize": 12
+    },
+    {
+      "scene": "calendar",
+      "theme": "dark",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1425,
+      "controls": [
+        {
+          "id": "searchOpen",
+          "x": 1130.96875,
+          "y": 27,
+          "width": 44,
+          "height": 44,
+          "right": 1174.96875,
+          "bottom": 71
+        },
+        {
+          "id": "themeToggle",
+          "x": 1178.96875,
+          "y": 27,
+          "width": 44,
+          "height": 44,
+          "right": 1222.96875,
+          "bottom": 71
+        },
+        {
+          "id": "motionToggle",
+          "x": 1226.96875,
+          "y": 27,
+          "width": 93.015625,
+          "height": 44,
+          "right": 1319.984375,
+          "bottom": 71
+        },
+        {
+          "id": "todayButton",
+          "x": 1146.34375,
+          "y": 92.3125,
+          "width": 106.53125,
+          "height": 45.125,
+          "right": 1252.875,
+          "bottom": 137.4375
+        },
+        {
+          "id": "randomButton",
+          "x": 1260.875,
+          "y": 92.3125,
+          "width": 106.53125,
+          "height": 45.125,
+          "right": 1367.40625,
+          "bottom": 137.4375
+        },
+        {
+          "id": "calPrev",
+          "x": 667.5,
+          "y": 222.25,
+          "width": 44,
+          "height": 44,
+          "right": 711.5,
+          "bottom": 266.25
+        },
+        {
+          "id": "calNext",
+          "x": 715.5,
+          "y": 222.25,
+          "width": 44,
+          "height": 44,
+          "right": 759.5,
+          "bottom": 266.25
+        },
+        {
+          "id": "eraFilter",
+          "x": 875.515625,
+          "y": 460.765625,
+          "width": 87,
+          "height": 44,
+          "right": 962.515625,
+          "bottom": 504.765625
+        },
+        {
+          "id": "100 年",
+          "x": 813.5,
+          "y": 766.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 878.203125,
+          "bottom": 810.671875
+        },
+        {
+          "id": "300 年",
+          "x": 886.203125,
+          "y": 766.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 950.90625,
+          "bottom": 810.671875
+        },
+        {
+          "id": "500 年",
+          "x": 958.90625,
+          "y": 766.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 1023.609375,
+          "bottom": 810.671875
+        },
+        {
+          "id": "800 年",
+          "x": 1031.609375,
+          "y": 766.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 1096.3125,
+          "bottom": 810.671875
+        },
+        {
+          "id": "1000 年",
+          "x": 1104.3125,
+          "y": 766.671875,
+          "width": 72.125,
+          "height": 44,
+          "right": 1176.4375,
+          "bottom": 810.671875
+        }
+      ],
+      "nav": [
+        {
+          "text": "日历",
+          "foreground": [
+            238,
+            155,
+            128,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 2.17940237451464
+        },
+        {
+          "text": "朝代长卷",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 1.9101361653001705
+        },
+        {
+          "text": "四时流转",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 1.9101361653001705
+        }
+      ],
+      "toolContrast": [
+        {
+          "text": "",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 2.7902413050800345
+        },
+        {
+          "text": "",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 2.7902413050800345
+        },
+        {
+          "text": "暂停动效",
+          "foreground": [
+            237,
+            226,
+            201,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 4.1426950441291925
+        },
+        {
+          "text": "回到画境",
+          "foreground": [
+            237,
+            226,
+            201,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 4.1426950441291925
+        }
+      ],
+      "title": {
+        "x": 881.5,
+        "y": 577.765625,
+        "width": 369,
+        "height": 33,
+        "right": 1250.5,
+        "bottom": 610.765625
+      },
+      "footer": {
+        "x": 0,
+        "y": 0,
+        "width": 142,
+        "height": 900,
+        "right": 142,
+        "bottom": 900
+      },
+      "header": {
+        "x": 0,
+        "y": -0.5,
+        "width": 1425,
+        "height": 178.75,
+        "right": 1425,
+        "bottom": 178.25
+      },
+      "tools": {
+        "x": 1127.96875,
+        "y": 24,
+        "width": 271.03125,
+        "height": 50,
+        "right": 1399,
+        "bottom": 74
+      },
+      "selected": {
+        "foreground": "rgb(20, 18, 15)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 8.579033176036964
+      },
+      "neighbor": {
+        "opacity": 1,
+        "contrast": 6.142386381856825
+      },
+      "descriptionSize": 16,
+      "sourceSize": 12
+    },
+    {
+      "scene": "calendar",
+      "theme": "light",
+      "width": 1536,
+      "height": 864,
+      "scrollWidth": 1521,
+      "controls": [
+        {
+          "id": "searchOpen",
+          "x": 1226.96875,
+          "y": 27,
+          "width": 44,
+          "height": 44,
+          "right": 1270.96875,
+          "bottom": 71
+        },
+        {
+          "id": "themeToggle",
+          "x": 1274.96875,
+          "y": 27,
+          "width": 44,
+          "height": 44,
+          "right": 1318.96875,
+          "bottom": 71
+        },
+        {
+          "id": "motionToggle",
+          "x": 1322.96875,
+          "y": 27,
+          "width": 93.015625,
+          "height": 44,
+          "right": 1415.984375,
+          "bottom": 71
+        },
+        {
+          "id": "todayButton",
+          "x": 1238.5,
+          "y": 92.3125,
+          "width": 106.53125,
+          "height": 45.125,
+          "right": 1345.03125,
+          "bottom": 137.4375
+        },
+        {
+          "id": "randomButton",
+          "x": 1353.03125,
+          "y": 92.3125,
+          "width": 106.53125,
+          "height": 45.125,
+          "right": 1459.5625,
+          "bottom": 137.4375
+        },
+        {
+          "id": "calPrev",
+          "x": 715.5,
+          "y": 222.25,
+          "width": 44,
+          "height": 44,
+          "right": 759.5,
+          "bottom": 266.25
+        },
+        {
+          "id": "calNext",
+          "x": 763.5,
+          "y": 222.25,
+          "width": 44,
+          "height": 44,
+          "right": 807.5,
+          "bottom": 266.25
+        },
+        {
+          "id": "eraFilter",
+          "x": 923.515625,
+          "y": 460.765625,
+          "width": 87,
+          "height": 44,
+          "right": 1010.515625,
+          "bottom": 504.765625
+        },
+        {
+          "id": "100 年",
+          "x": 861.5,
+          "y": 766.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 926.203125,
+          "bottom": 810.671875
+        },
+        {
+          "id": "300 年",
+          "x": 934.203125,
+          "y": 766.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 998.90625,
+          "bottom": 810.671875
+        },
+        {
+          "id": "500 年",
+          "x": 1006.90625,
+          "y": 766.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 1071.609375,
+          "bottom": 810.671875
+        },
+        {
+          "id": "800 年",
+          "x": 1079.609375,
+          "y": 766.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 1144.3125,
+          "bottom": 810.671875
+        },
+        {
+          "id": "1000 年",
+          "x": 1152.3125,
+          "y": 766.671875,
+          "width": 72.125,
+          "height": 44,
+          "right": 1224.4375,
+          "bottom": 810.671875
+        }
+      ],
+      "nav": [
+        {
+          "text": "日历",
+          "foreground": [
+            166,
+            56,
+            46,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 3.2265189175363282
+        },
+        {
+          "text": "朝代长卷",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 3.2099810376738382
+        },
+        {
+          "text": "四时流转",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 3.2099810376738382
+        }
+      ],
+      "toolContrast": [
+        {
+          "text": "",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 2.58093501252316
+        },
+        {
+          "text": "",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 2.58093501252316
+        },
+        {
+          "text": "暂停动效",
+          "foreground": [
+            37,
+            58,
+            56,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 4.758644157483993
+        },
+        {
+          "text": "回到画境",
+          "foreground": [
+            37,
+            58,
+            56,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 4.758644157483993
+        }
+      ],
+      "title": {
+        "x": 929.5,
+        "y": 577.765625,
+        "width": 369,
+        "height": 33,
+        "right": 1298.5,
+        "bottom": 610.765625
+      },
+      "footer": {
+        "x": 0,
+        "y": 0,
+        "width": 142,
+        "height": 864,
+        "right": 142,
+        "bottom": 864
+      },
+      "header": {
+        "x": 0,
+        "y": -0.5,
+        "width": 1521,
+        "height": 178.75,
+        "right": 1521,
+        "bottom": 178.25
+      },
+      "tools": {
+        "x": 1223.96875,
+        "y": 24,
+        "width": 271.03125,
+        "height": 50,
+        "right": 1495,
+        "bottom": 74
+      },
+      "selected": {
+        "foreground": "rgb(255, 249, 244)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 6.2322905742039865
+      },
+      "neighbor": {
+        "opacity": 1,
+        "contrast": 6.175832169128552
+      },
+      "descriptionSize": 16,
+      "sourceSize": 12
+    },
+    {
+      "scene": "calendar",
+      "theme": "dark",
+      "width": 1536,
+      "height": 864,
+      "scrollWidth": 1521,
+      "controls": [
+        {
+          "id": "searchOpen",
+          "x": 1226.96875,
+          "y": 27,
+          "width": 44,
+          "height": 44,
+          "right": 1270.96875,
+          "bottom": 71
+        },
+        {
+          "id": "themeToggle",
+          "x": 1274.96875,
+          "y": 27,
+          "width": 44,
+          "height": 44,
+          "right": 1318.96875,
+          "bottom": 71
+        },
+        {
+          "id": "motionToggle",
+          "x": 1322.96875,
+          "y": 27,
+          "width": 93.015625,
+          "height": 44,
+          "right": 1415.984375,
+          "bottom": 71
+        },
+        {
+          "id": "todayButton",
+          "x": 1238.5,
+          "y": 92.3125,
+          "width": 106.53125,
+          "height": 45.125,
+          "right": 1345.03125,
+          "bottom": 137.4375
+        },
+        {
+          "id": "randomButton",
+          "x": 1353.03125,
+          "y": 92.3125,
+          "width": 106.53125,
+          "height": 45.125,
+          "right": 1459.5625,
+          "bottom": 137.4375
+        },
+        {
+          "id": "calPrev",
+          "x": 715.5,
+          "y": 222.25,
+          "width": 44,
+          "height": 44,
+          "right": 759.5,
+          "bottom": 266.25
+        },
+        {
+          "id": "calNext",
+          "x": 763.5,
+          "y": 222.25,
+          "width": 44,
+          "height": 44,
+          "right": 807.5,
+          "bottom": 266.25
+        },
+        {
+          "id": "eraFilter",
+          "x": 923.515625,
+          "y": 460.765625,
+          "width": 87,
+          "height": 44,
+          "right": 1010.515625,
+          "bottom": 504.765625
+        },
+        {
+          "id": "100 年",
+          "x": 861.5,
+          "y": 766.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 926.203125,
+          "bottom": 810.671875
+        },
+        {
+          "id": "300 年",
+          "x": 934.203125,
+          "y": 766.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 998.90625,
+          "bottom": 810.671875
+        },
+        {
+          "id": "500 年",
+          "x": 1006.90625,
+          "y": 766.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 1071.609375,
+          "bottom": 810.671875
+        },
+        {
+          "id": "800 年",
+          "x": 1079.609375,
+          "y": 766.671875,
+          "width": 64.703125,
+          "height": 44,
+          "right": 1144.3125,
+          "bottom": 810.671875
+        },
+        {
+          "id": "1000 年",
+          "x": 1152.3125,
+          "y": 766.671875,
+          "width": 72.125,
+          "height": 44,
+          "right": 1224.4375,
+          "bottom": 810.671875
+        }
+      ],
+      "nav": [
+        {
+          "text": "日历",
+          "foreground": [
+            238,
+            155,
+            128,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 2.17940237451464
+        },
+        {
+          "text": "朝代长卷",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 1.9101361653001705
+        },
+        {
+          "text": "四时流转",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 1.9101361653001705
+        }
+      ],
+      "toolContrast": [
+        {
+          "text": "",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 2.7902413050800345
+        },
+        {
+          "text": "",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 2.7902413050800345
+        },
+        {
+          "text": "暂停动效",
+          "foreground": [
+            237,
+            226,
+            201,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 4.1426950441291925
+        },
+        {
+          "text": "回到画境",
+          "foreground": [
+            237,
+            226,
+            201,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 4.1426950441291925
+        }
+      ],
+      "title": {
+        "x": 929.5,
+        "y": 577.765625,
+        "width": 369,
+        "height": 33,
+        "right": 1298.5,
+        "bottom": 610.765625
+      },
+      "footer": {
+        "x": 0,
+        "y": 0,
+        "width": 142,
+        "height": 864,
+        "right": 142,
+        "bottom": 864
+      },
+      "header": {
+        "x": 0,
+        "y": -0.5,
+        "width": 1521,
+        "height": 178.75,
+        "right": 1521,
+        "bottom": 178.25
+      },
+      "tools": {
+        "x": 1223.96875,
+        "y": 24,
+        "width": 271.03125,
+        "height": 50,
+        "right": 1495,
+        "bottom": 74
+      },
+      "selected": {
+        "foreground": "rgb(20, 18, 15)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 8.579033176036964
+      },
+      "neighbor": {
+        "opacity": 1,
+        "contrast": 6.142386381856825
+      },
+      "descriptionSize": 16,
+      "sourceSize": 12
+    },
+    {
+      "scene": "calendar",
+      "theme": "light",
+      "width": 1024,
+      "height": 768,
+      "scrollWidth": 1009,
+      "controls": [
+        {
+          "id": "searchOpen",
+          "x": 714.96875,
+          "y": 27,
+          "width": 44,
+          "height": 44,
+          "right": 758.96875,
+          "bottom": 71
+        },
+        {
+          "id": "themeToggle",
+          "x": 762.96875,
+          "y": 27,
+          "width": 44,
+          "height": 44,
+          "right": 806.96875,
+          "bottom": 71
+        },
+        {
+          "id": "motionToggle",
+          "x": 810.96875,
+          "y": 27,
+          "width": 93.015625,
+          "height": 44,
+          "right": 903.984375,
+          "bottom": 71
+        },
+        {
+          "id": "todayButton",
+          "x": 813.796875,
+          "y": 87.96875,
+          "width": 73.125,
+          "height": 44,
+          "right": 886.921875,
+          "bottom": 131.96875
+        },
+        {
+          "id": "randomButton",
+          "x": 894.921875,
+          "y": 87.96875,
+          "width": 73.125,
+          "height": 44,
+          "right": 968.046875,
+          "bottom": 131.96875
+        },
+        {
+          "id": "calPrev",
+          "x": 443.5,
+          "y": 212.453125,
+          "width": 44,
+          "height": 44,
+          "right": 487.5,
+          "bottom": 256.453125
+        },
+        {
+          "id": "calNext",
+          "x": 491.5,
+          "y": 212.453125,
+          "width": 44,
+          "height": 44,
+          "right": 535.5,
+          "bottom": 256.453125
+        },
+        {
+          "id": "eraFilter",
+          "x": 651.515625,
+          "y": 450.96875,
+          "width": 87,
+          "height": 44,
+          "right": 738.515625,
+          "bottom": 494.96875
+        },
+        {
+          "id": "100 年",
+          "x": 589.5,
+          "y": 819.375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 654.203125,
+          "bottom": 863.375
+        },
+        {
+          "id": "300 年",
+          "x": 662.203125,
+          "y": 819.375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 726.90625,
+          "bottom": 863.375
+        },
+        {
+          "id": "500 年",
+          "x": 734.90625,
+          "y": 819.375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 799.609375,
+          "bottom": 863.375
+        },
+        {
+          "id": "800 年",
+          "x": 807.609375,
+          "y": 819.375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 872.3125,
+          "bottom": 863.375
+        },
+        {
+          "id": "1000 年",
+          "x": 589.5,
+          "y": 871.375,
+          "width": 72.125,
+          "height": 44,
+          "right": 661.625,
+          "bottom": 915.375
+        }
+      ],
+      "nav": [
+        {
+          "text": "日历",
+          "foreground": [
+            166,
+            56,
+            46,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 3.2265189175363282
+        },
+        {
+          "text": "朝代长卷",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 3.2099810376738382
+        },
+        {
+          "text": "四时流转",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 3.2099810376738382
+        }
+      ],
+      "toolContrast": [
+        {
+          "text": "",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 2.58093501252316
+        },
+        {
+          "text": "",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 2.58093501252316
+        },
+        {
+          "text": "暂停动效",
+          "foreground": [
+            37,
+            58,
+            56,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 4.758644157483993
+        },
+        {
+          "text": "回到画境",
+          "foreground": [
+            37,
+            58,
+            56,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 4.758644157483993
+        }
+      ],
+      "title": {
+        "x": 590.5,
+        "y": 600.875,
+        "width": 346.546875,
+        "height": 33,
+        "right": 937.046875,
+        "bottom": 633.875
+      },
+      "footer": {
+        "x": 0,
+        "y": 0,
+        "width": 110,
+        "height": 768,
+        "right": 110,
+        "bottom": 768
+      },
+      "header": {
+        "x": 0,
+        "y": -0.5,
+        "width": 1009,
+        "height": 168.953125,
+        "right": 1009,
+        "bottom": 168.453125
+      },
+      "tools": {
+        "x": 711.96875,
+        "y": 24,
+        "width": 271.03125,
+        "height": 50,
+        "right": 983,
+        "bottom": 74
+      },
+      "selected": {
+        "foreground": "rgb(255, 249, 244)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 6.2322905742039865
+      },
+      "neighbor": {
+        "opacity": 1,
+        "contrast": 6.175832169128552
+      },
+      "descriptionSize": 16,
+      "sourceSize": 12
+    },
+    {
+      "scene": "calendar",
+      "theme": "dark",
+      "width": 1024,
+      "height": 768,
+      "scrollWidth": 1009,
+      "controls": [
+        {
+          "id": "searchOpen",
+          "x": 714.96875,
+          "y": 27,
+          "width": 44,
+          "height": 44,
+          "right": 758.96875,
+          "bottom": 71
+        },
+        {
+          "id": "themeToggle",
+          "x": 762.96875,
+          "y": 27,
+          "width": 44,
+          "height": 44,
+          "right": 806.96875,
+          "bottom": 71
+        },
+        {
+          "id": "motionToggle",
+          "x": 810.96875,
+          "y": 27,
+          "width": 93.015625,
+          "height": 44,
+          "right": 903.984375,
+          "bottom": 71
+        },
+        {
+          "id": "todayButton",
+          "x": 813.796875,
+          "y": 87.96875,
+          "width": 73.125,
+          "height": 44,
+          "right": 886.921875,
+          "bottom": 131.96875
+        },
+        {
+          "id": "randomButton",
+          "x": 894.921875,
+          "y": 87.96875,
+          "width": 73.125,
+          "height": 44,
+          "right": 968.046875,
+          "bottom": 131.96875
+        },
+        {
+          "id": "calPrev",
+          "x": 443.5,
+          "y": 212.453125,
+          "width": 44,
+          "height": 44,
+          "right": 487.5,
+          "bottom": 256.453125
+        },
+        {
+          "id": "calNext",
+          "x": 491.5,
+          "y": 212.453125,
+          "width": 44,
+          "height": 44,
+          "right": 535.5,
+          "bottom": 256.453125
+        },
+        {
+          "id": "eraFilter",
+          "x": 651.515625,
+          "y": 450.96875,
+          "width": 87,
+          "height": 44,
+          "right": 738.515625,
+          "bottom": 494.96875
+        },
+        {
+          "id": "100 年",
+          "x": 589.5,
+          "y": 819.375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 654.203125,
+          "bottom": 863.375
+        },
+        {
+          "id": "300 年",
+          "x": 662.203125,
+          "y": 819.375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 726.90625,
+          "bottom": 863.375
+        },
+        {
+          "id": "500 年",
+          "x": 734.90625,
+          "y": 819.375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 799.609375,
+          "bottom": 863.375
+        },
+        {
+          "id": "800 年",
+          "x": 807.609375,
+          "y": 819.375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 872.3125,
+          "bottom": 863.375
+        },
+        {
+          "id": "1000 年",
+          "x": 589.5,
+          "y": 871.375,
+          "width": 72.125,
+          "height": 44,
+          "right": 661.625,
+          "bottom": 915.375
+        }
+      ],
+      "nav": [
+        {
+          "text": "日历",
+          "foreground": [
+            238,
+            155,
+            128,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 2.17940237451464
+        },
+        {
+          "text": "朝代长卷",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 1.9101361653001705
+        },
+        {
+          "text": "四时流转",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 1.9101361653001705
+        }
+      ],
+      "toolContrast": [
+        {
+          "text": "",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 2.7902413050800345
+        },
+        {
+          "text": "",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 2.7902413050800345
+        },
+        {
+          "text": "暂停动效",
+          "foreground": [
+            237,
+            226,
+            201,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 4.1426950441291925
+        },
+        {
+          "text": "回到画境",
+          "foreground": [
+            237,
+            226,
+            201,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 4.1426950441291925
+        }
+      ],
+      "title": {
+        "x": 590.5,
+        "y": 600.875,
+        "width": 346.546875,
+        "height": 33,
+        "right": 937.046875,
+        "bottom": 633.875
+      },
+      "footer": {
+        "x": 0,
+        "y": 0,
+        "width": 110,
+        "height": 768,
+        "right": 110,
+        "bottom": 768
+      },
+      "header": {
+        "x": 0,
+        "y": -0.5,
+        "width": 1009,
+        "height": 168.953125,
+        "right": 1009,
+        "bottom": 168.453125
+      },
+      "tools": {
+        "x": 711.96875,
+        "y": 24,
+        "width": 271.03125,
+        "height": 50,
+        "right": 983,
+        "bottom": 74
+      },
+      "selected": {
+        "foreground": "rgb(20, 18, 15)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 8.579033176036964
+      },
+      "neighbor": {
+        "opacity": 1,
+        "contrast": 6.142386381856825
+      },
+      "descriptionSize": 16,
+      "sourceSize": 12
+    },
+    {
+      "scene": "calendar",
+      "theme": "light",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 753,
+      "controls": [
+        {
+          "id": "searchOpen",
+          "x": 566.984375,
+          "y": 9,
+          "width": 44,
+          "height": 44,
+          "right": 610.984375,
+          "bottom": 53
+        },
+        {
+          "id": "themeToggle",
+          "x": 610.984375,
+          "y": 9,
+          "width": 44,
+          "height": 44,
+          "right": 654.984375,
+          "bottom": 53
+        },
+        {
+          "id": "motionToggle",
+          "x": 654.984375,
+          "y": 9,
+          "width": 85.015625,
+          "height": 44,
+          "right": 740,
+          "bottom": 53
+        },
+        {
+          "id": "todayButton",
+          "x": 572.25,
+          "y": 59.84375,
+          "width": 81.375,
+          "height": 44,
+          "right": 653.625,
+          "bottom": 103.84375
+        },
+        {
+          "id": "randomButton",
+          "x": 657.625,
+          "y": 59.84375,
+          "width": 81.375,
+          "height": 44,
+          "right": 739,
+          "bottom": 103.84375
+        },
+        {
+          "id": "calendarCollapse",
+          "x": 596,
+          "y": 128.84375,
+          "width": 44,
+          "height": 44,
+          "right": 640,
+          "bottom": 172.84375
+        },
+        {
+          "id": "calPrev",
+          "x": 640,
+          "y": 128.84375,
+          "width": 44,
+          "height": 44,
+          "right": 684,
+          "bottom": 172.84375
+        },
+        {
+          "id": "calNext",
+          "x": 684,
+          "y": 128.84375,
+          "width": 44,
+          "height": 44,
+          "right": 728,
+          "bottom": 172.84375
+        },
+        {
+          "id": "eraFilter",
+          "x": 645,
+          "y": 580.28125,
+          "width": 83,
+          "height": 44,
+          "right": 728,
+          "bottom": 624.28125
+        },
+        {
+          "id": "100 年",
+          "x": 25,
+          "y": 831.390625,
+          "width": 64.703125,
+          "height": 44,
+          "right": 89.703125,
+          "bottom": 875.390625
+        },
+        {
+          "id": "300 年",
+          "x": 97.703125,
+          "y": 831.390625,
+          "width": 64.703125,
+          "height": 44,
+          "right": 162.40625,
+          "bottom": 875.390625
+        },
+        {
+          "id": "500 年",
+          "x": 170.40625,
+          "y": 831.390625,
+          "width": 64.703125,
+          "height": 44,
+          "right": 235.109375,
+          "bottom": 875.390625
+        },
+        {
+          "id": "800 年",
+          "x": 243.109375,
+          "y": 831.390625,
+          "width": 64.703125,
+          "height": 44,
+          "right": 307.8125,
+          "bottom": 875.390625
+        },
+        {
+          "id": "1000 年",
+          "x": 315.8125,
+          "y": 831.390625,
+          "width": 72.125,
+          "height": 44,
+          "right": 387.9375,
+          "bottom": 875.390625
+        }
+      ],
+      "nav": [
+        {
+          "text": "日历",
+          "foreground": [
+            166,
+            56,
+            46,
+            255
+          ],
+          "background": [
+            177,
+            59,
+            49,
+            26
+          ],
+          "worstContrast": 3.060870176505598
+        },
+        {
+          "text": "朝代长卷",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 3.2099810376738382
+        },
+        {
+          "text": "四时流转",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 3.2099810376738382
+        }
+      ],
+      "toolContrast": [
+        {
+          "text": "",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 2.58093501252316
+        },
+        {
+          "text": "",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 2.58093501252316
+        },
+        {
+          "text": "暂停动效",
+          "foreground": [
+            37,
+            58,
+            56,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 4.758644157483993
+        }
+      ],
+      "title": {
+        "x": 76,
+        "y": 660.28125,
+        "width": 652,
+        "height": 27,
+        "right": 728,
+        "bottom": 687.28125
+      },
+      "footer": {
+        "x": 0,
+        "y": 959,
+        "width": 753,
+        "height": 65,
+        "right": 753,
+        "bottom": 1024
+      },
+      "header": {
+        "x": 0,
+        "y": -0.15625,
+        "width": 753,
+        "height": 112,
+        "right": 753,
+        "bottom": 111.84375
+      },
+      "tools": {
+        "x": 565.984375,
+        "y": 8,
+        "width": 175.015625,
+        "height": 46,
+        "right": 741,
+        "bottom": 54
+      },
+      "selected": {
+        "foreground": "rgb(255, 249, 244)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 6.2322905742039865
+      },
+      "neighbor": {
+        "opacity": 1,
+        "contrast": 6.175832169128552
+      },
+      "descriptionSize": 16,
+      "sourceSize": 12
+    },
+    {
+      "scene": "calendar",
+      "theme": "dark",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 753,
+      "controls": [
+        {
+          "id": "searchOpen",
+          "x": 566.984375,
+          "y": 9,
+          "width": 44,
+          "height": 44,
+          "right": 610.984375,
+          "bottom": 53
+        },
+        {
+          "id": "themeToggle",
+          "x": 610.984375,
+          "y": 9,
+          "width": 44,
+          "height": 44,
+          "right": 654.984375,
+          "bottom": 53
+        },
+        {
+          "id": "motionToggle",
+          "x": 654.984375,
+          "y": 9,
+          "width": 85.015625,
+          "height": 44,
+          "right": 740,
+          "bottom": 53
+        },
+        {
+          "id": "todayButton",
+          "x": 572.25,
+          "y": 59.84375,
+          "width": 81.375,
+          "height": 44,
+          "right": 653.625,
+          "bottom": 103.84375
+        },
+        {
+          "id": "randomButton",
+          "x": 657.625,
+          "y": 59.84375,
+          "width": 81.375,
+          "height": 44,
+          "right": 739,
+          "bottom": 103.84375
+        },
+        {
+          "id": "calendarCollapse",
+          "x": 596,
+          "y": 128.84375,
+          "width": 44,
+          "height": 44,
+          "right": 640,
+          "bottom": 172.84375
+        },
+        {
+          "id": "calPrev",
+          "x": 640,
+          "y": 128.84375,
+          "width": 44,
+          "height": 44,
+          "right": 684,
+          "bottom": 172.84375
+        },
+        {
+          "id": "calNext",
+          "x": 684,
+          "y": 128.84375,
+          "width": 44,
+          "height": 44,
+          "right": 728,
+          "bottom": 172.84375
+        },
+        {
+          "id": "eraFilter",
+          "x": 645,
+          "y": 580.28125,
+          "width": 83,
+          "height": 44,
+          "right": 728,
+          "bottom": 624.28125
+        },
+        {
+          "id": "100 年",
+          "x": 25,
+          "y": 831.390625,
+          "width": 64.703125,
+          "height": 44,
+          "right": 89.703125,
+          "bottom": 875.390625
+        },
+        {
+          "id": "300 年",
+          "x": 97.703125,
+          "y": 831.390625,
+          "width": 64.703125,
+          "height": 44,
+          "right": 162.40625,
+          "bottom": 875.390625
+        },
+        {
+          "id": "500 年",
+          "x": 170.40625,
+          "y": 831.390625,
+          "width": 64.703125,
+          "height": 44,
+          "right": 235.109375,
+          "bottom": 875.390625
+        },
+        {
+          "id": "800 年",
+          "x": 243.109375,
+          "y": 831.390625,
+          "width": 64.703125,
+          "height": 44,
+          "right": 307.8125,
+          "bottom": 875.390625
+        },
+        {
+          "id": "1000 年",
+          "x": 315.8125,
+          "y": 831.390625,
+          "width": 72.125,
+          "height": 44,
+          "right": 387.9375,
+          "bottom": 875.390625
+        }
+      ],
+      "nav": [
+        {
+          "text": "日历",
+          "foreground": [
+            238,
+            155,
+            128,
+            255
+          ],
+          "background": [
+            227,
+            106,
+            85,
+            36
+          ],
+          "worstContrast": 1.8704053495649438
+        },
+        {
+          "text": "朝代长卷",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 1.9101361653001705
+        },
+        {
+          "text": "四时流转",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 1.9101361653001705
+        }
+      ],
+      "toolContrast": [
+        {
+          "text": "",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 2.7902413050800345
+        },
+        {
+          "text": "",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 2.7902413050800345
+        },
+        {
+          "text": "暂停动效",
+          "foreground": [
+            237,
+            226,
+            201,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 4.1426950441291925
+        }
+      ],
+      "title": {
+        "x": 76,
+        "y": 660.28125,
+        "width": 652,
+        "height": 27,
+        "right": 728,
+        "bottom": 687.28125
+      },
+      "footer": {
+        "x": 0,
+        "y": 959,
+        "width": 753,
+        "height": 65,
+        "right": 753,
+        "bottom": 1024
+      },
+      "header": {
+        "x": 0,
+        "y": -0.15625,
+        "width": 753,
+        "height": 112,
+        "right": 753,
+        "bottom": 111.84375
+      },
+      "tools": {
+        "x": 565.984375,
+        "y": 8,
+        "width": 175.015625,
+        "height": 46,
+        "right": 741,
+        "bottom": 54
+      },
+      "selected": {
+        "foreground": "rgb(20, 18, 15)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 8.579033176036964
+      },
+      "neighbor": {
+        "opacity": 1,
+        "contrast": 6.142386381856825
+      },
+      "descriptionSize": 16,
+      "sourceSize": 12
+    },
+    {
+      "scene": "calendar",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 375,
+      "controls": [
+        {
+          "id": "searchOpen",
+          "x": 188.984375,
+          "y": 9,
+          "width": 44,
+          "height": 44,
+          "right": 232.984375,
+          "bottom": 53
+        },
+        {
+          "id": "themeToggle",
+          "x": 232.984375,
+          "y": 9,
+          "width": 44,
+          "height": 44,
+          "right": 276.984375,
+          "bottom": 53
+        },
+        {
+          "id": "motionToggle",
+          "x": 276.984375,
+          "y": 9,
+          "width": 85.015625,
+          "height": 44,
+          "right": 362,
+          "bottom": 53
+        },
+        {
+          "id": "todayButton",
+          "x": 261.625,
+          "y": 59.84375,
+          "width": 47.6875,
+          "height": 44,
+          "right": 309.3125,
+          "bottom": 103.84375
+        },
+        {
+          "id": "randomButton",
+          "x": 313.3125,
+          "y": 59.84375,
+          "width": 47.6875,
+          "height": 44,
+          "right": 361,
+          "bottom": 103.84375
+        },
+        {
+          "id": "calendarCollapse",
+          "x": 218,
+          "y": 128.84375,
+          "width": 44,
+          "height": 44,
+          "right": 262,
+          "bottom": 172.84375
+        },
+        {
+          "id": "calPrev",
+          "x": 262,
+          "y": 128.84375,
+          "width": 44,
+          "height": 44,
+          "right": 306,
+          "bottom": 172.84375
+        },
+        {
+          "id": "calNext",
+          "x": 306,
+          "y": 128.84375,
+          "width": 44,
+          "height": 44,
+          "right": 350,
+          "bottom": 172.84375
+        },
+        {
+          "id": "eraFilter",
+          "x": 267,
+          "y": 574.28125,
+          "width": 83,
+          "height": 44,
+          "right": 350,
+          "bottom": 618.28125
+        },
+        {
+          "id": "100 年",
+          "x": 25,
+          "y": 824.984375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 89.703125,
+          "bottom": 868.984375
+        },
+        {
+          "id": "300 年",
+          "x": 97.703125,
+          "y": 824.984375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 162.40625,
+          "bottom": 868.984375
+        },
+        {
+          "id": "500 年",
+          "x": 170.40625,
+          "y": 824.984375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 235.109375,
+          "bottom": 868.984375
+        },
+        {
+          "id": "800 年",
+          "x": 243.109375,
+          "y": 824.984375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 307.8125,
+          "bottom": 868.984375
+        },
+        {
+          "id": "1000 年",
+          "x": 25,
+          "y": 876.984375,
+          "width": 72.125,
+          "height": 44,
+          "right": 97.125,
+          "bottom": 920.984375
+        }
+      ],
+      "nav": [
+        {
+          "text": "日历",
+          "foreground": [
+            166,
+            56,
+            46,
+            255
+          ],
+          "background": [
+            177,
+            59,
+            49,
+            26
+          ],
+          "worstContrast": 3.060870176505598
+        },
+        {
+          "text": "朝代长卷",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 3.2099810376738382
+        },
+        {
+          "text": "四时流转",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 3.2099810376738382
+        }
+      ],
+      "toolContrast": [
+        {
+          "text": "",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 2.58093501252316
+        },
+        {
+          "text": "",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 2.58093501252316
+        },
+        {
+          "text": "暂停动效",
+          "foreground": [
+            37,
+            58,
+            56,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 4.758644157483993
+        }
+      ],
+      "title": {
+        "x": 76,
+        "y": 632.28125,
+        "width": 274,
+        "height": 27,
+        "right": 350,
+        "bottom": 659.28125
+      },
+      "footer": {
+        "x": 0,
+        "y": 779,
+        "width": 375,
+        "height": 65,
+        "right": 375,
+        "bottom": 844
+      },
+      "header": {
+        "x": 0,
+        "y": -0.15625,
+        "width": 375,
+        "height": 112,
+        "right": 375,
+        "bottom": 111.84375
+      },
+      "tools": {
+        "x": 187.984375,
+        "y": 8,
+        "width": 175.015625,
+        "height": 46,
+        "right": 363,
+        "bottom": 54
+      },
+      "selected": {
+        "foreground": "rgb(255, 249, 244)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 6.2322905742039865
+      },
+      "neighbor": {
+        "opacity": 1,
+        "contrast": 6.175832169128552
+      },
+      "descriptionSize": 16,
+      "sourceSize": 12
+    },
+    {
+      "scene": "calendar",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 375,
+      "controls": [
+        {
+          "id": "searchOpen",
+          "x": 188.984375,
+          "y": 9,
+          "width": 44,
+          "height": 44,
+          "right": 232.984375,
+          "bottom": 53
+        },
+        {
+          "id": "themeToggle",
+          "x": 232.984375,
+          "y": 9,
+          "width": 44,
+          "height": 44,
+          "right": 276.984375,
+          "bottom": 53
+        },
+        {
+          "id": "motionToggle",
+          "x": 276.984375,
+          "y": 9,
+          "width": 85.015625,
+          "height": 44,
+          "right": 362,
+          "bottom": 53
+        },
+        {
+          "id": "todayButton",
+          "x": 261.625,
+          "y": 59.84375,
+          "width": 47.6875,
+          "height": 44,
+          "right": 309.3125,
+          "bottom": 103.84375
+        },
+        {
+          "id": "randomButton",
+          "x": 313.3125,
+          "y": 59.84375,
+          "width": 47.6875,
+          "height": 44,
+          "right": 361,
+          "bottom": 103.84375
+        },
+        {
+          "id": "calendarCollapse",
+          "x": 218,
+          "y": 128.84375,
+          "width": 44,
+          "height": 44,
+          "right": 262,
+          "bottom": 172.84375
+        },
+        {
+          "id": "calPrev",
+          "x": 262,
+          "y": 128.84375,
+          "width": 44,
+          "height": 44,
+          "right": 306,
+          "bottom": 172.84375
+        },
+        {
+          "id": "calNext",
+          "x": 306,
+          "y": 128.84375,
+          "width": 44,
+          "height": 44,
+          "right": 350,
+          "bottom": 172.84375
+        },
+        {
+          "id": "eraFilter",
+          "x": 267,
+          "y": 574.28125,
+          "width": 83,
+          "height": 44,
+          "right": 350,
+          "bottom": 618.28125
+        },
+        {
+          "id": "100 年",
+          "x": 25,
+          "y": 824.984375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 89.703125,
+          "bottom": 868.984375
+        },
+        {
+          "id": "300 年",
+          "x": 97.703125,
+          "y": 824.984375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 162.40625,
+          "bottom": 868.984375
+        },
+        {
+          "id": "500 年",
+          "x": 170.40625,
+          "y": 824.984375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 235.109375,
+          "bottom": 868.984375
+        },
+        {
+          "id": "800 年",
+          "x": 243.109375,
+          "y": 824.984375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 307.8125,
+          "bottom": 868.984375
+        },
+        {
+          "id": "1000 年",
+          "x": 25,
+          "y": 876.984375,
+          "width": 72.125,
+          "height": 44,
+          "right": 97.125,
+          "bottom": 920.984375
+        }
+      ],
+      "nav": [
+        {
+          "text": "日历",
+          "foreground": [
+            238,
+            155,
+            128,
+            255
+          ],
+          "background": [
+            227,
+            106,
+            85,
+            36
+          ],
+          "worstContrast": 1.8704053495649438
+        },
+        {
+          "text": "朝代长卷",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 1.9101361653001705
+        },
+        {
+          "text": "四时流转",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 1.9101361653001705
+        }
+      ],
+      "toolContrast": [
+        {
+          "text": "",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 2.7902413050800345
+        },
+        {
+          "text": "",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 2.7902413050800345
+        },
+        {
+          "text": "暂停动效",
+          "foreground": [
+            237,
+            226,
+            201,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 4.1426950441291925
+        }
+      ],
+      "title": {
+        "x": 76,
+        "y": 632.28125,
+        "width": 274,
+        "height": 27,
+        "right": 350,
+        "bottom": 659.28125
+      },
+      "footer": {
+        "x": 0,
+        "y": 779,
+        "width": 375,
+        "height": 65,
+        "right": 375,
+        "bottom": 844
+      },
+      "header": {
+        "x": 0,
+        "y": -0.15625,
+        "width": 375,
+        "height": 112,
+        "right": 375,
+        "bottom": 111.84375
+      },
+      "tools": {
+        "x": 187.984375,
+        "y": 8,
+        "width": 175.015625,
+        "height": 46,
+        "right": 363,
+        "bottom": 54
+      },
+      "selected": {
+        "foreground": "rgb(20, 18, 15)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 8.579033176036964
+      },
+      "neighbor": {
+        "opacity": 1,
+        "contrast": 6.142386381856825
+      },
+      "descriptionSize": 16,
+      "sourceSize": 12
+    },
+    {
+      "scene": "calendar",
+      "theme": "light",
+      "width": 320,
+      "height": 740,
+      "scrollWidth": 305,
+      "controls": [
+        {
+          "id": "searchOpen",
+          "x": 118.984375,
+          "y": 9,
+          "width": 44,
+          "height": 44,
+          "right": 162.984375,
+          "bottom": 53
+        },
+        {
+          "id": "themeToggle",
+          "x": 162.984375,
+          "y": 9,
+          "width": 44,
+          "height": 44,
+          "right": 206.984375,
+          "bottom": 53
+        },
+        {
+          "id": "motionToggle",
+          "x": 206.984375,
+          "y": 9,
+          "width": 85.015625,
+          "height": 44,
+          "right": 292,
+          "bottom": 53
+        },
+        {
+          "id": "todayButton",
+          "x": 191.625,
+          "y": 59.84375,
+          "width": 47.6875,
+          "height": 44,
+          "right": 239.3125,
+          "bottom": 103.84375
+        },
+        {
+          "id": "randomButton",
+          "x": 243.3125,
+          "y": 59.84375,
+          "width": 47.6875,
+          "height": 44,
+          "right": 291,
+          "bottom": 103.84375
+        },
+        {
+          "id": "calendarCollapse",
+          "x": 148,
+          "y": 128.84375,
+          "width": 44,
+          "height": 44,
+          "right": 192,
+          "bottom": 172.84375
+        },
+        {
+          "id": "calPrev",
+          "x": 192,
+          "y": 128.84375,
+          "width": 44,
+          "height": 44,
+          "right": 236,
+          "bottom": 172.84375
+        },
+        {
+          "id": "calNext",
+          "x": 236,
+          "y": 128.84375,
+          "width": 44,
+          "height": 44,
+          "right": 280,
+          "bottom": 172.84375
+        },
+        {
+          "id": "eraFilter",
+          "x": 197,
+          "y": 574.28125,
+          "width": 83,
+          "height": 44,
+          "right": 280,
+          "bottom": 618.28125
+        },
+        {
+          "id": "100 年",
+          "x": 25,
+          "y": 824.984375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 89.703125,
+          "bottom": 868.984375
+        },
+        {
+          "id": "300 年",
+          "x": 97.703125,
+          "y": 824.984375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 162.40625,
+          "bottom": 868.984375
+        },
+        {
+          "id": "500 年",
+          "x": 170.40625,
+          "y": 824.984375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 235.109375,
+          "bottom": 868.984375
+        },
+        {
+          "id": "800 年",
+          "x": 25,
+          "y": 876.984375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 89.703125,
+          "bottom": 920.984375
+        },
+        {
+          "id": "1000 年",
+          "x": 97.703125,
+          "y": 876.984375,
+          "width": 72.125,
+          "height": 44,
+          "right": 169.828125,
+          "bottom": 920.984375
+        }
+      ],
+      "nav": [
+        {
+          "text": "日历",
+          "foreground": [
+            166,
+            56,
+            46,
+            255
+          ],
+          "background": [
+            177,
+            59,
+            49,
+            26
+          ],
+          "worstContrast": 3.060870176505598
+        },
+        {
+          "text": "朝代长卷",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 3.2099810376738382
+        },
+        {
+          "text": "四时流转",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 3.2099810376738382
+        }
+      ],
+      "toolContrast": [
+        {
+          "text": "",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 2.58093501252316
+        },
+        {
+          "text": "",
+          "foreground": [
+            98,
+            93,
+            83,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 2.58093501252316
+        },
+        {
+          "text": "暂停动效",
+          "foreground": [
+            37,
+            58,
+            56,
+            255
+          ],
+          "background": [
+            245,
+            239,
+            230,
+            173
+          ],
+          "worstContrast": 4.758644157483993
+        }
+      ],
+      "title": {
+        "x": 76,
+        "y": 632.28125,
+        "width": 204,
+        "height": 27,
+        "right": 280,
+        "bottom": 659.28125
+      },
+      "footer": {
+        "x": 0,
+        "y": 675,
+        "width": 305,
+        "height": 65,
+        "right": 305,
+        "bottom": 740
+      },
+      "header": {
+        "x": 0,
+        "y": -0.15625,
+        "width": 305,
+        "height": 112,
+        "right": 305,
+        "bottom": 111.84375
+      },
+      "tools": {
+        "x": 117.984375,
+        "y": 8,
+        "width": 175.015625,
+        "height": 46,
+        "right": 293,
+        "bottom": 54
+      },
+      "selected": {
+        "foreground": "rgb(255, 249, 244)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 6.2322905742039865
+      },
+      "neighbor": {
+        "opacity": 1,
+        "contrast": 6.175832169128552
+      },
+      "descriptionSize": 16,
+      "sourceSize": 12
+    },
+    {
+      "scene": "calendar",
+      "theme": "dark",
+      "width": 320,
+      "height": 740,
+      "scrollWidth": 305,
+      "controls": [
+        {
+          "id": "searchOpen",
+          "x": 118.984375,
+          "y": 9,
+          "width": 44,
+          "height": 44,
+          "right": 162.984375,
+          "bottom": 53
+        },
+        {
+          "id": "themeToggle",
+          "x": 162.984375,
+          "y": 9,
+          "width": 44,
+          "height": 44,
+          "right": 206.984375,
+          "bottom": 53
+        },
+        {
+          "id": "motionToggle",
+          "x": 206.984375,
+          "y": 9,
+          "width": 85.015625,
+          "height": 44,
+          "right": 292,
+          "bottom": 53
+        },
+        {
+          "id": "todayButton",
+          "x": 191.625,
+          "y": 59.84375,
+          "width": 47.6875,
+          "height": 44,
+          "right": 239.3125,
+          "bottom": 103.84375
+        },
+        {
+          "id": "randomButton",
+          "x": 243.3125,
+          "y": 59.84375,
+          "width": 47.6875,
+          "height": 44,
+          "right": 291,
+          "bottom": 103.84375
+        },
+        {
+          "id": "calendarCollapse",
+          "x": 148,
+          "y": 128.84375,
+          "width": 44,
+          "height": 44,
+          "right": 192,
+          "bottom": 172.84375
+        },
+        {
+          "id": "calPrev",
+          "x": 192,
+          "y": 128.84375,
+          "width": 44,
+          "height": 44,
+          "right": 236,
+          "bottom": 172.84375
+        },
+        {
+          "id": "calNext",
+          "x": 236,
+          "y": 128.84375,
+          "width": 44,
+          "height": 44,
+          "right": 280,
+          "bottom": 172.84375
+        },
+        {
+          "id": "eraFilter",
+          "x": 197,
+          "y": 574.28125,
+          "width": 83,
+          "height": 44,
+          "right": 280,
+          "bottom": 618.28125
+        },
+        {
+          "id": "100 年",
+          "x": 25,
+          "y": 824.984375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 89.703125,
+          "bottom": 868.984375
+        },
+        {
+          "id": "300 年",
+          "x": 97.703125,
+          "y": 824.984375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 162.40625,
+          "bottom": 868.984375
+        },
+        {
+          "id": "500 年",
+          "x": 170.40625,
+          "y": 824.984375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 235.109375,
+          "bottom": 868.984375
+        },
+        {
+          "id": "800 年",
+          "x": 25,
+          "y": 876.984375,
+          "width": 64.703125,
+          "height": 44,
+          "right": 89.703125,
+          "bottom": 920.984375
+        },
+        {
+          "id": "1000 年",
+          "x": 97.703125,
+          "y": 876.984375,
+          "width": 72.125,
+          "height": 44,
+          "right": 169.828125,
+          "bottom": 920.984375
+        }
+      ],
+      "nav": [
+        {
+          "text": "日历",
+          "foreground": [
+            238,
+            155,
+            128,
+            255
+          ],
+          "background": [
+            227,
+            106,
+            85,
+            36
+          ],
+          "worstContrast": 1.8704053495649438
+        },
+        {
+          "text": "朝代长卷",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 1.9101361653001705
+        },
+        {
+          "text": "四时流转",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstContrast": 1.9101361653001705
+        }
+      ],
+      "toolContrast": [
+        {
+          "text": "",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 2.7902413050800345
+        },
+        {
+          "text": "",
+          "foreground": [
+            195,
+            187,
+            168,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 2.7902413050800345
+        },
+        {
+          "text": "暂停动效",
+          "foreground": [
+            237,
+            226,
+            201,
+            255
+          ],
+          "background": [
+            24,
+            40,
+            41,
+            173
+          ],
+          "worstContrast": 4.1426950441291925
+        }
+      ],
+      "title": {
+        "x": 76,
+        "y": 632.28125,
+        "width": 204,
+        "height": 27,
+        "right": 280,
+        "bottom": 659.28125
+      },
+      "footer": {
+        "x": 0,
+        "y": 675,
+        "width": 305,
+        "height": 65,
+        "right": 305,
+        "bottom": 740
+      },
+      "header": {
+        "x": 0,
+        "y": -0.15625,
+        "width": 305,
+        "height": 112,
+        "right": 305,
+        "bottom": 111.84375
+      },
+      "tools": {
+        "x": 117.984375,
+        "y": 8,
+        "width": 175.015625,
+        "height": 46,
+        "right": 293,
+        "bottom": 54
+      },
+      "selected": {
+        "foreground": "rgb(20, 18, 15)",
+        "mask": "url(\"http://127.0.0.1:8765/v2/assets/icons/date-seal-mask.svg\")",
+        "opacity": "1",
+        "contrast": 8.579033176036964
+      },
+      "neighbor": {
+        "opacity": 1,
+        "contrast": 6.142386381856825
+      },
+      "descriptionSize": 16,
+      "sourceSize": 12
+    }
+  ],
+  "pageErrors": [],
+  "httpErrors": [],
+  "external": [],
+  "ok": true
+}

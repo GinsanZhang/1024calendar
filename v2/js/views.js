@@ -31,6 +31,8 @@ window.V2Views = (function () {
       page.dataset.collapsed = String(collapsed);
       $('#calendarCollapse').setAttribute('aria-expanded', String(!collapsed));
       $('#calendarCollapse').textContent = collapsed ? '展开月历' : '收起月历';
+      $('#calendarCollapse').setAttribute('aria-label', $('#calendarCollapse').textContent);
+      $('#calendarCollapse').title = $('#calendarCollapse').textContent;
     });
     buildGridShell();
     buildScroll();
@@ -102,7 +104,7 @@ window.V2Views = (function () {
         el("span", { class: "d-lunar", text: lunar?.jq || lunarText })
       );
       btn.setAttribute("aria-label",
-        `${cm}月${cd}日${lunar ? "，农历" + lunar.text : ""}${events.length ? "，" + events.length + " 则记载" : "，无记载"}`);
+        `${cy}年${cm}月${cd}日${lunar ? "，农历" + lunar.text : ""}${events.length ? "，" + events.length + " 则记载" : "，无记载"}`);
       btn.addEventListener("click", () => pickDate(cy, cm, cd));
       frag.append(btn);
     }
@@ -115,7 +117,10 @@ window.V2Views = (function () {
     const now = new Date();
     $$(".day", $("#calGrid")).forEach(d => {
       const [y, m, dd] = d.dataset.date.split("-").map(Number);
-      if (y === now.getFullYear() && m === now.getMonth() + 1 && dd === now.getDate()) d.dataset.today = "1";
+      if (y === now.getFullYear() && m === now.getMonth() + 1 && dd === now.getDate()) {
+        d.dataset.today = "1";
+        d.setAttribute('aria-current', 'date');
+      }
     });
   }
 
@@ -545,14 +550,16 @@ window.V2Views = (function () {
     const ready = image.decode ? image.decode() : new Promise((resolve, reject)=>{image.onload=resolve;image.onerror=reject;});
     ready.then(()=>{
       if(token!==seasonPaintToken)return;
-      const old = $$('.season-image,.season-branch,.asset-placeholder',scene);
+      const old = [...$$('.season-image,.asset-placeholder',scene), ...$$(':scope > .season-branch',scene.parentElement)];
       const branch = el('img', {class:'season-branch',src:branchAsset.url,alt:'',ariaHidden:'true'});
-      scene.append(image,branch);
+      scene.append(image);
+      scene.parentElement.append(branch);
       requestAnimationFrame(()=>{image.dataset.ready='1';branch.dataset.ready='1';});
       setTimeout(()=>old.forEach(n=>n.remove()),reduced()?0:520);
     }).catch(()=>{
       if(token!==seasonPaintToken)return;
       scene.replaceChildren(V2Assets.slot({...termAsset,missing:true,url:''}));
+      $$(':scope > .season-branch',scene.parentElement).forEach(n=>n.remove());
     });
   }
 

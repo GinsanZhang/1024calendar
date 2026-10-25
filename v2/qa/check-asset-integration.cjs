@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { createHash } = require('crypto');
 
 const root = path.resolve(__dirname, '..');
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
@@ -32,13 +33,33 @@ assert(views.includes('distance > 2') && views.includes('opacity:.18'), '跨时�
 assert(read('js/overlay.js').includes('warmReaderArt'), '事件阅读器尚未预载画作');
 
 const manifest = JSON.parse(read('assets/manifest.json'));
+assert(manifest.schemaVersion === 2, '素材清单需要区分发布资源与归档母版');
+const registered = new Set();
 for (const item of manifest.rasters || []) {
-  const rel = item.path.replace(/^assets\//, 'assets/');
+  const rel = item.path;
+  assert(/^assets\/.+\.webp$/.test(rel), `发布清单不得包含母版或未知路径：${rel}`);
+  assert(!registered.has(rel), `素材清单重复：${rel}`);
+  registered.add(rel);
   assert(fs.existsSync(path.join(root, rel)), `素材清单文件缺失：${rel}`);
+  const bytes = fs.readFileSync(path.join(root, rel));
+  assert(bytes.length === item.bytes, `素材大小与清单不符：${rel}`);
+  assert(createHash('sha256').update(bytes).digest('hex') === item.sha256, `素材校验和与清单不符：${rel}`);
 }
+function checkPublishedFiles(dir) {
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const file = path.join(dir, entry.name);
+    if (entry.isDirectory()) checkPublishedFiles(file);
+    else if (entry.name.endsWith('.webp')) {
+      const rel = path.relative(root, file).split(path.sep).join('/');
+      assert(registered.has(rel), `发布素材未登记：${rel}`);
+    }
+  }
+}
+checkPublishedFiles(path.join(root, 'assets'));
 
 console.log(JSON.stringify({
   ok: true,
   checkedRasters: (manifest.rasters || []).length,
+  archivedSources: (manifest.archivedSources || []).length,
   integrated: ['font', 'hero', 'brand', 'calendar', 'scroll', 'events', 'seasons', 'lookback']
 }, null, 2));

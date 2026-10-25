@@ -1,0 +1,117 @@
+{
+  "method": "Human review, 0.5-point steps; layout 3, assets/materials 3, typography 2, component details 2 per scene. Not pixel similarity.",
+  "total": 91,
+  "possible": 100,
+  "scenes": [
+    {
+      "scene": 1,
+      "name": "首页",
+      "components": [
+        3,
+        3,
+        2,
+        1
+      ],
+      "score": 9
+    },
+    {
+      "scene": 2,
+      "name": "日历",
+      "components": [
+        2.5,
+        3,
+        2,
+        1.5
+      ],
+      "score": 9.0
+    },
+    {
+      "scene": 3,
+      "name": "史事",
+      "components": [
+        3,
+        2.5,
+        2,
+        1.5
+      ],
+      "score": 9.0
+    },
+    {
+      "scene": 4,
+      "name": "长卷",
+      "components": [
+        3,
+        2.5,
+        2,
+        1.5
+      ],
+      "score": 9.0
+    },
+    {
+      "scene": 5,
+      "name": "四时",
+      "components": [
+        3,
+        3,
+        2,
+        1.5
+      ],
+      "score": 9.5
+    },
+    {
+      "scene": 6,
+      "name": "回望",
+      "components": [
+        2.5,
+        2.5,
+        2,
+        1.5
+      ],
+      "score": 8.5
+    },
+    {
+      "scene": 7,
+      "name": "搜索",
+      "components": [
+        3,
+        3,
+        2,
+        1.5
+      ],
+      "score": 9.5
+    },
+    {
+      "scene": 8,
+      "name": "空白日",
+      "components": [
+        2.5,
+        3,
+        2,
+        1.5
+      ],
+      "score": 9.0
+    },
+    {
+      "scene": 9,
+      "name": "手机",
+      "components": [
+        2.5,
+        3,
+        2,
+        1.5
+      ],
+      "score": 9.0
+    },
+    {
+      "scene": 10,
+      "name": "视觉语言",
+      "components": [
+        3,
+        3,
+        2,
+        1.5
+      ],
+      "score": 9.5
+    }
+  ]
+}

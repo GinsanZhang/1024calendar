@@ -43,10 +43,22 @@ node v2/qa/check-asset-integration.cjs
 for f in v2/js/*.js; do node --check "$f"; done
 ```
 
-数据校验覆盖 131 条公历记录、20 条农历记录、92 条长卷史事、24 节气、5 档回望以及跨年日期；素材校验覆盖 177 个栅格文件及八个页面接入区域。
+数据校验覆盖 131 条公历记录、20 条农历记录、92 条长卷史事、24 节气、5 档回望以及跨年日期；素材校验覆盖全部 89 个发布 WebP 的存在性、登记完整性、字节数与 SHA-256，90 个归档 PNG 母版单独记录。
 
 ## UI 还原修复（2026-10-25）
 
 已修复回望按钮遮挡、900px导航/内容断点、节气日期跳转、翻日纸页反馈、长卷嵌套滚动、检索缩略图和手机月历密度，并统一纸面配色与轻导航。
 
-在本地预览中打开 `http://127.0.0.1:8765/v2/qa/ui-regressions.html` 可运行9项真实页面回归。浏览器尺寸与视觉证据见 `../docs/v2-ui-review/修复记录.md`。
+在本地预览中打开 `http://127.0.0.1:8765/v2/qa/ui-regressions.html` 可运行 11 项真实页面回归。
+
+本轮交付修复了首页导航对比度、44px 手机通用触区、320px 首屏信息层、朱砂日期圆印、正文/出处字阶和跨月日期可读性；同时调整纸册与阅读比例、节气小景带及窗外枝叶。详见 [修复与复验](../docs/ui-restoration-2026-10-25/修复与复验.md) 和 [前后对照](../docs/ui-restoration-2026-10-25/index.html)。
+
+启动上述本地服务后，可用 Playwright 和已安装的 Chromium 复验：
+
+```bash
+# 可通过 CHROME_PATH 指定 Chrome/Chromium；录屏需要 Playwright ffmpeg。
+QA_OUTPUT_DIR=/tmp/qianqiu-ui node v2/qa/check-delivery-ui.cjs
+QA_OUTPUT_DIR=/tmp/qianqiu-flow node v2/qa/check-interactions.cjs
+```
+
+检查会覆盖输出目录中的同名证据；复核时使用新目录保留交付快照。

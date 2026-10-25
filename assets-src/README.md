@@ -28,4 +28,4 @@ assets-src/v2/fonts/*.woff2     ←→   未被 fonts.css 引用的静态字重
 - **不要**把这里的文件挪回 `v2/assets/`：站点按同名 `.webp` 取图，母版只用于重新导出和质检。
 - 需要重新导出 WebP 时，从本目录取源图，输出到 `v2/assets/<组>/`。
 - `v2/assets/fonts/qianqiu-serif-variable.woff2` 被 `fonts.css` 直接引用，**必须**留在站点目录内。
-- `v2/assets/manifest.json` 是 2026-10-25 的验收快照（记录原生尺寸 / Alpha / SHA-256），其中 `path` 字段仍写的是移动前的 `assets/...` 路径，属历史记录，不要当作运行时路径使用。
+- `v2/assets/manifest.json` 的 `rasters` 只登记发布目录内实际存在的 WebP。原 PNG 快照保存在 `archivedSources`，其中 `originalPath` 为迁移前路径，`archivePath` 为本目录下的归档位置。母版不进版本库，发布校验不要求其存在；原生尺寸、Alpha 与 SHA-256 历史记录仍可查询。

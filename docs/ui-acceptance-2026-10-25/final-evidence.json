@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "x": 77.078125,
+    "y": 387.5,
+    "width": 32.40625,
+    "height": 21,
+    "color": "rgb(119, 61, 39)",
+    "fontSize": "15px"
+  },
+  "mobile": {
+    "title": {
+      "top": 791.125,
+      "bottom": 818.125
+    },
+    "footerTop": 683,
+    "scrollY": 1439,
+    "viewportHeight": 740
+  },
+  "lunar": {
+    "x": 32.203125,
+    "y": 372,
+    "width": 22,
+    "height": 12.09375,
+    "color": "rgb(98, 93, 83)",
+    "opacity": 0.41600000000000004
+  },
+  "regression": {
+    "ok": true,
+    "tests": [
+      {
+        "name": "应用初始化",
+        "ok": true
+      },
+      {
+        "name": "翻日立即提交最新日期",
+        "ok": true
+      },
+      {
+        "name": "翻日启动纸页动画",
+        "ok": true
+      },
+      {
+        "name": "快速切日取消旧动画、不排队",
+        "ok": true
+      },
+      {
+        "name": "暂停时直接到末态",
+        "ok": true
+      },
+      {
+        "name": "翻页结束清理透明旧纸层",
+        "ok": true
+      },
+      {
+        "name": "纸页清理不撑宽页面",
+        "ok": true
+      },
+      {
+        "name": "立冬跳到11月7日",
+        "ok": true
+      },
+      {
+        "name": "跨年节气使用选中年份",
+        "ok": true
+      },
+      {
+        "name": "搜索结果保留缩略图与来源",
+        "ok": true
+      },
+      {
+        "name": "取消回望后无迟发跳转",
+        "ok": true
+      }
+    ]
+  }
+}

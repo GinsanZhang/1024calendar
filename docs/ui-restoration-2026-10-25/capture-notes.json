@@ -1,0 +1,10 @@
+{
+  "lookback": {
+    "method": "Playwright browser clock paused after 580ms of the real runLookback animation; no app text/state overwritten",
+    "year": "1526",
+    "era": "明",
+    "selected": "500",
+    "selectedBackground": "rgb(114, 80, 35)",
+    "overlay": "lookback"
+  }
+}

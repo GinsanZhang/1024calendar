@@ -1,0 +1,28 @@
+{
+  "method": "Hero: CSS text color versus background screenshot at changed text/shadow pixels, fixed reduced-motion frame; local range is evidence of artwork collision, not a full WCAG certification. Calendar: alpha-composite CSS text and ancestor opacity against sampled paper pixel; antialiasing excluded.",
+  "heroActiveNav": {
+    "sampleCount": 136,
+    "minimum": 1.0049813942757357,
+    "maximum": 2.7788944999016856,
+    "below4_5Fraction": 1.0
+  },
+  "outMonthLunar": {
+    "opacity": 0.41600000000000004,
+    "foreground": [
+      98,
+      93,
+      83
+    ],
+    "sampledBackground": [
+      252,
+      248,
+      240
+    ],
+    "effectiveForeground": [
+      187.93599999999998,
+      183.51999999999998,
+      174.688
+    ],
+    "contrast": 1.8755954587591357
+  }
+}
